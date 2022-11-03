@@ -4,7 +4,7 @@ require_relative "lib/geocodio/gem/version"
 
 Gem::Specification.new do |spec|
   spec.name = "geocodio-gem"
-  spec.version = Geocodio::Gem::VERSION
+  spec.version = Geocodio::VERSION
   spec.authors = ["GoldenPavilion"]
   spec.email = ["rcorystine@gmail.com"]
 

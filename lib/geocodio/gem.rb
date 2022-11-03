@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
 require_relative "gem/version"
+require "faraday"
 
 module Geocodio
-  module Gem
-    class Error < StandardError; end
-    # Your code goes here...
+
+  class Error < StandardError; end
+    
+  class Gem 
+    def initialize(api_key)
+      @api_key = api_key
+    end
   end
 end

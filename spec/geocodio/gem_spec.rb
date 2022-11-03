@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
-RSpec.describe Geocodio::Gem do
+RSpec.describe Geocodio do
+
   it "has a version number" do
-    expect(Geocodio::Gem::VERSION).not_to be nil
+    expect(Geocodio::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has an API Key" do
+    expect(Geocodio::Gem.new("API_KEY")).not_to be nil
   end
 end
