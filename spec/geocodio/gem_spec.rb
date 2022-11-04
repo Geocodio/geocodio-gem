@@ -2,11 +2,17 @@
 
 RSpec.describe Geocodio do
 
+  geocodio = Geocodio::Gem.new("API_KEY")
+
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
   end
 
   it "has an API Key" do
-    expect(Geocodio::Gem.new("API_KEY")).not_to be nil
+    expect(geocodio).not_to be nil
+  end
+
+  it "geocodes a single address" do
+    expect(geocodio.geocode).to eq("1109 N Highland St, Arlington, VA")
   end
 end
