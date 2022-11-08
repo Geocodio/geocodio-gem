@@ -13,13 +13,13 @@ module Geocodio
       @api_key = api_key
     end
 
-    def geocode(query)
+    def geocode(query, fields=nil)
       conn = Faraday.new(
         url: 'https://api.geocod.io/v1.7/',
         headers: {'Content-Type' => 'application/json' }
       )
 
-      response = conn.get('geocode', { q: query, api_key: @api_key }).body
+      response = conn.get('geocode', { q: query, fields: fields, api_key: @api_key }).body
       parsed = JSON.parse(response)
       return parsed
     end
