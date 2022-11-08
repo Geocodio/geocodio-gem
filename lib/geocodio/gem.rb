@@ -13,10 +13,15 @@ module Geocodio
       @api_key = api_key
     end
 
-    def geocode
-      response = Faraday.get("https://api.geocod.io/v1.7/geocode?q=1109+N+Highland+St%2c+Arlington+VA&api_key=#{@api_key}")
-      parsed = JSON.parse(response.body)
-      return parsed["input"]["formatted_address"]
+    def geocode(query)
+      conn = Faraday.new(
+        url: 'https://api.geocod.io/v1.7/',
+        headers: {'Content-Type' => 'application/json' }
+      )
+
+      response = conn.get('geocode', { q: query, api_key: @api_key }).body
+      parsed = JSON.parse(response)
+      return parsed
     end
   end
 end
