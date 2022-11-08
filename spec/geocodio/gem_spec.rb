@@ -7,6 +7,7 @@ RSpec.describe Geocodio do
 
   api_key = ENV["API_KEY"]
   address_sample = "1109 N Highland St, Arlington, VA 22201"
+  coords_sample = "38.9002898,-76.9990361"
   appended_fields = "school" 
   geocodio = Geocodio::Gem.new(api_key)
 
@@ -24,5 +25,9 @@ RSpec.describe Geocodio do
 
   it "appends fields to single address" do
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("Arlington County Public Schools")
+  end
+
+  it "reverse geocodes coordinates" do
+    expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
   end
 end
