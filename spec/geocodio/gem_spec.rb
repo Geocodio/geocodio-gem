@@ -22,7 +22,7 @@ RSpec.describe Geocodio do
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample)
   end
 
-  it "appends fields to address" do
+  it "appends fields to single address" do
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("Arlington County Public Schools")
   end
 end

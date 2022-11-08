@@ -7,19 +7,19 @@ require "byebug"
 module Geocodio
 
   class Error < StandardError; end
-    
+
   class Gem
     def initialize(api_key)
       @api_key = api_key
-    end
 
-    def geocode(query, fields=nil)
-      conn = Faraday.new(
+      @conn = Faraday.new(
         url: 'https://api.geocod.io/v1.7/',
         headers: {'Content-Type' => 'application/json' }
       )
+    end
 
-      response = conn.get('geocode', { q: query, fields: fields, api_key: @api_key }).body
+    def geocode(query, fields=nil)
+      response = @conn.get('geocode', { q: query, fields: fields, api_key: @api_key }).body
       parsed = JSON.parse(response)
       return parsed
     end
