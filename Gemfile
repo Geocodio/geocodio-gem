@@ -14,3 +14,5 @@ gem "faraday"
 gem "byebug"
 
 gem "pry"
+
+gem "dotenv"

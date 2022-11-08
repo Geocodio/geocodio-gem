@@ -1,8 +1,12 @@
 # frozen_string_literal: true
 
+require 'dotenv'
+Dotenv.load
+
 RSpec.describe Geocodio do
 
-  geocodio = Geocodio::Gem.new("API_KEY")
+  api_key = ENV["API_KEY"] 
+  geocodio = Geocodio::Gem.new(api_key)
 
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
