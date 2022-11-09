@@ -8,7 +8,7 @@ RSpec.describe Geocodio do
   api_key = ENV["API_KEY"]
   address_sample = "1109 N Highland St, Arlington, VA 22201"
   coords_sample = "38.9002898,-76.9990361"
-  appended_fields = "school" 
+  appended_fields = ["school"]
   geocodio = Geocodio::Gem.new(api_key)
 
   it "has a version number" do
