@@ -6,8 +6,8 @@ Dotenv.load
 RSpec.describe Geocodio do
 
   api_key = ENV["API_KEY"]
-  address_sample = "1109 N Highland St, Arlington, VA 22201"
-  coords_sample = "38.9002898,-76.9990361"
+  address_sample = ["1109 N Highland St, Arlington, VA 22201"]
+  coords_sample = ["38.9002898,-76.9990361"]
   appended_fields = ["school"]
   geocodio = Geocodio::Gem.new(api_key)
 
@@ -20,7 +20,7 @@ RSpec.describe Geocodio do
   end
 
   it "geocodes a single address" do
-    expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample)
+    expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
   end
 
   it "appends fields to single address" do

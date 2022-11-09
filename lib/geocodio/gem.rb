@@ -18,22 +18,21 @@ module Geocodio
       )
     end
 
-    def geocode(query, fields=[])
-
+    def geocode(query=[], fields=[])
       if query.size < 1
         raise ArgumentError, 'Please provide at least one address to geocode.'
-      elsif
-        response = @conn.get('geocode', { q: query, fields: fields.join(","), api_key: @api_key }).body
+      elsif query.size == 1 
+        response = @conn.get('geocode', { q: query.join(""), fields: fields.join(","), api_key: @api_key }).body
         parsed = JSON.parse(response)
         return parsed
       end
     end
 
-    def reverse(query, fields=[])
+    def reverse(query=[], fields=[])
       if query.size < 1
         raise ArgumentError, 'Please provide at least one set of coordinates to geocode.'
       elsif
-        response = @conn.get('reverse', { q: query, fields: fields.join(","), api_key: @api_key}).body
+        response = @conn.get('reverse', { q: query.join(""), fields: fields.join(","), api_key: @api_key}).body
         parsed = JSON.parse(response)
         return parsed
       end
