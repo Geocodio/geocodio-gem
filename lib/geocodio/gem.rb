@@ -19,15 +19,23 @@ module Geocodio
     end
 
     def geocode(query, fields=nil)
-      response = @conn.get('geocode', { q: query, fields: fields, api_key: @api_key }).body
-      parsed = JSON.parse(response)
-      return parsed
+      if query.size < 1
+        raise ArgumentError, 'Please provide at least one address to geocode.'
+      elsif
+        response = @conn.get('geocode', { q: query, fields: fields, api_key: @api_key }).body
+        parsed = JSON.parse(response)
+        return parsed
+      end
     end
 
     def reverse(query, fields=nil)
-      response = @conn.get('reverse', { q: query, fields: fields, api_key: @api_key}).body
-      parsed = JSON.parse(response)
-      return parsed
+      if query.size < 1
+        raise ArgumentError, 'Please provide at least one set of coordinates to geocode.'
+      elsif
+        response = @conn.get('reverse', { q: query, fields: fields, api_key: @api_key}).body
+        parsed = JSON.parse(response)
+        return parsed
+      end
     end
   end
 end
