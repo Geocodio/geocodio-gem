@@ -30,4 +30,8 @@ RSpec.describe Geocodio do
   it "reverse geocodes coordinates" do
     expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
   end
+
+  it "appends fields to coordinates" do
+    expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("District of Columbia Public Schools")
+  end
 end

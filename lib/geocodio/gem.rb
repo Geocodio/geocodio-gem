@@ -24,8 +24,8 @@ module Geocodio
       return parsed
     end
 
-    def reverse(query)
-      response = @conn.get('reverse', { q: query, api_key: @api_key}).body
+    def reverse(query, fields=nil)
+      response = @conn.get('reverse', { q: query, fields: fields, api_key: @api_key}).body
       parsed = JSON.parse(response)
       return parsed
     end
