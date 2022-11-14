@@ -39,9 +39,17 @@ module Geocodio
     def reverse(query=[], fields=[])
       if query.size < 1
         raise ArgumentError, 'Please provide at least one set of coordinates to geocode.'
-      elsif
+      elsif query.size == 1
         response = @conn.get('reverse', { q: query.join(""), fields: fields.join(","), api_key: @api_key}).body
         parsed = JSON.parse(response)
+        return parsed
+      elsif query.size > 1
+        response = @conn.post('reverse') do |req|
+          req.params = { fields: fields.join(","), api_key: @api_key }
+          req.headers['Content-Type'] = 'application/json'
+          req.body = query.to_json
+        end
+        parsed = JSON.parse(response.body)
         return parsed
       end
     end

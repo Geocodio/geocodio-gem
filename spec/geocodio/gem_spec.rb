@@ -19,6 +19,11 @@ RSpec.describe Geocodio do
     "1109 N Highland St, Arlington, VA 22201",
     "12187 Darnestown Rd, Gaithersburg, MD 20878",
     "4961 Elm Street, Bethesda, MD" 
+  ]
+  batch_coordinates = [
+    "38.88674717512318, -77.09464642536076",
+    "39.118308110111954, -77.2516753863881",
+    "38.98237295882022, -77.09805507289941"
   ]  
 
   it "has a version number" do
@@ -47,5 +52,9 @@ RSpec.describe Geocodio do
 
   it "batch geocodes multiple addresses" do
     expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
+  end
+
+  it "reverse geocodes batch coordinates" do
+    expect(geocodio.reverse(batch_coordinates)["results"].size).to equal(batch_coordinates.size)
   end
 end
