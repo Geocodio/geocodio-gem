@@ -12,3 +12,6 @@
 
 # IGNORE ENV
 .env
+
+#IGNORE CSV
+sample_list_test.csv 
