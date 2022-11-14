@@ -54,7 +54,7 @@ module Geocodio
       end
     end
 
-    def createList(file, direction, format, callback)
+    def createList(file, direction, format, callback = nil)
       response = @conn.post('lists') do |req|
         req.params = { 
           api_key: @api_key,
