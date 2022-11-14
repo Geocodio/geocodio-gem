@@ -53,6 +53,19 @@ module Geocodio
         return parsed
       end
     end
+
+    def createList(file, direction, format, callback)
+      response = @conn.post('lists') do |req|
+        req.params = { 
+          api_key: @api_key,
+          file: file,
+          direction: direction,
+          format: format,
+          callback: callback
+        }
+        req.headers['Content-Type'] = 'application/json'
+      end
+    end
   end
 end
 

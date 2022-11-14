@@ -12,7 +12,7 @@ RSpec.describe Geocodio do
   ## SINGLE DATA SAMPLES
   address_sample = ["1109 N Highland St, Arlington, VA 22201"]
   coords_sample = ["38.9002898,-76.9990361"]
-  appended_fields = ["school"]
+  appended_fields = ["school", "cd"]
   
   ## BATCH DATA SAMPLES
   batch_addresses = [
@@ -25,6 +25,8 @@ RSpec.describe Geocodio do
     "39.118308110111954, -77.2516753863881",
     "38.98237295882022, -77.09805507289941"
   ]  
+
+  byebug
 
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
