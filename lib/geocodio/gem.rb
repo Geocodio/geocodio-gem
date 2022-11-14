@@ -25,6 +25,14 @@ module Geocodio
         response = @conn.get('geocode', { q: query.join(""), fields: fields.join(","), api_key: @api_key }).body
         parsed = JSON.parse(response)
         return parsed
+      elsif query.size > 1
+        response = @conn.post('geocode') do |req|
+          req.params = { fields: fields.join(","), api_key: @api_key }
+          req.headers['Content-Type'] = 'application/json'
+          req.body = query.to_json
+        end
+        parsed = JSON.parse(response.body)
+        return parsed
       end
     end
 
@@ -39,3 +47,6 @@ module Geocodio
     end
   end
 end
+
+## Make a single batch request versus comparing query size?
+## Batch requests require a little bit more digging down to get data

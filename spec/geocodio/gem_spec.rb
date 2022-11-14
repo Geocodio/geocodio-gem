@@ -5,11 +5,21 @@ Dotenv.load
 
 RSpec.describe Geocodio do
 
+  ## CONFIG
   api_key = ENV["API_KEY"]
+  geocodio = Geocodio::Gem.new(api_key)
+
+  ## SINGLE DATA SAMPLES
   address_sample = ["1109 N Highland St, Arlington, VA 22201"]
   coords_sample = ["38.9002898,-76.9990361"]
   appended_fields = ["school"]
-  geocodio = Geocodio::Gem.new(api_key)
+  
+  ## BATCH DATA SAMPLES
+  batch_addresses = [
+    "1109 N Highland St, Arlington, VA 22201",
+    "12187 Darnestown Rd, Gaithersburg, MD 20878",
+    "4961 Elm Street, Bethesda, MD" 
+  ]  
 
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
@@ -33,5 +43,9 @@ RSpec.describe Geocodio do
 
   it "appends fields to coordinates" do
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("District of Columbia Public Schools")
+  end
+
+  it "batch geocodes multiple addresses" do
+    expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
   end
 end
