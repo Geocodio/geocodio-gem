@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'dotenv'
+require 'pathname'
 Dotenv.load
 
 RSpec.describe Geocodio do
@@ -26,7 +27,11 @@ RSpec.describe Geocodio do
     "38.98237295882022, -77.09805507289941"
   ]  
 
-  byebug
+  ## LISTS DATA
+  path = Pathname.new("/Users/cstine/libraries/geocodio-gem/sample_list_test.csv")
+  filename = "sample_list_test.csv" 
+  format = "{{A}} {{B}} {{C}} {{D}}"
+
 
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
@@ -58,5 +63,9 @@ RSpec.describe Geocodio do
 
   it "reverse geocodes batch coordinates" do
     expect(geocodio.reverse(batch_coordinates)["results"].size).to equal(batch_coordinates.size)
+  end
+
+  it "creates list from file" do
+    expect(geocodio.createList(path, filename, "forward", format))
   end
 end
