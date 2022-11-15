@@ -78,7 +78,6 @@ module Geocodio
     def getAllLists
       response = @conn.get("lists", { api_key: @api_key}).body
       parsed = JSON.parse(response)
-      byebug
       return parsed
     end
 
