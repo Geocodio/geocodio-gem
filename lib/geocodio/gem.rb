@@ -81,6 +81,10 @@ module Geocodio
       return parsed
     end
 
+    def downloadList(id)
+      response = @conn.get("lists/#{id}/download", { api_key: @api_key})
+      return response
+    end
   end
 end
 
