@@ -66,7 +66,15 @@ module Geocodio
         }
         req.headers['Content-Type'] = 'application/json'
       end
+      puts response
     end
+
+    def getList(id)
+      response = @conn.get(`lists/#{id}`, { api_key: @api_key }).body
+      parsed = JSON.parse(response)
+      return parsed
+    end
+
   end
 end
 
