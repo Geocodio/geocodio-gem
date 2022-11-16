@@ -28,10 +28,9 @@ RSpec.describe Geocodio do
   ]  
 
   ## LISTS DATA
-  path = Pathname.new("/Users/cstine/libraries/geocodio-gem/sample_list_test.csv")
+  path = "sample_list_test.csv"
   filename = "sample_list_test.csv" 
   format = "{{A}} {{B}} {{C}} {{D}}"
-
 
   it "has a version number" do
     expect(Geocodio::VERSION).not_to be nil
@@ -66,6 +65,10 @@ RSpec.describe Geocodio do
   end
 
   it "creates list from file" do
-    expect(geocodio.createList(path, filename, "forward", format))
+    expect(geocodio.createList(path, filename, "forward", format)).not_to equal(nil)
+  end
+
+  it "gets list using ID" do
+    expect(geocodio.getList(11533825)["id"]).to be(11533825)
   end
 end
