@@ -28,7 +28,8 @@ RSpec.describe Geocodio do
   ]  
 
   ## LISTS DATA
-  path = "sample_list_test.csv"
+  file = "sample_list_test.csv"
+  path = File.read(file)
   filename = "sample_list_test.csv" 
   format = "{{A}} {{B}} {{C}} {{D}}"
 
@@ -65,7 +66,7 @@ RSpec.describe Geocodio do
   end
 
   it "creates list from file" do
-    expect(geocodio.createList(path, filename, "forward", format)["id"]).to be(true)
+    expect(geocodio.createList(path, filename, "forward", format)["file"]["filename"]).to eq(filename)
   end
 
   it "gets list using ID" do
