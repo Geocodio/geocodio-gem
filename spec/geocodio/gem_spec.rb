@@ -65,7 +65,7 @@ RSpec.describe Geocodio do
   end
 
   it "creates list from file" do
-    expect(geocodio.createList(path, filename, "forward", format)).not_to equal(nil)
+    expect(geocodio.createList(path, filename, "forward", format)["id"]).to be(true)
   end
 
   it "gets list using ID" do
