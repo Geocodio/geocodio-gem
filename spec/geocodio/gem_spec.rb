@@ -72,4 +72,8 @@ RSpec.describe Geocodio do
   it "gets list using ID" do
     expect(geocodio.getList(11533825)["id"]).to be(11533825)
   end
+
+  it "gets all lists" do
+    expect(geocodio.getAllLists).to_not be(nil)
+  end
 end
