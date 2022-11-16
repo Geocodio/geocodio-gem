@@ -85,6 +85,11 @@ module Geocodio
       response = @conn.get("lists/#{id}/download", { api_key: @api_key})
       return response
     end
+
+    def deleteList(id)
+      response = @conn.delete("lists/#{id}", { api_key: @api_key})
+      return response
+    end
   end
 end
 
