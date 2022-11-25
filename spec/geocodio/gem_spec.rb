@@ -77,6 +77,11 @@ RSpec.describe Geocodio do
     expect(geocodio.getAllLists).to_not be(nil)
   end
 
+  it "downloads a list" do
+    id = geocodio.createList(path, filename, "forward", format)["id"]
+    expect(geocodio.downloadList(id)).to_not be(nil)
+  end
+
   it "deletes a list" do
     id = geocodio.createList(path, filename, "forward", format)["id"]
     expect(geocodio.deleteList(id)["success"]).to be(true)
