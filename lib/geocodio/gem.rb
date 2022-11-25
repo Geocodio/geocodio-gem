@@ -22,9 +22,8 @@ module Geocodio
       if query.size < 1
         raise ArgumentError, 'Please provide at least one address to geocode.'
       elsif query.size == 1 
-        response = @conn.get('geocode', { q: query.join(""), fields: fields.join(","), api_key: @api_key }).body
-        parsed = JSON.parse(response)
-        return parsed
+        response = JSON.parse(@conn.get('geocode', { q: query.join(""), fields: fields.join(","), api_key: @api_key }).body)
+        return response
       elsif query.size > 1
         response = @conn.post('geocode') do |req|
           req.params = { fields: fields.join(","), api_key: @api_key }
@@ -40,9 +39,8 @@ module Geocodio
       if query.size < 1
         raise ArgumentError, 'Please provide at least one set of coordinates to geocode.'
       elsif query.size == 1
-        response = @conn.get('reverse', { q: query.join(""), fields: fields.join(","), api_key: @api_key}).body
-        parsed = JSON.parse(response)
-        return parsed
+        response = JSON.parse(@conn.get('reverse', { q: query.join(""), fields: fields.join(","), api_key: @api_key}).body)
+        return response
       elsif query.size > 1
         response = @conn.post('reverse') do |req|
           req.params = { fields: fields.join(","), api_key: @api_key }
@@ -71,15 +69,13 @@ module Geocodio
     end
 
     def getList(id)
-      response = @conn.get("lists/#{id}", { api_key: @api_key }).body
-      parsed = JSON.parse(response)
-      return parsed
+      response = JSON.parse(@conn.get("lists/#{id}", { api_key: @api_key }).body)
+      return response
     end
 
     def getAllLists
-      response = @conn.get("lists", { api_key: @api_key}).body
-      parsed = JSON.parse(response)
-      return parsed
+      response = JSON.parse(@conn.get("lists", { api_key: @api_key}).body)
+      return response
     end
 
     def downloadList(id)
@@ -88,9 +84,8 @@ module Geocodio
     end
 
     def deleteList(id)
-      response = @conn.delete("lists/#{id}", { api_key: @api_key}).body
-      parsed = JSON.parse(response)
-      return parsed
+      response = JSON.parse(@conn.delete("lists/#{id}", { api_key: @api_key}).body)
+      return response
     end
   end
 end
