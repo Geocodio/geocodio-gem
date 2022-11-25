@@ -88,8 +88,9 @@ module Geocodio
     end
 
     def deleteList(id)
-      response = @conn.delete("lists/#{id}", { api_key: @api_key})
-      return response
+      response = @conn.delete("lists/#{id}", { api_key: @api_key}).body
+      parsed = JSON.parse(response)
+      return parsed
     end
   end
 end
