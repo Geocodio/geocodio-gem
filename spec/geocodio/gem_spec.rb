@@ -38,7 +38,7 @@ RSpec.describe Geocodio do
   end
 
   it "has an API Key" do
-    expect(geocodio).not_to be nil
+    expect(geocodio.api_key).to be(api_key)
   end
 
   it "geocodes a single address" do
