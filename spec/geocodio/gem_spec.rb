@@ -74,7 +74,7 @@ RSpec.describe Geocodio do
   end
 
   it "gets all lists" do
-    expect(geocodio.getAllLists).to_not be(nil)
+    expect(geocodio.getAllLists.size).to be(9)
   end
 
   it "downloads a list" do
