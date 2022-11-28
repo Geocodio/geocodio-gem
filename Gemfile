@@ -11,6 +11,8 @@ gem "rspec", "~> 3.0"
 
 gem "faraday"
 
+gem "faraday-follow_redirects"
+
 gem "byebug"
 
 gem "pry"

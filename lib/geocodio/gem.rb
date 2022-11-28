@@ -2,6 +2,7 @@
 
 require_relative "gem/version"
 require "faraday"
+require "faraday/follow_redirects"
 require "byebug"
 
 module Geocodio
@@ -15,7 +16,10 @@ module Geocodio
       @conn = Faraday.new(
         url: 'https://api.geocod.io/v1.7/',
         headers: {'Content-Type' => 'application/json' }
-      )
+      ) do |f|
+        f.response :follow_redirects
+        f.adapter Faraday.default_adapter
+      end
     end
 
     def geocode(query=[], fields=[])
@@ -81,6 +85,7 @@ module Geocodio
     def downloadList(id)
       response = @conn.get("lists/#{id}/download", { api_key: @api_key})
       return response
+      ## Assertions on CSV output itself?
     end
 
     def deleteList(id)
@@ -92,3 +97,7 @@ end
 
 ## Make a single batch request versus comparing query size?
 ## Batch requests require a little bit more digging down to get data
+
+## Writing tests for failure states or errors
+## Is there a way to get Faraday to test error states?
+## Documentation with code samples - update right side of Docs
