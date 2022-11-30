@@ -19,6 +19,15 @@ To get started, initialize a Geocodio::Gem class by passing in your API Key. If 
 geocodio = Geocodio::Gem.new("YOUR_API_KEY")
 ```
 
+### Geocoding
+
+Forward geocode a single address or batch addresses by using the `Geocodio::Gem#geocode` method. Pass in an array of addresses. If that array contains more than one address, we will automatically trigger the batch option for you. We will parse the provided addresses and return a set of coordinates to you. Your results will return the most accurate locations first. 
+
+```ruby
+geocodio.geocode(["1109 N Highland St, Arlington, VA 22201"])
+# => {"input"=>{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201"}, "results"=>[{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886672, "lng"=>-77.094735}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Arlington"}]}
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
