@@ -13,7 +13,11 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+To get started, initialize a Geocodio::Gem class by passing in your API Key. If you need to generate an API Key, you can do so by logging into your Geocodio account and navigating to the [API Keys](https://dash.geocod.io/apikey) tab.
+
+```ruby
+geocodio = Geocodio::Gem.new("YOUR_API_KEY")
+```
 
 ## Development
 
