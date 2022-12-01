@@ -68,7 +68,7 @@ This will work for both the `Geocodio::Gem#geocode` and `Geocodio::Gem#reverse` 
 If you would like to append multiple data fields, pass each parameter that you require into the array as a separate string, divided by commas. 
 
 ```ruby
-    results = results = geocodio.geocode(["1109 N Highland St, Arlington, VA 22201"], ["timezone", "stateleg"])
+    results = geocodio.geocode(["1109 N Highland St, Arlington, VA 22201"], ["timezone", "stateleg"])
 
     # => {"input"=>{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201"}, "results"=>[{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886672, "lng"=>-77.094735}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Arlington", "fields"=>{"state_legislative_districts"=>{"house"=>[{"name"=>"State House District 47", "district_number"=>"47", "ocd_id"=>nil, "is_upcoming_state_legislative_district"=>false, "proportion"=>1}], "senate"=>[{"name"=>"State Senate District 31", "district_number"=>"31", "ocd_id"=>nil, "is_upcoming_state_legislative_district"=>false, "proportion"=>1}]}, "timezone"=>{"name"=>"America/New_York", "utc_offset"=>-5, "observes_dst"=>true, "abbreviation"=>"EST", "source"=>"© OpenStreetMap contributors"}}}]}
 ``` 
