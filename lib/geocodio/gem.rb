@@ -31,7 +31,7 @@ module Geocodio
         return response
       elsif query.size > 1
         response = @conn.post('geocode') do |req|
-          req.params = { fields: fields.join(","), api_key: @api_key }
+          req.params = { fields: fields.join(","), limit: limit, api_key: @api_key }
           req.headers['Content-Type'] = 'application/json'
           req.body = query.to_json
         end
