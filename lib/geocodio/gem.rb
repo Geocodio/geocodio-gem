@@ -1,8 +1,7 @@
-# frozen_string_literal: true
-
 require_relative "gem/version"
 require "faraday"
 require "faraday/follow_redirects"
+require "csv"
 require "byebug"
 
 module Geocodio
@@ -24,11 +23,11 @@ module Geocodio
       end
     end
 
-    def geocode(query=[], fields=[])
+    def geocode(query=[], fields=[], limit=nil, format=nil)
       if query.size < 1
         raise ArgumentError, 'Please provide at least one address to geocode.'
       elsif query.size == 1 
-        response = JSON.parse(@conn.get('geocode', { q: query.join(""), fields: fields.join(","), api_key: @api_key }).body)
+        response = JSON.parse(@conn.get('geocode', { q: query.join(""), fields: fields.join(","), limit: limit, format: format, api_key: @api_key }).body)
         return response
       elsif query.size > 1
         response = @conn.post('geocode') do |req|
@@ -86,7 +85,14 @@ module Geocodio
 
     def downloadList(id)
       response = @conn.get("lists/#{id}/download", { api_key: @api_key})
-      return response
+  
+      if (JSON.parse(response.body)["success"] == false)
+        return JSON.parse(response.body)
+      else
+        return CSV.read(response.body)
+      end
+
+      ## return response
       ## Assertions on CSV output itself?
     end
 
