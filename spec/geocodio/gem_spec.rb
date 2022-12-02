@@ -49,6 +49,14 @@ RSpec.describe Geocodio do
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("Arlington County Public Schools")
   end
 
+  it "#geocode can limit amount of responses" do
+    expect(geocodio.geocode(address_sample, appended_fields, 1)["results"].length).to eq(1)
+  end
+
+  it "#geocode can return simple format" do
+    expect(geocodio.geocode(address_sample, [], nil, "simple")["address"]).to eq(address_sample.join(""))
+  end
+
   it "reverse geocodes coordinates" do
     expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
   end
@@ -79,7 +87,8 @@ RSpec.describe Geocodio do
 
   it "downloads a list" do
     id = geocodio.createList(path, filename, "forward", format)["id"]
-    expect(geocodio.downloadList(id).status).to eq(200)
+    expect(geocodio.downloadList(id)["success"]).to eq(false)
+    ## Still need to test success === true state. 
   end
 
   it "deletes a list" do
