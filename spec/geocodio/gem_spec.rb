@@ -65,6 +65,14 @@ RSpec.describe Geocodio do
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("District of Columbia Public Schools")
   end
 
+  it "#reverse can limit amount of responses" do
+    expect(geocodio.reverse(coords_sample, appended_fields, 1)["results"].length).to eq(1)
+  end
+
+  it "#reverse can return simple format" do
+    expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("508 H St NE, Washington, DC 20002")
+  end
+
   it "batch geocodes multiple addresses" do
     expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
   end
