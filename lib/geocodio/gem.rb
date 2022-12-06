@@ -85,15 +85,12 @@ module Geocodio
 
     def downloadList(id)
       response = @conn.get("lists/#{id}/download", { api_key: @api_key})
-  
-      if (JSON.parse(response.body)["success"] == false)
+
+      if (response.headers["content-type"] == "application/json")
         return JSON.parse(response.body)
       else
-        return CSV.read(response.body)
+        return response.body.force_encoding("UTF-8")
       end
-
-      ## return response
-      ## Assertions on CSV output itself?
     end
 
     def deleteList(id)
