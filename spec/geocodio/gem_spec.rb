@@ -42,7 +42,9 @@ RSpec.describe Geocodio do
   end
 
   it "geocodes a single address" do
-    expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
+    result = geocodio.geocode(address_sample)
+
+    expect(result["results"][0]["formatted_address"]).to eq(address_sample.join(""))
   end
 
   it "appends fields to single address" do
@@ -95,8 +97,7 @@ RSpec.describe Geocodio do
 
   it "downloads a list" do
     id = geocodio.createList(path, filename, "forward", format)["id"]
-    expect(geocodio.downloadList(id)["success"]).to eq(false)
-    ## Still need to test success === true state. 
+    expect(geocodio.downloadList(id)["success"]).to eq(false) 
   end
 
   it "deletes a list" do
@@ -104,3 +105,8 @@ RSpec.describe Geocodio do
     expect(geocodio.deleteList(id)["success"]).to be(true)
   end
 end
+
+
+### WebMock Gem
+### VCR Gem
+# adamlogic
