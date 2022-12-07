@@ -35,6 +35,7 @@ GEM
       rspec-support (~> 3.12.0)
     rspec-support (3.12.0)
     ruby2_keywords (0.0.5)
+    vcr (6.1.0)
 
 PLATFORMS
   arm64-darwin-21
@@ -48,6 +49,7 @@ DEPENDENCIES
   pry
   rake (~> 13.0)
   rspec (~> 3.0)
+  vcr
 
 BUNDLED WITH
    2.3.17

@@ -110,7 +110,7 @@ RSpec.describe Geocodio do
     filename = "sample_list_test.csv" 
     format = "{{A}} {{B}} {{C}} {{D}}"
     id = geocodio.createList(path, filename, "forward", format)["id"]
-    
+    byebug
     expect(geocodio.downloadList(id)["success"]).to eq(false) 
   end
 
