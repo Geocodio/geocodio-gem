@@ -89,7 +89,7 @@ module Geocodio
       if (response.headers["content-type"] == "application/json")
         return JSON.parse(response.body)
       else
-        return response.body.force_encoding("UTF-8")
+        return CSV.parse(response.body.force_encoding("UTF-8"))
       end
     end
 
