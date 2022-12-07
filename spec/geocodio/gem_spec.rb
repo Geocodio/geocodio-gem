@@ -20,7 +20,7 @@ RSpec.describe Geocodio do
 
   it "geocodes a single address" do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
-    
+
     expect(geocodio.geocode(address_sample)["input"]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["number"]).to eq("1109")
@@ -29,7 +29,11 @@ RSpec.describe Geocodio do
   it "appends fields to single address" do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     appended_fields = ["school", "cd"]
+
+    expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["current_legislators"][0]["type"]).to eq("representative")   
+    expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["name"]).to eq("Congressional District 8")
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("Arlington County Public Schools")
+    expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["grade_high"]).to eq("12")
   end
 
   it "#geocode can limit amount of responses" do
