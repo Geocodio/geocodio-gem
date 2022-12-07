@@ -20,7 +20,10 @@ RSpec.describe Geocodio do
 
   it "geocodes a single address" do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
+    
+    expect(geocodio.geocode(address_sample)["input"]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
+    expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["number"]).to eq("1109")
   end
 
   it "appends fields to single address" do
