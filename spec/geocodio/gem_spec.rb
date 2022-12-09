@@ -19,12 +19,13 @@ RSpec.describe Geocodio do
     expect(geocodio.api_key).to be(api_key)
   end
 
-  it "geocodes a single address", :vcr do
+  it "geocodes a single address", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
 
     expect(geocodio.geocode(address_sample)["input"]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["number"]).to eq("1109")
+    expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["city"]).to eq("Arlington")
   end
 
   it "appends fields to single address", :vcr do
