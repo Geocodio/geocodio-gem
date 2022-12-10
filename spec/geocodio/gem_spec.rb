@@ -40,8 +40,12 @@ RSpec.describe Geocodio do
 
   it "#geocode can limit amount of responses", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
+    multi_address_sample = ["1120 N Highland St, Arlington, VA 22201"]
     appended_fields = ["school", "cd"]
+
     expect(geocodio.geocode(address_sample, appended_fields, 1)["results"].length).to eq(1)
+    expect(geocodio.geocode(multi_address_sample, appended_fields, 4)["results"].length).to eq(4)
+    expect(geocodio.geocode(multi_address_sample, appended_fields, nil)["results"].length).to eq(4)
   end
 
   it "#geocode can return simple format", vcr: { record: :new_episodes } do
