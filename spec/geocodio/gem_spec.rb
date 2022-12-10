@@ -50,7 +50,9 @@ RSpec.describe Geocodio do
 
   it "#geocode can return simple format", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
+    second_sample = ["1120 N Highland St, Arlington, VA 22201"]
     expect(geocodio.geocode(address_sample, [], nil, "simple")["address"]).to eq(address_sample.join(""))
+    expect(geocodio.geocode(second_sample, [], nil, "simple")["address"]).to eq(second_sample.join(""))
   end
 
   it "reverse geocodes coordinates", vcr: { record: :new_episodes } do
