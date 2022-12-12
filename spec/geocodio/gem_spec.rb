@@ -97,7 +97,11 @@ RSpec.describe Geocodio do
       "12187 Darnestown Rd, Gaithersburg, MD 20878",
       "4961 Elm Street, Bethesda, MD" 
     ]
+    
     expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
+    expect(geocodio.geocode(batch_addresses)["results"][0]["response"]["input"]["formatted_address"]).to eq("1109 N Highland St, Arlington, VA 22201")
+    expect(geocodio.geocode(batch_addresses)["results"][1]["response"]["input"]["formatted_address"]).to eq("12187 Darnestown Rd, Gaithersburg, MD 20878")
+    expect(geocodio.geocode(batch_addresses)["results"][2]["response"]["input"]["formatted_address"]).to eq("4961 Elm St, Bethesda, MD")
   end
 
   it "reverse geocodes batch coordinates", vcr: { record: :new_episodes } do
@@ -105,8 +109,12 @@ RSpec.describe Geocodio do
       "38.88674717512318, -77.09464642536076",
       "39.118308110111954, -77.2516753863881",
       "38.98237295882022, -77.09805507289941"
-    ]  
+    ]
+
     expect(geocodio.reverse(batch_coordinates)["results"].size).to equal(batch_coordinates.size)
+    expect(geocodio.reverse(batch_coordinates)["results"][0]["response"]["results"][0]["location"]).to eq({"lat"=>38.886672, "lng"=>-77.094735})
+    expect(geocodio.reverse(batch_coordinates)["results"][1]["response"]["results"][0]["location"]).to eq({"lat"=>39.118326, "lng"=>-77.251749})
+    expect(geocodio.reverse(batch_coordinates)["results"][2]["response"]["results"][0]["location"]).to eq({"lat"=>38.98239, "lng"=>-77.097993})
   end
 
   it "creates list from file", vcr: { record: :new_episodes } do
