@@ -51,30 +51,44 @@ RSpec.describe Geocodio do
   it "#geocode can return simple format", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     second_sample = ["1120 N Highland St, Arlington, VA 22201"]
+    
     expect(geocodio.geocode(address_sample, [], nil, "simple")["address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(second_sample, [], nil, "simple")["address"]).to eq(second_sample.join(""))
   end
 
   it "reverse geocodes coordinates", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
+    
+    expect(geocodio.reverse(coords_sample)["results"][0]["address_components"]["number"]).to eq("508")
     expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
+    expect(geocodio.reverse(coords_sample)["results"][0]["formatted_address"]).to eq("508 H St NE, Washington, DC 20002")
   end
 
   it "appends fields to coordinates", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     appended_fields = ["school", "cd"]
+    
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("District of Columbia Public Schools")
+    expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["district_number"]).to eq(98)
+    expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["current_legislators"][0]["type"]).to eq("representative")
   end
 
   it "#reverse can limit amount of responses", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     appended_fields = ["school", "cd"]
+
     expect(geocodio.reverse(coords_sample, appended_fields, 1)["results"].length).to eq(1)
+    expect(geocodio.reverse(coords_sample, appended_fields, 4)["results"].length).to eq(4)
+    expect(geocodio.reverse(coords_sample, [], 8)["results"].length).to eq(8)
+    expect(geocodio.reverse(coords_sample, [], nil)["results"].length).to eq(13)
   end
 
   it "#reverse can return simple format", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
+    coords_two = ["38.92977415631741,-77.04941962147353"]
+
     expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("508 H St NE, Washington, DC 20002")
+    expect(geocodio.reverse(coords_two, [], nil, "simple")["address"]).to eq("2269 Cathedral Ave NW, Washington, DC 20008")
   end
 
   it "batch geocodes multiple addresses", vcr: { record: :new_episodes } do
