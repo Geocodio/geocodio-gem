@@ -135,6 +135,8 @@ RSpec.describe Geocodio do
 
   it "gets list using ID", vcr: { record: :new_episodes } do
     expect(geocodio.getList(11533825)["id"]).to be(11533825)
+    expect(geocodio.getList(11599178)["id"]).to be(11599178)
+    expect(geocodio.getList(11600843)["id"]).to be(11600843)
   end
 
   it "gets all lists", vcr: { record: :new_episodes } do
