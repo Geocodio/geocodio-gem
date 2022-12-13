@@ -119,11 +119,18 @@ RSpec.describe Geocodio do
 
   it "creates list from file", vcr: { record: :new_episodes } do
     file = "sample_list_test.csv"
+    file_two = "lat_long_test.csv"
     path = File.read(file)
+    path_two = File.read(file_two)
     filename = "sample_list_test.csv" 
+    filename_two = "lat_long_test.csv"
     format = "{{A}} {{B}} {{C}} {{D}}"
+    format_two = "{{A}} {{B}}"
     
     expect(geocodio.createList(path, filename, "forward", format)["file"]["filename"]).to eq(filename)
+    expect(geocodio.createList(path, filename, "forward", format)["file"]["estimated_rows_count"]).to eq(24)
+    expect(geocodio.createList(path_two, filename_two, "reverse", format_two)["file"]["filename"]).to eq(filename_two)
+    expect(geocodio.createList(path_two, filename_two, "reverse", format_two)["file"]["estimated_rows_count"]).to eq(19)
   end
 
   it "gets list using ID", vcr: { record: :new_episodes } do
@@ -139,6 +146,7 @@ RSpec.describe Geocodio do
     path = File.read(file)
     filename = "sample_list_test.csv" 
     format = "{{A}} {{B}} {{C}} {{D}}"
+
     id = geocodio.createList(path, filename, "forward", format)["id"]
 
     expect(geocodio.downloadList(id)["success"]).to eq(false) 
