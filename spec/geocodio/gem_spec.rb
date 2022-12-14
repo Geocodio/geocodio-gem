@@ -141,6 +141,7 @@ RSpec.describe Geocodio do
 
   it "gets all lists", vcr: { record: :new_episodes } do
     expect(geocodio.getAllLists.size).to be(9)
+    expect(geocodio.getAllLists["current_page"]).to eq(1)
   end
 
   it "downloads a list", vcr: { record: :new_episodes } do
@@ -148,7 +149,6 @@ RSpec.describe Geocodio do
     path = File.read(file)
     filename = "sample_list_test.csv" 
     format = "{{A}} {{B}} {{C}} {{D}}"
-
     id = geocodio.createList(path, filename, "forward", format)["id"]
 
     expect(geocodio.downloadList(id)["success"]).to eq(false) 
@@ -156,11 +156,17 @@ RSpec.describe Geocodio do
 
   it "deletes a list", vcr: { record: :new_episodes } do
     file = "sample_list_test.csv"
+    file_two = "lat_long_test.csv"
     path = File.read(file)
+    path_two = File.read(file_two)
     filename = "sample_list_test.csv" 
+    filename_two = "lat_long_test.csv"
     format = "{{A}} {{B}} {{C}} {{D}}"
+    format_two = "{{A}} {{B}}"
     id = geocodio.createList(path, filename, "forward", format)["id"]
+    id_two = geocodio.createList(path_two, filename_two, "reverse", format_two)["id"]
     
     expect(geocodio.deleteList(id)["success"]).to be(true)
+    expect(geocodio.deleteList(id_two)["success"]).to be(true)
   end
 end
