@@ -150,8 +150,20 @@ RSpec.describe Geocodio do
     filename = "sample_list_test.csv" 
     format = "{{A}} {{B}} {{C}} {{D}}"
     id = geocodio.createList(path, filename, "forward", format)["id"]
+    download = geocodio.downloadList(id)
 
-    expect(geocodio.downloadList(id)["success"]).to eq(false) 
+    loop do 
+      puts download 
+
+      if download["success"] === false
+        expect(download["success"]).to eq(false)
+        break
+      else
+        expect(download["filename"]).to eq("sample_list_test.csv")
+        break
+      end
+    end
+    
   end
 
   it "deletes a list", vcr: { record: :new_episodes } do
