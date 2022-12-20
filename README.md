@@ -72,6 +72,44 @@ If you would like to append multiple data fields, pass each parameter that you r
 
     # => {"input"=>{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201"}, "results"=>[{"address_components"=>{"number"=>"1109", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1109 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886672, "lng"=>-77.094735}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Arlington", "fields"=>{"state_legislative_districts"=>{"house"=>[{"name"=>"State House District 47", "district_number"=>"47", "ocd_id"=>nil, "is_upcoming_state_legislative_district"=>false, "proportion"=>1}], "senate"=>[{"name"=>"State Senate District 31", "district_number"=>"31", "ocd_id"=>nil, "is_upcoming_state_legislative_district"=>false, "proportion"=>1}]}, "timezone"=>{"name"=>"America/New_York", "utc_offset"=>-5, "observes_dst"=>true, "abbreviation"=>"EST", "source"=>"© OpenStreetMap contributors"}}}]}
 ``` 
+### Limiting Results
+
+Some results may return a collection of different possible matches to the address or coordinates you've provided. If you would like to limit the number of results you receive, you can add a `limit` parameter that will set a maximum amount of results to be returned. 
+
+Pass in the maximum amount of results you'd prefer after your fields array as a number.
+
+```ruby
+    results = geocodio.geocode(["1120 N Highland St, Arlington, VA 22201"], [], 1)
+
+    # => {"input"=>{"address_components"=>{"number"=>"1120", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1120 N Highland St, Arlington, VA 22201"}, "results"=>[{"address_components"=>{"number"=>"1120", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1120 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886743, "lng"=>-77.095041}, "accuracy"=>1, "accuracy_type"=>"range_interpolation", "source"=>"TIGER/Line® dataset from the US Census Bureau"}]}
+
+    results_two = geocodio.geocode(["1120 N Highland St, Arlington, VA 22201"], [], 3) 
+    
+    # => {{"input"=>{"address_components"=>{"number"=>"1120", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1120 N Highland St, Arlington, VA 22201"}, "results"=>[{"address_components"=>{"number"=>"1120", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1120 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886743, "lng"=>-77.095041}, "accuracy"=>1, "accuracy_type"=>"range_interpolation", "source"=>"TIGER/Line® dataset from the US Census Bureau"}, {"address_components"=>{"number"=>"1120", "predirectional"=>"N", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"N Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22201", "country"=>"US"}, "formatted_address"=>"1120 N Highland St, Arlington, VA 22201", "location"=>{"lat"=>38.886743, "lng"=>-77.09474}, "accuracy"=>0.9, "accuracy_type"=>"range_interpolation", "source"=>"TIGER/Line® dataset from the US Census Bureau"}, {"address_components"=>{"number"=>"1120", "predirectional"=>"S", "street"=>"Highland", "suffix"=>"St", "formatted_street"=>"S Highland St", "city"=>"Arlington", "county"=>"Arlington County", "state"=>"VA", "zip"=>"22204", "country"=>"US"}, "formatted_address"=>"1120 S Highland St, Arlington, VA 22204", "location"=>{"lat"=>38.860865, "lng"=>-77.089447}, "accuracy"=>0.8, "accuracy_type"=>"rooftop", "source"=>"Arlington"}]}}
+
+    results["results"].length # => 1
+    results_two["results"].length # => 3
+```
+
+In this example, you can see that by limiting the `results` to 1, we only receive the first element of the returned array. When we limit the `results_two` to 3 in the second example, we receive the first three elements in the array. 
+
+If you would rather not limit your results at all, you can enter `nil` or leave the third parameter blank. 
+
+You can also limit `reverse` geocode requests. 
+
+```ruby
+    results = geocodio.reverse(["38.9002898,-76.9990361"], [], 1)
+    
+    # => {"results"=>[{"address_components"=>{"number"=>"508", "street"=>"H", "suffix"=>"St", "postdirectional"=>"NE", "formatted_street"=>"H St NE", "city"=>"Washington", "county"=>"District of Columbia", "state"=>"DC", "zip"=>"20002", "country"=>"US"}, "formatted_address"=>"508 H St NE, Washington, DC 20002", "location"=>{"lat"=>38.900432, "lng"=>-76.999031}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC"}]}
+
+    results_two = geocodio.reverse(["38.9002898,-76.9990361"], [], 4)
+
+    # => {"results"=>[{"address_components"=>{"number"=>"508", "street"=>"H", "suffix"=>"St", "postdirectional"=>"NE", "formatted_street"=>"H St NE", "city"=>"Washington", "county"=>"District of Columbia", "state"=>"DC", "zip"=>"20002", "country"=>"US"}, "formatted_address"=>"508 H St NE, Washington, DC 20002", "location"=>{"lat"=>38.900432, "lng"=>-76.999031}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC"}, {"address_components"=>{"number"=>"510", "street"=>"H", "suffix"=>"St", "postdirectional"=>"NE", "formatted_street"=>"H St NE", "city"=>"Washington", "county"=>"District of Columbia", "state"=>"DC", "zip"=>"20002", "country"=>"US"}, "formatted_address"=>"510 H St NE, Washington, DC 20002", "location"=>{"lat"=>38.900429, "lng"=>-76.998965}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC"}, {"address_components"=>{"number"=>"506", "street"=>"H", "suffix"=>"St", "postdirectional"=>"NE", "formatted_street"=>"H St NE", "city"=>"Washington", "county"=>"District of Columbia", "state"=>"DC", "zip"=>"20002", "country"=>"US"}, "formatted_address"=>"506 H St NE, Washington, DC 20002", "location"=>{"lat"=>38.900437, "lng"=>-76.999099}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC"}, {"address_components"=>{"number"=>"504", "street"=>"H", "suffix"=>"St", "postdirectional"=>"NE", "formatted_street"=>"H St NE", "city"=>"Washington", "county"=>"District of Columbia", "state"=>"DC", "zip"=>"20002", "country"=>"US"}, "formatted_address"=>"504 H St NE, Washington, DC 20002", "location"=>{"lat"=>38.900422, "lng"=>-76.999169}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC"}]}
+
+    results["results"].length # => 1
+    results_two["results"].length # => 4 
+```
+
 
 ## Development
 
