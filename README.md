@@ -11,13 +11,15 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
     $ gem install geocodio-gem
 
-## Usage
+## Setup
 
-To get started, initialize a Geocodio::Gem class by passing in your API Key. If you need to generate an API Key, you can do so by logging into your Geocodio account and navigating to the [API Keys](https://dash.geocod.io/apikey) tab.
+To get started, initialize a `Geocodio::Gem` class by passing in your API Key. If you need to generate an API Key, you can do so by logging into your Geocodio account and navigating to the [API Keys](https://dash.geocod.io/apikey) tab.
 
 ```ruby
 geocodio = Geocodio::Gem.new("YOUR_API_KEY")
 ```
+
+## Basic Usage
 
 ### Geocoding
 
@@ -125,12 +127,38 @@ Currently, the `simple` format only works with single `geocode` and `reverse` in
 
     # => {"address"=>"1109 N Highland St, Arlington, VA 22201", "lat"=>38.886672, "lng"=>-77.094735, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Arlington"}
 
-    ## EXAMPLE: Reverse geocoding simple formatting with school appends and limit of 1. 
+    ## EXAMPLE: Reverse geocoding simple formatting with school appends and limit of 1.
 
     response = geocodio.reverse(["38.9002898,-76.9990361"], ["school"], 1, "simple"))
 
     # => {"address"=>"508 H St NE, Washington, DC 20002", "lat"=>38.900432, "lng"=>-76.999031, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC", "fields"=>{"school_districts"=>{"unified"=>{"name"=>"District of Columbia Public Schools", "lea_code"=>"1100030", "grade_low"=>"PK", "grade_high"=>"12"}}}}
 ```
+
+## Lists API
+
+The Geocodio Lists API allows you to upload and process a spreadsheet with addresses or coordinates. This is very similar to our [Spreadsheet Uploader]("https://geocod.io/upload") tool. While your spreadsheet is being processed, you can also query the status of its current progress, download the final result or delete it from your records. 
+
+You will continue to use the `Geocodio##Gem` class you created in the Setup portion so that you can access the Lists API methods. 
+
+### Create A List
+
+Create a new spreadsheet list job by utilizing the `createList()` method. To upload a spreadsheet file, pass following arguments into the method:
+- file: The location of the file to be geocoded. 
+- filename: File extension is used to determine the file format. Valid formats include: CSV, TSV, XLS, XLSX. 
+- direction: Identify whether you will be `forward` geocoding or `reverse` geocoding. 
+- format: Provide a template for how addresses or coordinates should be read from the spreadsheet. For example: 
+    - Full address in column A: {{A}}
+    - Street adresses in column A, Zip in column D: {{A}} {{D}}
+    - Street name in A, City in B, State in C, Zip in D: {{A}} {{B}} {{C}} {{D}}
+    - [More examples here.]("https://www.geocod.io/docs/?shell#create-a-new-list")
+- callback: Optional parameter. A valid URL that a webhook should be sent to upon completion of the spreadsheet geocoding job. 
+
+```ruby
+    response = geocodio.createList(File.read("sample_list_test.csv"), "sample_list_test.csv", "forward", "{{A}} {{B}} {{C}} {{D}}")
+
+    # => {"id"=>11599178, "file"=>{"headers"=>["address", "city", "state", "zip"], "estimated_rows_count"=>24, "filename"=>"sample_list_test.csv"}}
+```
+
 
 
 
