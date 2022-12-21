@@ -110,6 +110,29 @@ You can also limit `reverse` geocode requests.
     results_two["results"].length # => 4 
 ```
 
+### Simple Formatting
+
+The `simple` format parameter returns an alternative JSON response that is simplified and only includes the formatted address, lat, long, accuracy and source fields. 
+
+To receive a `simple` response, include the string `"simple"` as the fourth argument after any limit you have set. 
+
+Currently, the `simple` format only works with single `geocode` and `reverse` input. It does not support batch requests. 
+
+```ruby 
+    ## EXAMPLE: Forward geocoding simple formatting without data appends or limit.  
+    
+    response = geocodio.geocode(["1109 N Highland St, Arlington, VA 22201"], [], nil, "simple")
+
+    # => {"address"=>"1109 N Highland St, Arlington, VA 22201", "lat"=>38.886672, "lng"=>-77.094735, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Arlington"}
+
+    ## EXAMPLE: Reverse geocoding simple formatting with school appends and limit of 1. 
+
+    response = geocodio.reverse(["38.9002898,-76.9990361"], ["school"], 1, "simple"))
+
+    # => {"address"=>"508 H St NE, Washington, DC 20002", "lat"=>38.900432, "lng"=>-76.999031, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide DC", "fields"=>{"school_districts"=>{"unified"=>{"name"=>"District of Columbia Public Schools", "lea_code"=>"1100030", "grade_low"=>"PK", "grade_high"=>"12"}}}}
+```
+
+
 
 ## Development
 
