@@ -158,9 +158,15 @@ Create a new spreadsheet list job by utilizing the `createList()` method. To upl
 
     # => {"id"=>11599178, "file"=>{"headers"=>["address", "city", "state", "zip"], "estimated_rows_count"=>24, "filename"=>"sample_list_test.csv"}}
 ```
+### Check List Status
 
+To check the current status of your List API spreadsheet upload, use the `getList()` method. Pass in the ID generated when you created your List to identify which list you'd like to check. 
 
+```ruby
+    response = geocodio.getList(11599178)
 
+    # => {"id"=>11599178, "fields"=>[], "file"=>{"estimated_rows_count"=>24, "filename"=>"sample_list_test.csv"}, "status"=>{"state"=>"COMPLETED", "progress"=>100, "message"=>"Completed", "time_left_description"=>nil, "time_left_seconds"=>nil}, "download_url"=>nil, "expires_at"=>"2022-12-10T23:33:01.000000Z"}
+```
 
 ## Development
 
