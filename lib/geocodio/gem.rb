@@ -99,10 +99,3 @@ module Geocodio
     end
   end
 end
-
-## Make a single batch request versus comparing query size?
-## Batch requests require a little bit more digging down to get data
-
-## Writing tests for failure states or errors
-## Is there a way to get Faraday to test error states?
-## Documentation with code samples - update right side of Docs
