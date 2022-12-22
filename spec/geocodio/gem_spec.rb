@@ -51,7 +51,7 @@ RSpec.describe Geocodio do
   it "#geocode can return simple format", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     second_sample = ["1120 N Highland St, Arlington, VA 22201"]
-    
+
     expect(geocodio.geocode(address_sample, [], nil, "simple")["address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(second_sample, [], nil, "simple")["address"]).to eq(second_sample.join(""))
   end
@@ -76,7 +76,7 @@ RSpec.describe Geocodio do
   it "#reverse can limit amount of responses", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     appended_fields = ["school", "cd"]
-
+    
     expect(geocodio.reverse(coords_sample, appended_fields, 1)["results"].length).to eq(1)
     expect(geocodio.reverse(coords_sample, appended_fields, 4)["results"].length).to eq(4)
     expect(geocodio.reverse(coords_sample, [], 8)["results"].length).to eq(8)
@@ -86,7 +86,7 @@ RSpec.describe Geocodio do
   it "#reverse can return simple format", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     coords_two = ["38.92977415631741,-77.04941962147353"]
-
+   
     expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("508 H St NE, Washington, DC 20002")
     expect(geocodio.reverse(coords_two, [], nil, "simple")["address"]).to eq("2269 Cathedral Ave NW, Washington, DC 20008")
   end
@@ -144,26 +144,21 @@ RSpec.describe Geocodio do
     expect(geocodio.getAllLists["current_page"]).to eq(1)
   end
 
-  it "downloads a list", vcr: { record: :new_episodes } do
-    file = "sample_list_test.csv"
-    path = File.read(file)
-    filename = "sample_list_test.csv" 
-    format = "{{A}} {{B}} {{C}} {{D}}"
-    id = geocodio.createList(path, filename, "forward", format)["id"]
-    download = geocodio.downloadList(id)
+  it "downloads a processing list", vcr: { record: :new_episodes } do
+    id = "11603086"
+    download = geocodio.downloadList(id)  
 
-    loop do 
-      puts download 
+    expect(download["success"]).to eq(false)
+  end
 
-      if download["success"] === false
-        expect(download["success"]).to eq(false)
-        break
-      else
-        expect(download["filename"]).to eq("sample_list_test.csv")
-        break
-      end
-    end
-    
+  it "downloads a complete list", vcr: { record: :new_episodes} do
+    id = "11604236"
+    download_complete = geocodio.downloadList(id)
+
+    expect(download_complete[0][1]).to eq("city")
+    expect(download_complete[1][1]).to eq("Washington")
+
+    # First cell in spreadsheet returns unprintable character, so testing against other cells. 
   end
 
   it "deletes a list", vcr: { record: :new_episodes } do
@@ -177,7 +172,7 @@ RSpec.describe Geocodio do
     format_two = "{{A}} {{B}}"
     id = geocodio.createList(path, filename, "forward", format)["id"]
     id_two = geocodio.createList(path_two, filename_two, "reverse", format_two)["id"]
-    
+
     expect(geocodio.deleteList(id)["success"]).to be(true)
     expect(geocodio.deleteList(id_two)["success"]).to be(true)
   end
