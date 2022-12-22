@@ -2,6 +2,8 @@
 
 require "geocodio/gem"
 require "vcr"
+require 'dotenv'
+Dotenv.load
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -20,4 +22,5 @@ VCR.configure do |c|
   c.hook_into :webmock
   c.configure_rspec_metadata!
   c.ignore_localhost = true
+  c.filter_sensitive_data('<API_KEY>') { ENV["API_KEY"] }
 end
