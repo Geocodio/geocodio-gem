@@ -12,6 +12,3 @@
 
 # IGNORE ENV
 .env
-
-#IGNORE CSV
-lat_long_test.csv
