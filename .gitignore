@@ -15,4 +15,3 @@
 
 #IGNORE CSV
 lat_long_test.csv
-/spec/vcr_cassettes 
