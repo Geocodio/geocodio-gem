@@ -1,6 +1,7 @@
 # Geocodio::Gem
 
-Geocodio Gem is a library that allows you to make quick and easy API calls to the [geocod.io](https://geocod.io) API.  
+Geocodio Gem is a library that allows you to make quick and easy API calls to the [geocod.io](https://geocod.io) API.
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
