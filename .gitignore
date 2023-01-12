@@ -12,3 +12,9 @@
 
 # IGNORE ENV
 .env
+
+#IGNORE ByeBug History
+.byebug_history
+
+#IGNORE VSCode
+.vscode
