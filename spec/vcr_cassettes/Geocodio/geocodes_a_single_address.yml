@@ -1,0 +1,275 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 22 Dec 2022 23:43:57 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api286
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:F58B_05A15419:01BB_63A4EBBC_9F0F6:072E
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}'
+  recorded_at: Thu, 22 Dec 2022 23:43:57 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 22 Dec 2022 23:43:57 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api273
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:F58C_05A15419:01BB_63A4EBBD_9F145:072E
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '998'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}'
+  recorded_at: Thu, 22 Dec 2022 23:43:57 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 22 Dec 2022 23:43:57 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api284
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:F58D_05A15419:01BB_63A4EBBD_9F19C:072E
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '997'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}'
+  recorded_at: Thu, 22 Dec 2022 23:43:57 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 22 Dec 2022 23:43:58 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api270
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:F58F_05A15419:01BB_63A4EBBD_9F1D1:072E
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '996'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}'
+  recorded_at: Thu, 22 Dec 2022 23:43:58 GMT
+recorded_with: VCR 6.1.0

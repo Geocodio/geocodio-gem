@@ -1,0 +1,281 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 07 Dec 2022 23:34:24 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api289
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CDBD_05A15419:01BB_639122FF_BC093B:1EC8
+      X-Ratelimit-Remaining:
+      - '995'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":11599181,"file":{"headers":["address","city","state","zip"],"estimated_rows_count":24,"filename":"sample_list_test.csv"}}'
+  recorded_at: Wed, 07 Dec 2022 23:34:24 GMT
+- request:
+    method: delete
+    uri: https://api.geocod.io/v1.7/lists/11599181?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 07 Dec 2022 23:34:29 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api287
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CDBF_05A15419:01BB_63912300_BC0A08:1EC8
+      X-Ratelimit-Remaining:
+      - '994'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"success":true}'
+  recorded_at: Wed, 07 Dec 2022 23:34:29 GMT
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback&direction=reverse&file=Latitude,Longitude,,,,,%0D%0A38.8886262809655,-77.0165386458959,,,,,%0D%0A38.8883882115863,-77.0198276082111,,,,,%0D%0A38.8891899038527,-77.0199992695837,,,,,%0D%0A38.886350536353,-77.0211109612279,,,,,%0D%0A38.8844010178023,-77.0255355942621,,,,,%0D%0A38.888332492042,-77.0254521107444,,,,,%0D%0A38.8890797724534,-77.0259738835079,,,,,%0D%0A38.8915489909506,-77.0257443034919,,,,,%0D%0A38.8883812279607,-77.0273304926929,,,,,%0D%0A38.888348737352,-77.0273304926929,,,,,%0D%0A38.891681936895,-77.0326497048902,,,,,%0D%0A39.3506842577113,-76.6211688308013,,,,,%0D%0A39.328085935215,-76.6200000598111,,,,,%0D%0A39.3140067165994,-76.5961237381548,,,,,%0D%0A39.2818423681824,-76.6070446000219,,,,,%0D%0A39.2868182724211,-76.6080089058459,,,,,%0D%0A39.2753731641967,-76.6022230709016,,,,,%0D%0A39.2949117273769,-76.6323515144706,,,,,%0D%0A39.2976382021164,-76.6160833127033,,,,,%0D%0A&filename=lat_long_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 14 Dec 2022 23:53:41 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api288
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:EBB5_05A15419:01BB_639A6204_80E94AB:1EC8
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":11601554,"file":{"headers":["Latitude","Longitude","","","","",""],"estimated_rows_count":19,"filename":"lat_long_test.csv"}}'
+  recorded_at: Wed, 14 Dec 2022 23:53:41 GMT
+- request:
+    method: delete
+    uri: https://api.geocod.io/v1.7/lists/11601554?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 14 Dec 2022 23:53:46 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api276
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:EBB7_05A15419:01BB_639A6205_80E9563:1EC8
+      X-Ratelimit-Remaining:
+      - '998'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"success":true}'
+  recorded_at: Wed, 14 Dec 2022 23:53:46 GMT
+- request:
+    method: delete
+    uri: https://api.geocod.io/v1.7/lists/?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 405
+      message: Method Not Allowed
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 14 Dec 2022 23:54:38 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type
+      X-Billable-Lookups-Count:
+      - '0'
+      X-Billable-Fields-Count:
+      - '0'
+      Request-Handler:
+      - api280
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:EBC5_05A15419:01BB_639A623E_80ECBB5:1EC8
+      X-Ratelimit-Remaining:
+      - '997'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"message":"Uh oh. Something went wrong in our end. Sorry! We have
+        already been notified of the issue, but please contact us at support@geocod.io
+        if you have any questions."}'
+  recorded_at: Wed, 14 Dec 2022 23:54:38 GMT
+recorded_with: VCR 6.1.0
