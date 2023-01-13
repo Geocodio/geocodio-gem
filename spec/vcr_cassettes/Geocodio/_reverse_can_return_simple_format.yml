@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 07 Dec 2022 23:29:46 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api218
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CD7C_05A15419:01BB_639121EA_BB021B:1EC8
+      X-Ratelimit-Remaining:
+      - '998'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"address":"508 H St NE, Washington, DC 20002","lat":38.900432,"lng":-76.999031,"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        DC"}'
+  recorded_at: Wed, 07 Dec 2022 23:29:46 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.92977415631741,-77.04941962147353
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 12 Dec 2022 23:14:04 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api293
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:C80B_05A15419:01BB_6397B5BC_5955286:1EC8
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"address":"2269 Cathedral Ave NW, Washington, DC 20008","lat":38.927781,"lng":-77.051845,"accuracy":0.95,"accuracy_type":"rooftop","source":"Statewide
+        DC"}'
+  recorded_at: Mon, 12 Dec 2022 23:14:04 GMT
+recorded_with: VCR 6.1.0

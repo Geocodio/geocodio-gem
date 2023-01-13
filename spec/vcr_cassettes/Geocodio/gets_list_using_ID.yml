@@ -1,0 +1,165 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/lists/11533825?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Wed, 07 Dec 2022 23:33:14 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api137
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CD9E_05A15419:01BB_639122BA_BBCA04:1EC8
+      X-Ratelimit-Remaining:
+      - '997'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":11533825,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2022-06-25T15:55:51.000000Z"}'
+  recorded_at: Wed, 07 Dec 2022 23:33:14 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/lists/11599178?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Tue, 13 Dec 2022 17:43:32 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api270
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CDF4_05A15419:01BB_6398B9C4_66E952B:1EC8
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":11599178,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2022-12-10T23:33:01.000000Z"}'
+  recorded_at: Tue, 13 Dec 2022 17:43:32 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.7/lists/11600843?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Tue, 13 Dec 2022 17:43:32 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      Request-Handler:
+      - api218
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 60F44AC5:CDF5_05A15419:01BB_6398B9C4_66E95AF:1EC8
+      X-Ratelimit-Remaining:
+      - '998'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":11600843,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.7\/lists\/11600843\/download","expires_at":"2022-12-16T17:17:38.000000Z"}'
+  recorded_at: Tue, 13 Dec 2022 17:43:32 GMT
+recorded_with: VCR 6.1.0

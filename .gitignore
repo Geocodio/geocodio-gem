@@ -13,5 +13,8 @@
 # IGNORE ENV
 .env
 
-#IGNORE CSV
-sample_list_test.csv 
+#IGNORE ByeBug History
+.byebug_history
+
+#IGNORE VSCode
+.vscode
