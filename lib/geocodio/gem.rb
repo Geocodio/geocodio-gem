@@ -2,7 +2,6 @@ require_relative "gem/version"
 require "faraday"
 require "faraday/follow_redirects"
 require "csv"
-require "byebug"
 
 module Geocodio
 
