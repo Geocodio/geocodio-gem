@@ -31,12 +31,12 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  s.add_dependency "faraday"
-  s.add_dependency "faraday-follow_redirects"
+  spec.add_dependency "faraday"
+  spec.add_dependency "faraday-follow_redirects"
 
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "webmock"
-  s.add_development_dependency "vcr"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "webmock"
+  spec.add_development_dependency "vcr"
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
