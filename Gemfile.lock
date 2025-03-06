@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    geocodio-gem (0.1.0)
+    geocodio-gem (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -50,6 +50,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
+  arm64-darwin-24
 
 DEPENDENCIES
   byebug
