@@ -194,10 +194,9 @@ RSpec.describe Geocodio do
     # Requires a list ID that has already been uploaded and processed
     download_complete = geocodio.downloadList(12040486)
 
+    # First cell in spreadsheet returns unprintable character, so testing against other cells.
     expect(download_complete[0][1]).to eq("city")
     expect(download_complete[1][1]).to eq("Washington")
-
-    # First cell in spreadsheet returns unprintable character, so testing against other cells.
   end
 
   it "deletes a list", vcr: { record: :new_episodes } do
