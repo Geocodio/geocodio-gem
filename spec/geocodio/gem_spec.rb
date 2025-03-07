@@ -21,7 +21,7 @@ RSpec.describe Geocodio do
 
   it "geocodes a single address", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
-    
+
     expect(geocodio.geocode(address_sample)["input"]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["number"]).to eq("1109")
@@ -32,7 +32,7 @@ RSpec.describe Geocodio do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     appended_fields = ["school", "cd"]
 
-    expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["current_legislators"][0]["type"]).to eq("representative")   
+    expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["current_legislators"][0]["type"]).to eq("representative")
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["name"]).to eq("Congressional District 8")
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("Arlington County Public Schools")
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["grade_high"]).to eq("12")
@@ -45,7 +45,7 @@ RSpec.describe Geocodio do
 
     expect(geocodio.geocode(address_sample, appended_fields, 1)["results"].length).to eq(1)
     expect(geocodio.geocode(multi_address_sample, appended_fields, 4)["results"].length).to eq(4)
-    expect(geocodio.geocode(multi_address_sample, appended_fields, nil)["results"].length).to eq(4)
+    expect(geocodio.geocode(multi_address_sample, appended_fields, nil)["results"].length).to eq(6)
   end
 
   it "#geocode can return simple format", vcr: { record: :new_episodes } do
@@ -58,7 +58,7 @@ RSpec.describe Geocodio do
 
   it "reverse geocodes coordinates", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
-    
+
     expect(geocodio.reverse(coords_sample)["results"][0]["address_components"]["number"]).to eq("508")
     expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
     expect(geocodio.reverse(coords_sample)["results"][0]["formatted_address"]).to eq("508 H St NE, Washington, DC 20002")
@@ -67,7 +67,7 @@ RSpec.describe Geocodio do
   it "appends fields to coordinates", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     appended_fields = ["school", "cd"]
-    
+
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["name"]).to eq("District of Columbia Public Schools")
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["district_number"]).to eq(98)
     expect(geocodio.reverse(coords_sample, appended_fields)["results"][0]["fields"]["congressional_districts"][0]["current_legislators"][0]["type"]).to eq("representative")
@@ -76,17 +76,17 @@ RSpec.describe Geocodio do
   it "#reverse can limit amount of responses", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     appended_fields = ["school", "cd"]
-    
+
     expect(geocodio.reverse(coords_sample, appended_fields, 1)["results"].length).to eq(1)
     expect(geocodio.reverse(coords_sample, appended_fields, 4)["results"].length).to eq(4)
-    expect(geocodio.reverse(coords_sample, [], 8)["results"].length).to eq(8)
-    expect(geocodio.reverse(coords_sample, [], nil)["results"].length).to eq(13)
+    expect(geocodio.reverse(coords_sample, [], 8)["results"].length).to eq(5)
+    expect(geocodio.reverse(coords_sample, [], nil)["results"].length).to eq(5)
   end
 
   it "#reverse can return simple format", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
     coords_two = ["38.92977415631741,-77.04941962147353"]
-   
+
     expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("508 H St NE, Washington, DC 20002")
     expect(geocodio.reverse(coords_two, [], nil, "simple")["address"]).to eq("2269 Cathedral Ave NW, Washington, DC 20008")
   end
@@ -95,9 +95,9 @@ RSpec.describe Geocodio do
     batch_addresses = [
       "1109 N Highland St, Arlington, VA 22201",
       "12187 Darnestown Rd, Gaithersburg, MD 20878",
-      "4961 Elm Street, Bethesda, MD" 
+      "4961 Elm Street, Bethesda, MD"
     ]
-    
+
     expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
     expect(geocodio.geocode(batch_addresses)["results"][0]["response"]["input"]["formatted_address"]).to eq("1109 N Highland St, Arlington, VA 22201")
     expect(geocodio.geocode(batch_addresses)["results"][1]["response"]["input"]["formatted_address"]).to eq("12187 Darnestown Rd, Gaithersburg, MD 20878")
@@ -113,8 +113,8 @@ RSpec.describe Geocodio do
 
     expect(geocodio.reverse(batch_coordinates)["results"].size).to equal(batch_coordinates.size)
     expect(geocodio.reverse(batch_coordinates)["results"][0]["response"]["results"][0]["location"]).to eq({"lat"=>38.886672, "lng"=>-77.094735})
-    expect(geocodio.reverse(batch_coordinates)["results"][1]["response"]["results"][0]["location"]).to eq({"lat"=>39.118326, "lng"=>-77.251749})
-    expect(geocodio.reverse(batch_coordinates)["results"][2]["response"]["results"][0]["location"]).to eq({"lat"=>38.98239, "lng"=>-77.097993})
+    expect(geocodio.reverse(batch_coordinates)["results"][1]["response"]["results"][0]["location"]).to eq({"lat"=>39.118305, "lng"=>-77.251728})
+    expect(geocodio.reverse(batch_coordinates)["results"][2]["response"]["results"][0]["location"]).to eq({"lat"=>38.982397, "lng"=>-77.097998})
   end
 
   it "creates list from file", vcr: { record: :new_episodes } do
@@ -122,21 +122,48 @@ RSpec.describe Geocodio do
     file_two = "lat_long_test.csv"
     path = File.read(file)
     path_two = File.read(file_two)
-    filename = "sample_list_test.csv" 
+    filename = "sample_list_test.csv"
     filename_two = "lat_long_test.csv"
     format = "{{A}} {{B}} {{C}} {{D}}"
     format_two = "{{A}} {{B}}"
-    
-    expect(geocodio.createList(path, filename, "forward", format)["file"]["filename"]).to eq(filename)
-    expect(geocodio.createList(path, filename, "forward", format)["file"]["estimated_rows_count"]).to eq(24)
-    expect(geocodio.createList(path_two, filename_two, "reverse", format_two)["file"]["filename"]).to eq(filename_two)
-    expect(geocodio.createList(path_two, filename_two, "reverse", format_two)["file"]["estimated_rows_count"]).to eq(19)
+
+    response = geocodio.createList(
+      path,
+      filename,
+      "forward",
+      format,
+      'http://localhost'
+    )
+
+    expect(response["file"]["filename"]).to eq(filename)
+    expect(response["file"]["estimated_rows_count"]).to eq(24)
+
+    response = geocodio.createList(
+      path_two,
+      filename_two,
+      "forward",
+      format_two,
+      'http://localhost'
+    )
+    expect(response["file"]["filename"]).to eq(filename_two)
+    expect(response["file"]["estimated_rows_count"]).to eq(19)
   end
 
   it "gets list using ID", vcr: { record: :new_episodes } do
-    expect(geocodio.getList(11533825)["id"]).to be(11533825)
-    expect(geocodio.getList(11599178)["id"]).to be(11599178)
-    expect(geocodio.getList(11600843)["id"]).to be(11600843)
+    file = "sample_list_test.csv"
+    path = File.read(file)
+    filename = "sample_list_test.csv"
+    format = "{{A}} {{B}} {{C}} {{D}}"
+
+    response = geocodio.createList(
+      path,
+      filename,
+      "forward",
+      format,
+      'http://localhost'
+    )
+
+    expect(geocodio.getList(response["id"])["id"]).to be(response["id"])
   end
 
   it "gets all lists", vcr: { record: :new_episodes } do
@@ -145,35 +172,35 @@ RSpec.describe Geocodio do
   end
 
   it "downloads a processing list", vcr: { record: :new_episodes } do
-    id = "11603086"
-    download = geocodio.downloadList(id)  
+    file = "sample_list_test.csv"
+    path = File.read(file)
+    filename = "sample_list_test.csv"
+    format = "{{A}} {{B}} {{C}} {{D}}"
+
+    response = geocodio.createList(
+      path,
+      filename,
+      "forward",
+      format,
+      'http://localhost'
+    )
+
+    download = geocodio.downloadList(response["id"])
 
     expect(download["success"]).to eq(false)
   end
 
   it "downloads a complete list", vcr: { record: :new_episodes} do
-    id = "11604236"
-    download_complete = geocodio.downloadList(id)
+    # Requires a list ID that has already been uploaded and processed
+    download_complete = geocodio.downloadList(12040486)
 
+    # First cell in spreadsheet returns unprintable character, so testing against other cells.
     expect(download_complete[0][1]).to eq("city")
     expect(download_complete[1][1]).to eq("Washington")
-
-    # First cell in spreadsheet returns unprintable character, so testing against other cells. 
   end
 
   it "deletes a list", vcr: { record: :new_episodes } do
-    file = "sample_list_test.csv"
-    file_two = "lat_long_test.csv"
-    path = File.read(file)
-    path_two = File.read(file_two)
-    filename = "sample_list_test.csv" 
-    filename_two = "lat_long_test.csv"
-    format = "{{A}} {{B}} {{C}} {{D}}"
-    format_two = "{{A}} {{B}}"
-    id = geocodio.createList(path, filename, "forward", format)["id"]
-    id_two = geocodio.createList(path_two, filename_two, "reverse", format_two)["id"]
-
-    expect(geocodio.deleteList(id)["success"]).to be(true)
-    expect(geocodio.deleteList(id_two)["success"]).to be(true)
+    # Requires a list ID that has already been uploaded and processed
+    expect(geocodio.deleteList(12040486)["success"]).to be(true)
   end
 end

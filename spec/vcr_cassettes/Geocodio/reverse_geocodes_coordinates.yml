@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Wed, 07 Dec 2022 23:24:15 GMT
+      - Fri, 07 Mar 2025 17:01:40 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -35,19 +35,27 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
-      - GET, POST
+      - GET, POST, PATCH, DELETE
       Access-Control-Allow-Headers:
       - Content-Type, User-Agent
       Access-Control-Expose-Headers:
       - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
       Request-Handler:
-      - api286
+      - api298
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 60F44AC5:CD53_05A15419:01BB_6391209F_B9CEE3:1EC8
+      - 46E21BA0:EE22_05A11518:01BB_67CB2674_214D:697C
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '986'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -55,48 +63,24 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"508
         H St NE, Washington, DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"510
         H St NE, Washington, DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"506
         H St NE, Washington, DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"504
         H St NE, Washington, DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"500","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"500
-        H St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"800","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"800
-        5th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"817","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"817
-        6th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.998442},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"774","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"774
-        6th St NE, Washington, DC 20002","location":{"lat":38.900078,"lng":-76.998443},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"474","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"474
-        H St NE, Washington, DC 20002","location":{"lat":38.900205,"lng":-76.99994},"accuracy":0.44,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"540","street":"I","suffix":"St","postdirectional":"NE","formatted_street":"I
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"540
-        I St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998836},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        5th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.999509},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        6th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998446},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"}]}'
-  recorded_at: Wed, 07 Dec 2022 23:24:15 GMT
+        (City of Washington)"}]}'
+  recorded_at: Fri, 07 Mar 2025 17:01:40 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
@@ -124,7 +108,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Mon, 12 Dec 2022 22:49:47 GMT
+      - Fri, 07 Mar 2025 17:01:40 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -132,19 +116,27 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
-      - GET, POST
+      - GET, POST, PATCH, DELETE
       Access-Control-Allow-Headers:
       - Content-Type, User-Agent
       Access-Control-Expose-Headers:
       - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
       Request-Handler:
-      - api270
+      - api194
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 60F44AC5:C758_05A15419:01BB_6397B00A_58F6A66:1EC8
+      - 46E21BA0:EE23_05A11518:01BB_67CB2674_21AB:697C
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '985'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -152,48 +144,24 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"508
         H St NE, Washington, DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"510
         H St NE, Washington, DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"506
         H St NE, Washington, DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"504
         H St NE, Washington, DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"500","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"500
-        H St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"800","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"800
-        5th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"817","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"817
-        6th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.998442},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"774","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"774
-        6th St NE, Washington, DC 20002","location":{"lat":38.900078,"lng":-76.998443},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"474","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"474
-        H St NE, Washington, DC 20002","location":{"lat":38.900205,"lng":-76.99994},"accuracy":0.44,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"540","street":"I","suffix":"St","postdirectional":"NE","formatted_street":"I
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"540
-        I St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998836},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        5th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.999509},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        6th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998446},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"}]}'
-  recorded_at: Mon, 12 Dec 2022 22:49:47 GMT
+        (City of Washington)"}]}'
+  recorded_at: Fri, 07 Mar 2025 17:01:40 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
@@ -221,7 +189,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Mon, 12 Dec 2022 22:49:47 GMT
+      - Fri, 07 Mar 2025 17:01:41 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -229,19 +197,27 @@ http_interactions:
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
-      - GET, POST
+      - GET, POST, PATCH, DELETE
       Access-Control-Allow-Headers:
       - Content-Type, User-Agent
       Access-Control-Expose-Headers:
       - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
       Request-Handler:
-      - api164
+      - api226
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 60F44AC5:C759_05A15419:01BB_6397B00B_58F6AE2:1EC8
+      - 46E21BA0:EE24_05A11518:01BB_67CB2674_2217:697C
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
       X-Ratelimit-Remaining:
-      - '998'
+      - '984'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -249,46 +225,22 @@ http_interactions:
       Connection:
       - close
     body:
-      encoding: UTF-8
+      encoding: ASCII-8BIT
       string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"508
         H St NE, Washington, DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"510
         H St NE, Washington, DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"506
         H St NE, Washington, DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"504
         H St NE, Washington, DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        (City of Washington)"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
-        DC"},{"address_components":{"number":"500","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"500
-        H St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"800","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"800
-        5th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.999507},"accuracy":0.46,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"817","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"817
-        6th St NE, Washington, DC 20002","location":{"lat":38.900203,"lng":-76.998442},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"774","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"774
-        6th St NE, Washington, DC 20002","location":{"lat":38.900078,"lng":-76.998443},"accuracy":0.45,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"474","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"474
-        H St NE, Washington, DC 20002","location":{"lat":38.900205,"lng":-76.99994},"accuracy":0.44,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"540","street":"I","suffix":"St","postdirectional":"NE","formatted_street":"I
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"540
-        I St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998836},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"5th","suffix":"St","postdirectional":"NE","formatted_street":"5th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        5th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.999509},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"},{"address_components":{"number":"900","street":"6th","suffix":"St","postdirectional":"NE","formatted_street":"6th
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"900
-        6th St NE, Washington, DC 20002","location":{"lat":38.901323,"lng":-76.998446},"accuracy":0.43,"accuracy_type":"nearest_street","source":"TIGER\/Line\u00ae
-        dataset from the US Census Bureau"}]}'
-  recorded_at: Mon, 12 Dec 2022 22:49:47 GMT
+        (City of Washington)"}]}'
+  recorded_at: Fri, 07 Mar 2025 17:01:41 GMT
 recorded_with: VCR 6.1.0
