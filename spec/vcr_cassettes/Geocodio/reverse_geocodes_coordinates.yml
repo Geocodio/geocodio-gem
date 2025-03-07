@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:55 GMT
+      - Fri, 07 Mar 2025 17:01:40 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api293
+      - api298
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0E_05A11518:01BB_67C9EBBF_56F42:6641
+      - 46E21BA0:EE22_05A11518:01BB_67CB2674_214D:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '919'
+      - '986'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -80,7 +80,7 @@ http_interactions:
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:55 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:40 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
@@ -108,7 +108,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:55 GMT
+      - Fri, 07 Mar 2025 17:01:40 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -126,17 +126,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api288
+      - api194
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0F_05A11518:01BB_67C9EBBF_56F99:6641
+      - 46E21BA0:EE23_05A11518:01BB_67CB2674_21AB:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '918'
+      - '985'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -161,7 +161,7 @@ http_interactions:
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:55 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:40 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
@@ -189,7 +189,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:56 GMT
+      - Fri, 07 Mar 2025 17:01:41 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -207,17 +207,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api287
+      - api226
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD10_05A11518:01BB_67C9EBC0_56FC1:6641
+      - 46E21BA0:EE24_05A11518:01BB_67CB2674_2217:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '918'
+      - '984'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -242,5 +242,5 @@ http_interactions:
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:56 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:41 GMT
 recorded_with: VCR 6.1.0

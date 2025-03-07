@@ -191,6 +191,7 @@ RSpec.describe Geocodio do
   end
 
   it "downloads a complete list", vcr: { record: :new_episodes} do
+    # Requires a list ID that has already been uploaded and processed
     download_complete = geocodio.downloadList(12040486)
 
     expect(download_complete[0][1]).to eq("city")
@@ -200,30 +201,7 @@ RSpec.describe Geocodio do
   end
 
   it "deletes a list", vcr: { record: :new_episodes } do
-    file = "sample_list_test.csv"
-    file_two = "lat_long_test.csv"
-    path = File.read(file)
-    path_two = File.read(file_two)
-    filename = "sample_list_test.csv"
-    filename_two = "lat_long_test.csv"
-    format = "{{A}} {{B}} {{C}} {{D}}"
-    format_two = "{{A}} {{B}}"
-    id = geocodio.createList(
-      path,
-      filename,
-      "forward",
-      format,
-      'http://localhost'
-    )["id"]
-    id_two = geocodio.createList(
-      path_two,
-      filename_two, 
-      "reverse", 
-      format_two,
-      'http://localhost'
-    )["id"]
-
-    expect(geocodio.deleteList(id)["success"]).to be(true)
-    expect(geocodio.deleteList(id_two)["success"]).to be(true)
+    # Requires a list ID that has already been uploaded and processed
+    expect(geocodio.deleteList(12040486)["success"]).to be(true)
   end
 end

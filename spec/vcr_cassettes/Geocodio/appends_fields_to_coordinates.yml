@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:56 GMT
+      - Fri, 07 Mar 2025 17:01:41 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api289
+      - api294
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD11_05A11518:01BB_67C9EBC0_56FFB:6641
+      - 46E21BA0:EE25_05A11518:01BB_67CB2675_2277:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '917'
+      - '983'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -105,7 +105,7 @@ http_interactions:
         Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
         Holmes Norton"},"source":"Legislator data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"District
         of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:56 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:41 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=school,cd&format&limit&q=38.9002898,-76.9990361
@@ -133,7 +133,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:57 GMT
+      - Fri, 07 Mar 2025 17:01:41 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -151,17 +151,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api285
+      - api287
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD13_05A11518:01BB_67C9EBC0_57031:6641
+      - 46E21BA0:EE26_05A11518:01BB_67CB2675_22D1:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '917'
+      - '982'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -211,7 +211,7 @@ http_interactions:
         Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
         Holmes Norton"},"source":"Legislator data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"District
         of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:57 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:42 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=school,cd&format&limit&q=38.9002898,-76.9990361
@@ -239,7 +239,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:57 GMT
+      - Fri, 07 Mar 2025 17:01:42 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -257,17 +257,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api311
+      - api310
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD14_05A11518:01BB_67C9EBC1_5707A:6641
+      - 46E21BA0:EE27_05A11518:01BB_67CB2676_2328:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '916'
+      - '981'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -317,5 +317,5 @@ http_interactions:
         Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
         Holmes Norton"},"source":"Legislator data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"District
         of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:57 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:42 GMT
 recorded_with: VCR 6.1.0

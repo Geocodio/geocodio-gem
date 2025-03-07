@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:59 GMT
+      - Fri, 07 Mar 2025 17:01:44 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api290
+      - api310
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD18_05A11518:01BB_67C9EBC3_571A1:6641
+      - 46E21BA0:EE2C_05A11518:01BB_67CB2678_2561:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '915'
+      - '976'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -66,7 +66,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"address":"508 H St NE, Washington, DC 20002","lat":38.900432,"lng":-76.999031,"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}'
-  recorded_at: Thu, 06 Mar 2025 18:38:59 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:44 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.92977415631741,-77.04941962147353
@@ -94,7 +94,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:59 GMT
+      - Fri, 07 Mar 2025 17:01:44 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -112,17 +112,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api297
+      - api308
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD19_05A11518:01BB_67C9EBC3_571D8:6641
+      - 46E21BA0:EE2D_05A11518:01BB_67CB2678_25E2:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '914'
+      - '975'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -133,5 +133,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"address":"2269 Cathedral Ave NW, Washington, DC 20008","lat":38.927781,"lng":-77.051845,"accuracy":0.97,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}'
-  recorded_at: Thu, 06 Mar 2025 18:38:59 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:44 GMT
 recorded_with: VCR 6.1.0

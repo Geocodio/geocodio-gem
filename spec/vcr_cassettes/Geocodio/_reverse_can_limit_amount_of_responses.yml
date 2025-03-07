@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:58 GMT
+      - Fri, 07 Mar 2025 17:01:42 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api304
+      - api226
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD15_05A11518:01BB_67C9EBC1_570C7:6641
+      - 46E21BA0:EE28_05A11518:01BB_67CB2676_2374:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '916'
+      - '980'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -73,7 +73,7 @@ http_interactions:
         Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
         Holmes Norton"},"source":"Legislator data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"District
         of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:58 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:42 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=school,cd&format&limit=4&q=38.9002898,-76.9990361
@@ -101,7 +101,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:58 GMT
+      - Fri, 07 Mar 2025 17:01:43 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -119,17 +119,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api226
+      - api281
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD16_05A11518:01BB_67C9EBC2_57113:6641
+      - 46E21BA0:EE29_05A11518:01BB_67CB2676_23E9:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '916'
+      - '979'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -171,7 +171,7 @@ http_interactions:
         Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
         Holmes Norton"},"source":"Legislator data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"District
         of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:58 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit=8&q=38.9002898,-76.9990361
@@ -199,7 +199,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:58 GMT
+      - Fri, 07 Mar 2025 17:01:43 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -217,17 +217,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api194
+      - api303
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD17_05A11518:01BB_67C9EBC2_57153:6641
+      - 46E21BA0:EE2A_05A11518:01BB_67CB2677_244D:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '915'
+      - '978'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -252,7 +252,7 @@ http_interactions:
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:58 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
@@ -280,7 +280,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:54:51 GMT
+      - Fri, 07 Mar 2025 17:01:43 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -298,17 +298,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api281
+      - api302
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DDF1_05A11518:01BB_67C9EF7B_766E1:6641
+      - 46E21BA0:EE2B_05A11518:01BB_67CB2677_24C6:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '977'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -333,5 +333,5 @@ http_interactions:
         St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"formatted_address":"512
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
-  recorded_at: Thu, 06 Mar 2025 18:54:51 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
 recorded_with: VCR 6.1.0

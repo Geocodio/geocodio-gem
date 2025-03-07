@@ -2,198 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/lists/11604236/download?api_key=<API_KEY>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Thu, 06 Mar 2025 18:39:04 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      X-Billable-Lookups-Count:
-      - '0'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api294
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:DD32_05A11518:01BB_67C9EBC8_574DF:6641
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '908'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"message":"Resource not found. See our documentation at https:\/\/www.geocod.io\/docs\/"}'
-  recorded_at: Thu, 06 Mar 2025 18:39:04 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback=http://localhost&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Thu, 06 Mar 2025 20:54:17 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api253
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:E02F_05A11518:01BB_67CA0B79_673E2:6689
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '998'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"id":12040492,"file":{"headers":["address","city","state","zip"],"estimated_rows_count":24,"filename":"sample_list_test.csv"}}'
-  recorded_at: Thu, 06 Mar 2025 20:54:18 GMT
-- request:
-    method: get
-    uri: https://api.geocod.io/v1.7/lists/12040492/download?api_key=<API_KEY>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Thu, 06 Mar 2025 20:54:18 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api287
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:E030_05A11518:01BB_67CA0B7A_67456:6689
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '997'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"message":"List is still processing","success":false}'
-  recorded_at: Thu, 06 Mar 2025 20:54:18 GMT
-- request:
-    method: get
     uri: https://api.geocod.io/v1.7/lists/12040486/download?api_key=<API_KEY>
     body:
       encoding: US-ASCII
@@ -221,7 +29,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 20:58:35 GMT
+      - Fri, 07 Mar 2025 17:01:54 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -235,17 +43,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api253
+      - api310
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:E060_05A11518:01BB_67CA0C7A_700BC:6689
+      - 46E21BA0:EE4A_05A11518:01BB_67CB2681_2EFB:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '958'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -256,5 +64,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         77u/YWRkcmVzcyxjaXR5LHN0YXRlLHppcCxMYXRpdHVkZSxMb25naXR1ZGUsIkFjY3VyYWN5IFNjb3JlIiwiQWNjdXJhY3kgVHlwZSIsTnVtYmVyLFN0cmVldCwiVW5pdCBUeXBlIiwiVW5pdCBOdW1iZXIiLENpdHksU3RhdGUsQ291bnR5LFppcCxDb3VudHJ5LFNvdXJjZQoiNjYwIFBlbm5zeWx2YW5pYSBBdmUgU0UiLFdhc2hpbmd0b24sREMsMjAwMDMsMzguODg1MTcyLC03Ni45OTY1NjUsMSxyb29mdG9wLDY2MCwiUGVubnN5bHZhbmlhIEF2ZSBTRSIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDMsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjE3MTggMTR0aCBTdCBOVyIsV2FzaGluZ3RvbixEQywyMDAwOSwzOC45MTMyNzQsLTc3LjAzMjI2NiwxLHJvb2Z0b3AsMTcxOCwiMTR0aCBTdCBOVyIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDksVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjEzMDkgNXRoIFN0IE5FIiwsLDIwMDAyLDM4LjkwODcyNCwtNzYuOTk3NjUzLDAuOSxyb29mdG9wLDEzMDksIjV0aCBTdCBORSIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDIsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjIxNTAgUCBTdCBOVyIsLCwyMDAzNywzOC45MDk0OCwtNzcuMDQ4NTI3LDEscm9vZnRvcCwyMTUwLCJQIFN0IE5XIiwsLFdhc2hpbmd0b24sREMsIkRpc3RyaWN0IG9mIENvbHVtYmlhIiwyMDAzNyxVUywiU3RhdGV3aWRlIChDaXR5IG9mIFdhc2hpbmd0b24pIgoiMjAxIEYgU3RyZWV0IE5FIiwsLDIwMDAyLDM4Ljg5NzEzOSwtNzcuMDAzMjg2LDAuOSxyb29mdG9wLDIwMSwiRiBTdCBORSIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDIsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjEwMDEgMm5kIFN0IFNFIiwsLDIwMDAzLDM4Ljg3NzczNywtNzcuMDAzNjk1LDEscm9vZnRvcCwxMDAxLCIybmQgU3QgU0UiLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDAzLFVTLCJTdGF0ZXdpZGUgKENpdHkgb2YgV2FzaGluZ3RvbikiCiIxNjQ1IFdpc2NvbnNpbiBBdmVudWUgTlciLFdhc2hpbmd0b24sREMsMjAwMDcsMzguOTExNjI2LC03Ny4wNjUyODEsMSxyb29mdG9wLDE2NDUsIldpc2NvbnNpbiBBdmUgTlciLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDA3LFVTLCJTdGF0ZXdpZGUgKENpdHkgb2YgV2FzaGluZ3RvbikiCiI4MjAgRWFzdCBCYWx0aW1vcmUgU3RyZWV0IixCYWx0aW1vcmUsTUQsMjEyMDIsMzkuMjkwMywtNzYuNjA0NzYyLDEscm9vZnRvcCw4MjAsIkUgQmFsdGltb3JlIFN0IiwsLEJhbHRpbW9yZSxNRCwiQmFsdGltb3JlIENpdHkiLDIxMjAyLFVTLCJDaXR5IG9mIEJhbHRpbW9yZSAoQ2l0eSBvZiBCYWx0aW1vcmUpIgoiODAwIEYgU3QgTlciLFdhc2hpbmd0b24sREMsMjAwMDEsMzguODk2OTg3LC03Ny4wMjMyODYsMSxyb29mdG9wLDgwMCwiRiBTdCBOVyIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDQsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjcwMCBDb25zdGl0dXRpb24gQXZlbnVlIE5XIixXYXNoaW5ndG9uLERDLDIwNTY1LDM4Ljg5MjIyOCwtNzcuMDIxOSwwLjkscmFuZ2VfaW50ZXJwb2xhdGlvbiw3MDAsIkNvbnN0aXR1dGlvbiBBdmUgTlciLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDA0LFVTLCJUSUdFUi9MaW5lwq4gZGF0YXNldCBmcm9tIHRoZSBVUyBDZW5zdXMgQnVyZWF1IgoiMTEyMyBQZW5uc3lsdmFuaWEgQXZlIFNFIixXYXNoaW5ndG9uLERDLDIwMDAzLDM4Ljg4MjA5NywtNzYuOTkwNzE0LDEscm9vZnRvcCwxMTIzLCJQZW5uc3lsdmFuaWEgQXZlIFNFIiwsLFdhc2hpbmd0b24sREMsIkRpc3RyaWN0IG9mIENvbHVtYmlhIiwyMDAwMyxVUywiU3RhdGV3aWRlIChDaXR5IG9mIFdhc2hpbmd0b24pIgoiNjIxIFBlbm5zeWx2YW5pYSBBdmUgU0UiLFdhc2hpbmd0b24sREMsMjAwMDMsMzguODg0OTA2LC03Ni45OTc2ODIsMSxyb29mdG9wLDYyMSwiUGVubnN5bHZhbmlhIEF2ZSBTRSIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDMsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjE3MDIgRyBTdHJlZXQgTlciLFdhc2hpbmd0b24sREMsMjAwMDYsMzguODk4MTYsLTc3LjAzOTk4MiwxLHJvb2Z0b3AsMTcwMiwiRyBTdCBOVyIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDYsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjcwMSA4dGggU3QgU0UiLFdhc2hpbmd0b24sREMsMjAwMDMsMzguODgxMTE1LC03Ni45OTUyNDUsMSxyb29mdG9wLDcwMSwiOHRoIFN0IFNFIiwsLFdhc2hpbmd0b24sREMsIkRpc3RyaWN0IG9mIENvbHVtYmlhIiwyMDAwMyxVUywiU3RhdGV3aWRlIChDaXR5IG9mIFdhc2hpbmd0b24pIgoiMTIxODcgRGFybmVzdG93biBSZCIsR2FpdGhlcnNidXJnLE1ELDIwODc4LDM5LjExODE2LC03Ny4yNTE3NTQsMSxyb29mdG9wLDEyMTg3LCJEYXJuZXN0b3duIFJkIiwsLEdhaXRoZXJzYnVyZyxNRCwiTW9udGdvbWVyeSBDb3VudHkiLDIwODc4LFVTLE1vbnRnb21lcnkKIjQ5NjEgRWxtIFN0cmVldCIsQmV0aGVzZGEsTUQsLDM4Ljk4MjI1MiwtNzcuMDk4MTY0LDEscm9vZnRvcCw0OTYxLCJFbG0gU3QiLCwsQmV0aGVzZGEsTUQsIk1vbnRnb21lcnkgQ291bnR5IiwyMDgxNCxVUyxNb250Z29tZXJ5CiIzMDY0IE1vdW50IFBsZWFzYW50IFN0IE5XIixXYXNoaW5ndG9uLERDLCwzOC45Mjg0NiwtNzcuMDM3NTA5LDEscm9vZnRvcCwzMDY0LCJNdCBQbGVhc2FudCBTdCBOVyIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDksVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjEwNTIgVGhvbWFzIEplZmZlcnNvbiBTdHJlZXQgTlciLFdhc2hpbmd0b24sREMsLDM4LjkwMzg4NywtNzcuMDYwNDM3LDEscm9vZnRvcCwxMDUyLCJUaG9tYXMgSmVmZmVyc29uIFN0IE5XIiwsLFdhc2hpbmd0b24sREMsIkRpc3RyaWN0IG9mIENvbHVtYmlhIiwyMDAwNyxVUywiU3RhdGV3aWRlIChDaXR5IG9mIFdhc2hpbmd0b24pIgoiNDc1IEggU3QgTlciLFdhc2hpbmd0b24sREMsLDM4LjkwMDA3OCwtNzcuMDE4NjQ1LDEscm9vZnRvcCw0NzUsIkggU3QgTlciLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDAxLFVTLCJTdGF0ZXdpZGUgKENpdHkgb2YgV2FzaGluZ3RvbikiCiIxMzAxIFUgU3QgTlciLFdhc2hpbmd0b24sREMsLDM4LjkxNzI5NCwtNzcuMDMwNTIsMSxyb29mdG9wLDEzMDEsIlUgU3QgTlciLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDA5LFVTLCJTdGF0ZXdpZGUgKENpdHkgb2YgV2FzaGluZ3RvbikiCiIxNzI2IDIwdGggU3RyZWV0LCBOVyIsV2FzaGluZ3RvbixEQywsMzguOTEzNjk0LC03Ny4wNDUwOTUsMSxyb29mdG9wLDE3MjYsIjIwdGggU3QgTlciLCwsV2FzaGluZ3RvbixEQywiRGlzdHJpY3Qgb2YgQ29sdW1iaWEiLDIwMDA5LFVTLCJTdGF0ZXdpZGUgKENpdHkgb2YgV2FzaGluZ3RvbikiCiIxOTE2IEkgU3RyZWV0LCBOVyIsV2FzaGluZ3RvbixEQywsMzguOTAxMTUsLTc3LjA0NDE3MiwxLHJvb2Z0b3AsMTkxNiwiSSBTdCBOVyIsLCxXYXNoaW5ndG9uLERDLCJEaXN0cmljdCBvZiBDb2x1bWJpYSIsMjAwMDYsVVMsIlN0YXRld2lkZSAoQ2l0eSBvZiBXYXNoaW5ndG9uKSIKIjEwNyBDaHVyY2ggU3QgTkUiLFZpZW5uYSxWQSwsMzguOTAyNTY1LC03Ny4yNjU2OTMsMSxyb29mdG9wLDEwNywiQ2h1cmNoIFN0IE5FIiwsLFZpZW5uYSxWQSwiRmFpcmZheCBDb3VudHkiLDIyMTgwLFVTLEZhaXJmYXgKIjQ4MTcgQmV0aGVzZGEgQXZlIixCZXRoZXNkYSxNRCwyMDgxNCwzOC45ODExMzQsLTc3LjA5NjUwNiwxLHJvb2Z0b3AsNDgxNywiQmV0aGVzZGEgQXZlIiwsLEJldGhlc2RhLE1ELCJNb250Z29tZXJ5IENvdW50eSIsMjA4MTQsVVMsTW9udGdvbWVyeQo=
-  recorded_at: Thu, 06 Mar 2025 20:58:35 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:54 GMT
 recorded_with: VCR 6.1.0

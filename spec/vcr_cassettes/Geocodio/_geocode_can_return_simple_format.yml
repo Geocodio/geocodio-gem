@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:54 GMT
+      - Fri, 07 Mar 2025 17:01:39 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api311
+      - api194
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0C_05A11518:01BB_67C9EBBE_56ED6:6641
+      - 46E21BA0:EE20_05A11518:01BB_67CB2673_2072:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '920'
+      - '988'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -65,7 +65,7 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"address":"1109 N Highland St, Arlington, VA 22201","lat":38.886672,"lng":-77.094735,"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}'
-  recorded_at: Thu, 06 Mar 2025 18:38:54 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:39 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&format=simple&limit&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
@@ -93,7 +93,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:55 GMT
+      - Fri, 07 Mar 2025 17:01:40 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -111,17 +111,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api212
+      - api285
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0D_05A11518:01BB_67C9EBBE_56F12:6641
+      - 46E21BA0:EE21_05A11518:01BB_67CB2673_20DC:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '919'
+      - '987'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -132,5 +132,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"address":"1120 N Highland St, Arlington, VA 22201","lat":38.886743,"lng":-77.095041,"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER\/Line\u00ae
         dataset from the US Census Bureau"}'
-  recorded_at: Thu, 06 Mar 2025 18:38:55 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:40 GMT
 recorded_with: VCR 6.1.0

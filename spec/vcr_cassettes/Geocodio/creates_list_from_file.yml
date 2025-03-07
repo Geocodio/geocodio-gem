@@ -2,144 +2,6 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 422
-      message: Unprocessable Content
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Thu, 06 Mar 2025 18:39:03 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      X-Billable-Lookups-Count:
-      - '0'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api310
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:DD2D_05A11518:01BB_67C9EBC6_573F0:6641
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '911'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"message":"The callback field must be a valid URL.","error":{"callback":["The
-        callback field must be a valid URL."]}}'
-  recorded_at: Thu, 06 Mar 2025 18:39:03 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 422
-      message: Unprocessable Content
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Thu, 06 Mar 2025 18:59:02 GMT
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      X-Billable-Lookups-Count:
-      - '0'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api287
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:DE22_05A11518:01BB_67C9F076_7DFF8:6641
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '999'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: UTF-8
-      string: '{"message":"The callback field must be a valid URL.","error":{"callback":["The
-        callback field must be a valid URL."]}}'
-  recorded_at: Thu, 06 Mar 2025 18:59:02 GMT
-- request:
-    method: post
     uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback=http://localhost&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
     body:
       encoding: UTF-8
@@ -167,7 +29,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 20:46:31 GMT
+      - Fri, 07 Mar 2025 17:01:49 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -181,17 +43,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api303
+      - api291
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DF88_05A11518:01BB_67CA09A6_574B7:6689
+      - 46E21BA0:EE3C_05A11518:01BB_67CB267C_28F1:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '966'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -200,8 +62,8 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"id":12040471,"file":{"headers":["address","city","state","zip"],"estimated_rows_count":24,"filename":"sample_list_test.csv"}}'
-  recorded_at: Thu, 06 Mar 2025 20:46:31 GMT
+      string: '{"id":12041003,"file":{"headers":["address","city","state","zip"],"estimated_rows_count":24,"filename":"sample_list_test.csv"}}'
+  recorded_at: Fri, 07 Mar 2025 17:01:49 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback=http://localhost&direction=forward&file=Latitude,Longitude,,,,,%0D%0A38.8886262809655,-77.0165386458959,,,,,%0D%0A38.8883882115863,-77.0198276082111,,,,,%0D%0A38.8891899038527,-77.0199992695837,,,,,%0D%0A38.886350536353,-77.0211109612279,,,,,%0D%0A38.8844010178023,-77.0255355942621,,,,,%0D%0A38.888332492042,-77.0254521107444,,,,,%0D%0A38.8890797724534,-77.0259738835079,,,,,%0D%0A38.8915489909506,-77.0257443034919,,,,,%0D%0A38.8883812279607,-77.0273304926929,,,,,%0D%0A38.888348737352,-77.0273304926929,,,,,%0D%0A38.891681936895,-77.0326497048902,,,,,%0D%0A39.3506842577113,-76.6211688308013,,,,,%0D%0A39.328085935215,-76.6200000598111,,,,,%0D%0A39.3140067165994,-76.5961237381548,,,,,%0D%0A39.2818423681824,-76.6070446000219,,,,,%0D%0A39.2868182724211,-76.6080089058459,,,,,%0D%0A39.2753731641967,-76.6022230709016,,,,,%0D%0A39.2949117273769,-76.6323515144706,,,,,%0D%0A39.2976382021164,-76.6160833127033,,,,,%0D%0A&filename=lat_long_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D
@@ -231,7 +93,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 20:50:48 GMT
+      - Fri, 07 Mar 2025 17:01:50 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -245,17 +107,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api303
+      - api300
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:E014_05A11518:01BB_67CA0AA8_5FCF6:6689
+      - 46E21BA0:EE43_05A11518:01BB_67CB267D_29B7:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '965'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -264,6 +126,6 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"id":12040481,"file":{"headers":["Latitude","Longitude","","","","",""],"estimated_rows_count":19,"filename":"lat_long_test.csv"}}'
-  recorded_at: Thu, 06 Mar 2025 20:50:48 GMT
+      string: '{"id":12041004,"file":{"headers":["Latitude","Longitude","","","","",""],"estimated_rows_count":19,"filename":"lat_long_test.csv"}}'
+  recorded_at: Fri, 07 Mar 2025 17:01:50 GMT
 recorded_with: VCR 6.1.0

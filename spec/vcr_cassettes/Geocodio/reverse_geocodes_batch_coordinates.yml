@@ -28,7 +28,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:01 GMT
+      - Fri, 07 Mar 2025 17:01:46 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -46,17 +46,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api297
+      - api292
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD22_05A11518:01BB_67C9EBC5_57318:6641
+      - 46E21BA0:EE32_05A11518:01BB_67CB267A_274D:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '912'
+      - '970'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -96,7 +96,7 @@ http_interactions:
         Elm St, Bethesda, MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4945
         Elm St, Bethesda, MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:01 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
@@ -125,7 +125,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:02 GMT
+      - Fri, 07 Mar 2025 17:01:47 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -143,17 +143,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api230
+      - api311
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD25_05A11518:01BB_67C9EBC6_57351:6641
+      - 46E21BA0:EE33_05A11518:01BB_67CB267A_27A5:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '912'
+      - '969'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -193,7 +193,7 @@ http_interactions:
         Elm St, Bethesda, MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4945
         Elm St, Bethesda, MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:02 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:47 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
@@ -222,7 +222,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:02 GMT
+      - Fri, 07 Mar 2025 17:01:47 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -240,17 +240,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api288
+      - api309
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD29_05A11518:01BB_67C9EBC6_573C3:6641
+      - 46E21BA0:EE34_05A11518:01BB_67CB267B_2823:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '911'
+      - '968'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -290,7 +290,7 @@ http_interactions:
         Elm St, Bethesda, MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4945
         Elm St, Bethesda, MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:02 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:47 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
@@ -319,7 +319,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:53:42 GMT
+      - Fri, 07 Mar 2025 17:01:48 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -337,17 +337,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api294
+      - api293
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DDD5_05A11518:01BB_67C9EF35_7443C:6641
+      - 46E21BA0:EE35_05A11518:01BB_67CB267B_289B:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '999'
+      - '967'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -387,5 +387,5 @@ http_interactions:
         Elm St, Bethesda, MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4945
         Elm St, Bethesda, MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:53:42 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:48 GMT
 recorded_with: VCR 6.1.0

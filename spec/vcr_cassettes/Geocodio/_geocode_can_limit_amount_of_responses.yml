@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:53 GMT
+      - Fri, 07 Mar 2025 17:01:38 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api230
+      - api293
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD09_05A11518:01BB_67C9EBBD_56E11:6641
+      - 46E21BA0:EE1D_05A11518:01BB_67CB2671_1EE6:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '921'
+      - '991'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -80,7 +80,7 @@ http_interactions:
         Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
         data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"Arlington
         County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:53 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:38 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit=4&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
@@ -108,7 +108,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:53 GMT
+      - Fri, 07 Mar 2025 17:01:38 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -126,17 +126,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api309
+      - api308
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0A_05A11518:01BB_67C9EBBD_56E37:6641
+      - 46E21BA0:EE1E_05A11518:01BB_67CB2672_1F28:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '920'
+      - '990'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -202,7 +202,7 @@ http_interactions:
         Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
         data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"Arlington
         County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:53 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:38 GMT
 - request:
     method: get
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
@@ -230,7 +230,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:38:54 GMT
+      - Fri, 07 Mar 2025 17:01:39 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -248,17 +248,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api292
+      - api300
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD0B_05A11518:01BB_67C9EBBD_56E97:6641
+      - 46E21BA0:EE1F_05A11518:01BB_67CB2672_1FD6:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '920'
+      - '989'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -351,5 +351,5 @@ http_interactions:
         Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
         data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"Arlington
         County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:38:54 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:39 GMT
 recorded_with: VCR 6.1.0

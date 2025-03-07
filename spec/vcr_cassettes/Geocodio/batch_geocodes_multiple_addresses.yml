@@ -28,7 +28,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:00 GMT
+      - Fri, 07 Mar 2025 17:01:45 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -46,17 +46,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api301
+      - api287
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD1A_05A11518:01BB_67C9EBC3_5720C:6641
+      - 46E21BA0:EE2E_05A11518:01BB_67CB2678_263C:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '914'
+      - '974'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -82,7 +82,7 @@ http_interactions:
         Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
         Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:00 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
@@ -111,7 +111,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:00 GMT
+      - Fri, 07 Mar 2025 17:01:45 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -129,17 +129,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api226
+      - api303
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD1B_05A11518:01BB_67C9EBC4_57252:6641
+      - 46E21BA0:EE2F_05A11518:01BB_67CB2679_267A:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '913'
+      - '973'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -165,7 +165,7 @@ http_interactions:
         Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
         Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:00 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
@@ -194,7 +194,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:00 GMT
+      - Fri, 07 Mar 2025 17:01:46 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -212,17 +212,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api293
+      - api289
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD1C_05A11518:01BB_67C9EBC4_57296:6641
+      - 46E21BA0:EE30_05A11518:01BB_67CB2679_26C1:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '913'
+      - '972'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -248,7 +248,7 @@ http_interactions:
         Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
         Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:01 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
 - request:
     method: post
     uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
@@ -277,7 +277,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Thu, 06 Mar 2025 18:39:01 GMT
+      - Fri, 07 Mar 2025 17:01:46 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -295,17 +295,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api300
+      - api281
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:DD1D_05A11518:01BB_67C9EBC5_572CA:6641
+      - 46E21BA0:EE31_05A11518:01BB_67CB267A_2709:697C
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '913'
+      - '971'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -331,5 +331,5 @@ http_interactions:
         Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
         Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Thu, 06 Mar 2025 18:39:01 GMT
+  recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
 recorded_with: VCR 6.1.0
