@@ -2,9 +2,9 @@ name: Ruby Tests
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 
 jobs:
   test:
@@ -25,7 +25,12 @@ jobs:
         
     - name: Install dependencies
       run: |
-        gem install bundler
+        # Install appropriate bundler version based on Ruby version
+        if [[ "${{ matrix.ruby-version }}" == "2.6" || "${{ matrix.ruby-version }}" == "2.7" ]]; then
+          gem install bundler -v 2.4.22
+        else
+          gem install bundler
+        fi
         bundle config set --local path 'vendor/bundle'
         bundle install
     
