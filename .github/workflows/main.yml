@@ -3,7 +3,7 @@ name: Ruby Tests
 on:
   push:
     branches: [main]
-  pull_request: 
+  pull_request:
     branches: [main]
 
 jobs:
@@ -11,20 +11,27 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ["2.6", "2.7", "3.0", "3.1"]
+        ruby-version: ['2.6', '2.7', '3.0', '3.1']
 
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: ${{ matrix.ruby-version }}
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-
-      - name: Create .env file
-        run: |
-          echo "API_KEY=${{ secrets.GEOCODIO_API_KEY }}" > .env
-
-      - name: Run tests
-        run: bundle exec rspec
+    - uses: actions/checkout@v3
+    
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: ${{ matrix.ruby-version }}
+        # Don't use bundler-cache as it enables deployment mode
+        bundler-cache: false
+        
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle config set --local path 'vendor/bundle'
+        bundle install
+    
+    - name: Create .env file
+      run: |
+        echo "API_KEY=${{ secrets.GEOCODIO_API_KEY }}" > .env
+    
+    - name: Run tests
+      run: bundle exec rspec
