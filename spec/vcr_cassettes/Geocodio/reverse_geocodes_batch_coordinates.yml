@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
@@ -99,7 +99,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
@@ -196,7 +196,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:47 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
@@ -293,7 +293,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:47 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,

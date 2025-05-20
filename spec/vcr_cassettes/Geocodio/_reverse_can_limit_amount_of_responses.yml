@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=school,cd&format&limit=1&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=school,cd&format&limit=1&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -76,7 +76,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:42 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=school,cd&format&limit=4&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=school,cd&format&limit=4&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -174,7 +174,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit=8&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&format&limit=8&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -255,7 +255,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&format&limit&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''

@@ -14,7 +14,7 @@ module Geocodio
       @api_key = api_key
 
       @conn = Faraday.new(
-        url: 'https://api.geocod.io/v1.7/',
+        url: 'https://api.geocod.io/v1.8/',
         headers: {'Content-Type' => 'application/json' }
       ) do |f|
         f.response :follow_redirects

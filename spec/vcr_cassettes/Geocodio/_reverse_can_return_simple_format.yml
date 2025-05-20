@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -69,7 +69,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:44 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.92977415631741,-77.04941962147353
+    uri: https://api.geocod.io/v1.8/reverse?api_key=<API_KEY>&fields=&format=simple&limit&q=38.92977415631741,-77.04941962147353
     body:
       encoding: US-ASCII
       string: ''
