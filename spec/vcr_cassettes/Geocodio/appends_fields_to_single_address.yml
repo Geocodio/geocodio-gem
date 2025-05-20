@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -83,7 +83,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:36 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -164,7 +164,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:37 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -245,7 +245,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:37 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=school,cd&format&limit&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/lists?api_key=<API_KEY>&callback=http://localhost&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
+    uri: https://api.geocod.io/v1.8/lists?api_key=<API_KEY>&callback=http://localhost&direction=forward&file=%EF%BB%BFaddress,city,state,zip%0D%0A660%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1718%2014th%20St%20NW,Washington,DC,20009%0D%0A1309%205th%20St%20NE,,,20002%0D%0A2150%20P%20St%20NW,,,20037%0D%0A201%20F%20Street%20NE,,,20002%0D%0A1001%202nd%20St%20SE,,,20003%0D%0A1645%20Wisconsin%20Avenue%20NW,Washington,DC,20007%0D%0A820%20East%20Baltimore%20Street,Baltimore,MD,21202%0D%0A800%20F%20St%20NW,Washington,DC,20001%0D%0A700%20Constitution%20Avenue%20NW,Washington,DC,20565%0D%0A1123%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A621%20Pennsylvania%20Ave%20SE,Washington,DC,20003%0D%0A1702%20G%20Street%20NW,Washington,DC,20006%0D%0A701%208th%20St%20SE,Washington,DC,20003%0D%0A12187%20Darnestown%20Rd,Gaithersburg,MD,20878%0D%0A4961%20Elm%20Street,Bethesda,MD,%0D%0A3064%20Mount%20Pleasant%20St%20NW,Washington,DC,%0D%0A1052%20Thomas%20Jefferson%20Street%20NW,Washington,DC,%0D%0A475%20H%20St%20NW,Washington,DC,%0D%0A1301%20U%20St%20NW,Washington,DC,%0D%0A%221726%2020th%20Street,%20NW%22,Washington,DC,%0D%0A%221916%20I%20Street,%20NW%22,Washington,DC,%0D%0A107%20Church%20St%20NE,Vienna,VA,%0D%0A4817%20Bethesda%20Ave,Bethesda,MD,20814&filename=sample_list_test.csv&format=%7B%7BA%7D%7D%20%7B%7BB%7D%7D%20%7B%7BC%7D%7D%20%7B%7BD%7D%7D
     body:
       encoding: UTF-8
       string: ''
@@ -66,7 +66,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:50 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/lists/12041005?api_key=<API_KEY>
+    uri: https://api.geocod.io/v1.8/lists/12041005?api_key=<API_KEY>
     body:
       encoding: US-ASCII
       string: ''

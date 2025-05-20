@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -85,7 +85,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -168,7 +168,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -251,7 +251,7 @@ http_interactions:
   recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.7/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,

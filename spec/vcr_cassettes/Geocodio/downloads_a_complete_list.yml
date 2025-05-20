@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.7/lists/12040486/download?api_key=<API_KEY>
+    uri: https://api.geocod.io/v1.8/lists/12040486/download?api_key=<API_KEY>
     body:
       encoding: US-ASCII
       string: ''
