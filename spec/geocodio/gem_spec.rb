@@ -203,4 +203,167 @@ RSpec.describe Geocodio do
     # Requires a list ID that has already been uploaded and processed
     expect(geocodio.deleteList(12040486)["success"]).to be(true)
   end
+
+  # Distance API Tests
+
+  it "calculates distance from single origin to multiple destinations", vcr: { record: :new_episodes } do
+    origin = "38.8977,-77.0365,white_house"
+    destinations = ["38.9072,-77.0369,capitol", "38.8895,-77.0353,monument"]
+
+    response = geocodio.distance(origin, destinations)
+
+    expect(response["origin"]).not_to be_nil
+    expect(response["origin"]["id"]).to eq("white_house")
+    expect(response["destinations"]).to be_an(Array)
+    expect(response["destinations"].length).to eq(2)
+    expect(response["destinations"][0]["distance_miles"]).to be_a(Numeric)
+  end
+
+  it "calculates distance with driving mode", vcr: { record: :new_episodes } do
+    origin = "38.8977,-77.0365"
+    destinations = ["38.9072,-77.0369"]
+
+    response = geocodio.distance(origin, destinations, mode: :driving)
+
+    expect(response["mode"]).to eq("driving")
+    expect(response["destinations"][0]["duration_seconds"]).to be_a(Numeric)
+  end
+
+  it "calculates distance with different units", vcr: { record: :new_episodes } do
+    origin = "38.8977,-77.0365"
+    destinations = ["38.9072,-77.0369"]
+
+    response = geocodio.distance(origin, destinations, units: :kilometers)
+
+    expect(response["destinations"][0]["distance_km"]).to be_a(Numeric)
+  end
+
+  it "calculates distance with array coordinate format", vcr: { record: :new_episodes } do
+    origin = [38.8977, -77.0365, "headquarters"]
+    destinations = [[38.9072, -77.0369, "branch_1"]]
+
+    response = geocodio.distance(origin, destinations)
+
+    expect(response["origin"]["id"]).to eq("headquarters")
+    expect(response["destinations"][0]["id"]).to eq("branch_1")
+  end
+
+  it "calculates distance with hash coordinate format", vcr: { record: :new_episodes } do
+    origin = { lat: 38.8977, lng: -77.0365, id: "hq" }
+    destinations = [{ lat: 38.9072, lng: -77.0369, id: "branch" }]
+
+    response = geocodio.distance(origin, destinations)
+
+    expect(response["origin"]["id"]).to eq("hq")
+    expect(response["destinations"][0]["id"]).to eq("branch")
+  end
+
+  it "calculates distance with filtering options", vcr: { record: :new_episodes } do
+    origin = "38.8977,-77.0365"
+    destinations = ["38.9072,-77.0369", "39.2904,-76.6122", "39.9526,-75.1652"]
+
+    response = geocodio.distance(origin, destinations, max_results: 2, order_by: :distance, sort: :asc)
+
+    expect(response["destinations"].length).to be <= 2
+  end
+
+  it "calculates distance matrix", vcr: { record: :new_episodes } do
+    origins = ["38.8977,-77.0365,origin_1", "38.9072,-77.0369,origin_2"]
+    destinations = ["38.8895,-77.0353,dest_1", "39.2904,-76.6122,dest_2"]
+
+    response = geocodio.distanceMatrix(origins, destinations)
+
+    expect(response["results"]).to be_an(Array)
+    expect(response["results"].length).to eq(2)
+    expect(response["results"][0]["origin"]["id"]).to eq("origin_1")
+    expect(response["results"][0]["destinations"]).to be_an(Array)
+  end
+
+  it "calculates distance matrix with driving mode", vcr: { record: :new_episodes } do
+    origins = ["38.8977,-77.0365"]
+    destinations = ["38.9072,-77.0369"]
+
+    response = geocodio.distanceMatrix(origins, destinations, mode: :driving)
+
+    expect(response["mode"]).to eq("driving")
+    expect(response["results"][0]["destinations"][0]["duration_seconds"]).to be_a(Numeric)
+  end
+
+  it "creates a distance matrix job", vcr: { record: :new_episodes } do
+    origins = ["38.8977,-77.0365,origin_1"]
+    destinations = ["38.8895,-77.0353,dest_1"]
+
+    response = geocodio.createDistanceMatrixJob(
+      "Test Distance Job",
+      origins,
+      destinations,
+      mode: :straightline,
+      callback_url: "https://example.com/webhook"
+    )
+
+    expect(response["id"]).not_to be_nil
+    expect(response["name"]).to eq("Test Distance Job")
+    expect(response["status"]).not_to be_nil
+  end
+
+  it "gets distance matrix job status", vcr: { record: :new_episodes } do
+    # Create a job first
+    origins = ["38.8977,-77.0365"]
+    destinations = ["38.8895,-77.0353"]
+    job = geocodio.createDistanceMatrixJob("Status Test Job", origins, destinations)
+
+    response = geocodio.distanceMatrixJobStatus(job["id"])
+
+    expect(response["data"]["id"]).to eq(job["id"])
+    expect(response["data"]["status"]).not_to be_nil
+  end
+
+  it "lists all distance matrix jobs", vcr: { record: :new_episodes } do
+    response = geocodio.distanceMatrixJobs
+
+    expect(response).to have_key("data")
+    expect(response["data"]).to be_an(Array)
+  end
+
+  it "geocodes with distance to destinations", vcr: { record: :new_episodes } do
+    address = ["1109 N Highland St, Arlington, VA 22201"]
+    destinations = ["38.9072,-77.0369,capitol", "38.8895,-77.0353,monument"]
+
+    response = geocodio.geocode(
+      address,
+      [],
+      nil,
+      nil,
+      destinations: destinations,
+      distance_mode: :straightline
+    )
+
+    expect(response["results"][0]["destinations"]).to be_an(Array)
+    expect(response["results"][0]["destinations"].length).to eq(2)
+  end
+
+  it "reverse geocodes with distance to destinations", vcr: { record: :new_episodes } do
+    coords = ["38.9002898,-76.9990361"]
+    destinations = ["38.9072,-77.0369,capitol"]
+
+    response = geocodio.reverse(
+      coords,
+      [],
+      nil,
+      nil,
+      destinations: destinations,
+      distance_mode: :driving
+    )
+
+    expect(response["results"][0]["destinations"]).to be_an(Array)
+  end
+
+  it "maps haversine mode to straightline", vcr: { record: :new_episodes } do
+    origin = "38.8977,-77.0365"
+    destinations = ["38.9072,-77.0369"]
+
+    response = geocodio.distance(origin, destinations, mode: :haversine)
+
+    expect(response["mode"]).to eq("straightline")
+  end
 end
