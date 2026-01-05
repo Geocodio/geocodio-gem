@@ -352,4 +352,263 @@ http_interactions:
         data collected by https:\/\/github.com\/unitedstates\/"}]}],"school_districts":{"unified":{"name":"Arlington
         County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
   recorded_at: Fri, 07 Mar 2025 17:01:39 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=school,cd&limit=1&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:02:56 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api308
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E4DE_94FBB48F:01BB_695B8C50_77743:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '958'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington","fields":{"congressional_districts":[{"name":"Congressional
+        District 8","district_number":8,"ocd_id":"ocd-division\/country:us\/state:va\/cd:8","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Beyer","first_name":"Donald","birthday":"1950-06-20","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/b001292_200.jpg","photo_attribution":"Image
+        courtesy of the Member"},"contact":{"url":"https:\/\/beyer.house.gov","address":"1226
+        Longworth House Office Building Washington DC 20515-4608","phone":"202-225-4376","contact_form":null},"social":{"rss_url":null,"twitter":"RepDonBeyer","facebook":"RepDonBeyer","youtube":null,"youtube_id":"UCPJGVbOVcAVGiBwq8qr_T9w"},"references":{"bioguide_id":"B001292","thomas_id":"02272","opensecrets_id":"N00036018","lis_id":null,"cspan_id":"21141","govtrack_id":"412657","votesmart_id":"1707","ballotpedia_id":"Don
+        Beyer","washington_post_id":null,"icpsr_id":"21554","wikipedia_id":"Don Beyer"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"senior","bio":{"last_name":"Warner","first_name":"Mark","birthday":"1954-12-15","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/w000805_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.warner.senate.gov","address":"703
+        Hart Senate Office Building Washington DC 20510","phone":"202-224-2023","contact_form":"https:\/\/www.warner.senate.gov\/public\/index.cfm?p=Contact"},"social":{"rss_url":"http:\/\/www.warner.senate.gov\/public\/?a=rss.feed","twitter":"MarkWarner","facebook":"MarkRWarner","youtube":"SenatorMarkWarner","youtube_id":"UCwyivNlEGf4sGd1oDLfY5jw"},"references":{"bioguide_id":"W000805","thomas_id":"01897","opensecrets_id":"N00002097","lis_id":"S327","cspan_id":"7630","govtrack_id":"412321","votesmart_id":"535","ballotpedia_id":"Mark
+        Warner","washington_post_id":null,"icpsr_id":"40909","wikipedia_id":"Mark
+        Warner"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"junior","bio":{"last_name":"Kaine","first_name":"Timothy","birthday":"1958-02-26","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/k000384_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.kaine.senate.gov","address":"231
+        Russell Senate Office Building Washington DC 20510","phone":"202-224-4024","contact_form":"https:\/\/www.kaine.senate.gov\/contact"},"social":{"rss_url":"http:\/\/www.kaine.senate.gov\/rss\/feeds\/?type=all","twitter":null,"facebook":"SenatorKaine","youtube":"SenatorTimKaine","youtube_id":"UC27LgTZlUnBQoNEQFZdn9LA"},"references":{"bioguide_id":"K000384","thomas_id":"02176","opensecrets_id":"N00033177","lis_id":"S362","cspan_id":"49219","govtrack_id":"412582","votesmart_id":"50772","ballotpedia_id":"Tim
+        Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"Arlington
+        County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:02:56 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=school,cd&limit=4&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:02:56 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api307
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E4E2_94FBB48F:01BB_695B8C50_77745:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '957'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"input":{"address_components":{"number":"1120","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1120
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1120","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1120
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1120 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886755,"lng":-77.094741},"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER\/Line\u00ae
+        from the US Census Bureau","fields":{"congressional_districts":[{"name":"Congressional
+        District 8","district_number":8,"ocd_id":"ocd-division\/country:us\/state:va\/cd:8","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Beyer","first_name":"Donald","birthday":"1950-06-20","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/b001292_200.jpg","photo_attribution":"Image
+        courtesy of the Member"},"contact":{"url":"https:\/\/beyer.house.gov","address":"1226
+        Longworth House Office Building Washington DC 20515-4608","phone":"202-225-4376","contact_form":null},"social":{"rss_url":null,"twitter":"RepDonBeyer","facebook":"RepDonBeyer","youtube":null,"youtube_id":"UCPJGVbOVcAVGiBwq8qr_T9w"},"references":{"bioguide_id":"B001292","thomas_id":"02272","opensecrets_id":"N00036018","lis_id":null,"cspan_id":"21141","govtrack_id":"412657","votesmart_id":"1707","ballotpedia_id":"Don
+        Beyer","washington_post_id":null,"icpsr_id":"21554","wikipedia_id":"Don Beyer"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"senior","bio":{"last_name":"Warner","first_name":"Mark","birthday":"1954-12-15","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/w000805_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.warner.senate.gov","address":"703
+        Hart Senate Office Building Washington DC 20510","phone":"202-224-2023","contact_form":"https:\/\/www.warner.senate.gov\/public\/index.cfm?p=Contact"},"social":{"rss_url":"http:\/\/www.warner.senate.gov\/public\/?a=rss.feed","twitter":"MarkWarner","facebook":"MarkRWarner","youtube":"SenatorMarkWarner","youtube_id":"UCwyivNlEGf4sGd1oDLfY5jw"},"references":{"bioguide_id":"W000805","thomas_id":"01897","opensecrets_id":"N00002097","lis_id":"S327","cspan_id":"7630","govtrack_id":"412321","votesmart_id":"535","ballotpedia_id":"Mark
+        Warner","washington_post_id":null,"icpsr_id":"40909","wikipedia_id":"Mark
+        Warner"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"junior","bio":{"last_name":"Kaine","first_name":"Timothy","birthday":"1958-02-26","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/k000384_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.kaine.senate.gov","address":"231
+        Russell Senate Office Building Washington DC 20510","phone":"202-224-4024","contact_form":"https:\/\/www.kaine.senate.gov\/contact"},"social":{"rss_url":"http:\/\/www.kaine.senate.gov\/rss\/feeds\/?type=all","twitter":null,"facebook":"SenatorKaine","youtube":"SenatorTimKaine","youtube_id":"UC27LgTZlUnBQoNEQFZdn9LA"},"references":{"bioguide_id":"K000384","thomas_id":"02176","opensecrets_id":"N00033177","lis_id":"S362","cspan_id":"49219","govtrack_id":"412582","votesmart_id":"50772","ballotpedia_id":"Tim
+        Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"Arlington
+        County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:02:56 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=school,cd&limit=1&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:07:17 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api312
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:EC21_94FBB48F:01BB_695B8D55_78275:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '919'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
+        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington","fields":{"congressional_districts":[{"name":"Congressional
+        District 8","district_number":8,"ocd_id":"ocd-division\/country:us\/state:va\/cd:8","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Beyer","first_name":"Donald","birthday":"1950-06-20","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/b001292_200.jpg","photo_attribution":"Image
+        courtesy of the Member"},"contact":{"url":"https:\/\/beyer.house.gov","address":"1226
+        Longworth House Office Building Washington DC 20515-4608","phone":"202-225-4376","contact_form":null},"social":{"rss_url":null,"twitter":"RepDonBeyer","facebook":"RepDonBeyer","youtube":null,"youtube_id":"UCPJGVbOVcAVGiBwq8qr_T9w"},"references":{"bioguide_id":"B001292","thomas_id":"02272","opensecrets_id":"N00036018","lis_id":null,"cspan_id":"21141","govtrack_id":"412657","votesmart_id":"1707","ballotpedia_id":"Don
+        Beyer","washington_post_id":null,"icpsr_id":"21554","wikipedia_id":"Don Beyer"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"senior","bio":{"last_name":"Warner","first_name":"Mark","birthday":"1954-12-15","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/w000805_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.warner.senate.gov","address":"703
+        Hart Senate Office Building Washington DC 20510","phone":"202-224-2023","contact_form":"https:\/\/www.warner.senate.gov\/public\/index.cfm?p=Contact"},"social":{"rss_url":"http:\/\/www.warner.senate.gov\/public\/?a=rss.feed","twitter":"MarkWarner","facebook":"MarkRWarner","youtube":"SenatorMarkWarner","youtube_id":"UCwyivNlEGf4sGd1oDLfY5jw"},"references":{"bioguide_id":"W000805","thomas_id":"01897","opensecrets_id":"N00002097","lis_id":"S327","cspan_id":"7630","govtrack_id":"412321","votesmart_id":"535","ballotpedia_id":"Mark
+        Warner","washington_post_id":null,"icpsr_id":"40909","wikipedia_id":"Mark
+        Warner"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"},{"type":"senator","seniority":"junior","bio":{"last_name":"Kaine","first_name":"Timothy","birthday":"1958-02-26","gender":"M","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/k000384_200.jpg","photo_attribution":"Courtesy
+        U.S. Senate Historical Office (http:\/\/www.senate.gov\/artandhistory\/history\/common\/generic\/Photo_Collection_of_the_Senate_Historical_Office.htm)"},"contact":{"url":"https:\/\/www.kaine.senate.gov","address":"231
+        Russell Senate Office Building Washington DC 20510","phone":"202-224-4024","contact_form":"https:\/\/www.kaine.senate.gov\/contact"},"social":{"rss_url":"http:\/\/www.kaine.senate.gov\/rss\/feeds\/?type=all","twitter":null,"facebook":"SenatorKaine","youtube":"SenatorTimKaine","youtube_id":"UC27LgTZlUnBQoNEQFZdn9LA"},"references":{"bioguide_id":"K000384","thomas_id":"02176","opensecrets_id":"N00033177","lis_id":"S362","cspan_id":"49219","govtrack_id":"412582","votesmart_id":"50772","ballotpedia_id":"Tim
+        Kaine","washington_post_id":null,"icpsr_id":"41305","wikipedia_id":"Tim Kaine"},"source":"Legislator
+        data collected by the @unitedstates project (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"Arlington
+        County Public Schools","lea_code":"5100270","grade_low":"PK","grade_high":"12"}}}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:07:17 GMT
 recorded_with: VCR 6.1.0

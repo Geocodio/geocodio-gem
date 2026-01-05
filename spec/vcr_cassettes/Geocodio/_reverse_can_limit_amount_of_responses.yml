@@ -334,4 +334,379 @@ http_interactions:
         H St NE, Washington, DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
   recorded_at: Fri, 07 Mar 2025 17:01:43 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=school,cd&limit=1&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:02:58 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api306
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E516_94FBB48F:01BB_695B8C52_7775F:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '949'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)","fields":{"congressional_districts":[{"name":"Delegate
+        District (at Large)","district_number":98,"ocd_id":"ocd-division\/country:us\/district:dc\/cd:at-large","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Norton","first_name":"Eleanor","birthday":"1937-06-13","gender":"F","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/116_dg_dc_norton_eleanor_200.jpg","photo_attribution":"Congressional
+        Pictorial Directory"},"contact":{"url":"https:\/\/norton.house.gov","address":"2136
+        Rayburn House Office Building Washington DC 20515-5101","phone":"202-225-8050","contact_form":null},"social":{"rss_url":"http:\/\/norton.house.gov\/index.php?format=feed&amp;type=rss","twitter":"EleanorNorton","facebook":"CongresswomanNorton","youtube":"EleanorHNorton","youtube_id":"UChRrAXUGylfxJjbquC6aUjQ"},"references":{"bioguide_id":"N000147","thomas_id":"00868","opensecrets_id":"N00001692","lis_id":null,"cspan_id":"882","govtrack_id":"400295","votesmart_id":"775","ballotpedia_id":"Eleanor
+        Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
+        Holmes Norton"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"District
+        of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:02:58 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=school,cd&limit=4&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:02:58 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api304
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E517_94FBB48F:01BB_695B8C52_77762:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '948'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)","fields":{"congressional_districts":[{"name":"Delegate
+        District (at Large)","district_number":98,"ocd_id":"ocd-division\/country:us\/district:dc\/cd:at-large","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Norton","first_name":"Eleanor","birthday":"1937-06-13","gender":"F","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/116_dg_dc_norton_eleanor_200.jpg","photo_attribution":"Congressional
+        Pictorial Directory"},"contact":{"url":"https:\/\/norton.house.gov","address":"2136
+        Rayburn House Office Building Washington DC 20515-5101","phone":"202-225-8050","contact_form":null},"social":{"rss_url":"http:\/\/norton.house.gov\/index.php?format=feed&amp;type=rss","twitter":"EleanorNorton","facebook":"CongresswomanNorton","youtube":"EleanorHNorton","youtube_id":"UChRrAXUGylfxJjbquC6aUjQ"},"references":{"bioguide_id":"N000147","thomas_id":"00868","opensecrets_id":"N00001692","lis_id":null,"cspan_id":"882","govtrack_id":"400295","votesmart_id":"775","ballotpedia_id":"Eleanor
+        Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
+        Holmes Norton"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"District
+        of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)","fields":{"congressional_districts":[{"name":"Delegate
+        District (at Large)","district_number":98,"ocd_id":"ocd-division\/country:us\/district:dc\/cd:at-large","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Norton","first_name":"Eleanor","birthday":"1937-06-13","gender":"F","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/116_dg_dc_norton_eleanor_200.jpg","photo_attribution":"Congressional
+        Pictorial Directory"},"contact":{"url":"https:\/\/norton.house.gov","address":"2136
+        Rayburn House Office Building Washington DC 20515-5101","phone":"202-225-8050","contact_form":null},"social":{"rss_url":"http:\/\/norton.house.gov\/index.php?format=feed&amp;type=rss","twitter":"EleanorNorton","facebook":"CongresswomanNorton","youtube":"EleanorHNorton","youtube_id":"UChRrAXUGylfxJjbquC6aUjQ"},"references":{"bioguide_id":"N000147","thomas_id":"00868","opensecrets_id":"N00001692","lis_id":null,"cspan_id":"882","govtrack_id":"400295","votesmart_id":"775","ballotpedia_id":"Eleanor
+        Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
+        Holmes Norton"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"District
+        of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)","fields":{"congressional_districts":[{"name":"Delegate
+        District (at Large)","district_number":98,"ocd_id":"ocd-division\/country:us\/district:dc\/cd:at-large","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Norton","first_name":"Eleanor","birthday":"1937-06-13","gender":"F","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/116_dg_dc_norton_eleanor_200.jpg","photo_attribution":"Congressional
+        Pictorial Directory"},"contact":{"url":"https:\/\/norton.house.gov","address":"2136
+        Rayburn House Office Building Washington DC 20515-5101","phone":"202-225-8050","contact_form":null},"social":{"rss_url":"http:\/\/norton.house.gov\/index.php?format=feed&amp;type=rss","twitter":"EleanorNorton","facebook":"CongresswomanNorton","youtube":"EleanorHNorton","youtube_id":"UChRrAXUGylfxJjbquC6aUjQ"},"references":{"bioguide_id":"N000147","thomas_id":"00868","opensecrets_id":"N00001692","lis_id":null,"cspan_id":"882","govtrack_id":"400295","votesmart_id":"775","ballotpedia_id":"Eleanor
+        Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
+        Holmes Norton"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"District
+        of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)","fields":{"congressional_districts":[{"name":"Delegate
+        District (at Large)","district_number":98,"ocd_id":"ocd-division\/country:us\/district:dc\/cd:at-large","congress_number":"119th","congress_years":"2025-2027","proportion":1,"current_legislators":[{"type":"representative","seniority":null,"bio":{"last_name":"Norton","first_name":"Eleanor","birthday":"1937-06-13","gender":"F","party":"Democrat","photo_url":"https:\/\/www.congress.gov\/img\/member\/116_dg_dc_norton_eleanor_200.jpg","photo_attribution":"Congressional
+        Pictorial Directory"},"contact":{"url":"https:\/\/norton.house.gov","address":"2136
+        Rayburn House Office Building Washington DC 20515-5101","phone":"202-225-8050","contact_form":null},"social":{"rss_url":"http:\/\/norton.house.gov\/index.php?format=feed&amp;type=rss","twitter":"EleanorNorton","facebook":"CongresswomanNorton","youtube":"EleanorHNorton","youtube_id":"UChRrAXUGylfxJjbquC6aUjQ"},"references":{"bioguide_id":"N000147","thomas_id":"00868","opensecrets_id":"N00001692","lis_id":null,"cspan_id":"882","govtrack_id":"400295","votesmart_id":"775","ballotpedia_id":"Eleanor
+        Holmes Norton","washington_post_id":null,"icpsr_id":null,"wikipedia_id":"Eleanor
+        Holmes Norton"},"source":"Legislator data collected by the @unitedstates project
+        (https:\/\/github.com\/unitedstates\/)"}]}],"school_districts":{"unified":{"name":"District
+        of Columbia Public Schools","lea_code":"1100030","grade_low":"PK","grade_high":"12"}}}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:02:58 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&limit=8&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:02:58 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api309
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E518_94FBB48F:01BB_695B8C52_77764:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '947'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
+        DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"502","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["502
+        H St NE","","Washington, DC 20002"],"formatted_address":"502 H St NE, Washington,
+        DC 20002","location":{"lat":38.900419,"lng":-76.999236},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
+        DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"500","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["500
+        H St NE","","Washington, DC 20002"],"formatted_address":"500 H St NE, Washington,
+        DC 20002","location":{"lat":38.900402,"lng":-76.99931},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"}]}'
+  recorded_at: Mon, 05 Jan 2026 10:02:58 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:07:17 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api307
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:EC23_94FBB48F:01BB_695B8D55_78278:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '919'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900429,"lng":-76.998965},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
+        DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"},{"address_components":{"number":"502","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["502
+        H St NE","","Washington, DC 20002"],"formatted_address":"502 H St NE, Washington,
+        DC 20002","location":{"lat":38.900419,"lng":-76.999236},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"}]}'
+  recorded_at: Mon, 05 Jan 2026 10:07:17 GMT
 recorded_with: VCR 6.1.0

@@ -388,4 +388,520 @@ http_interactions:
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4945
         Elm St, Bethesda, MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":0.99,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
   recorded_at: Fri, 07 Mar 2025 17:01:48 GMT
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=&limit
+    body:
+      encoding: UTF-8
+      string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
+        -77.09805507289941"]'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:00 GMT
+      X-Billable-Lookups-Count:
+      - '3'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api304
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E523_94FBB48F:01BB_695B8C54_77779:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '941'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"query":"38.88674717512318, -77.09464642536076","response":{"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3030","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3030
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3030 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886876,"lng":-77.094702},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3020","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3020
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3020 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886969,"lng":-77.094529},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1101","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1101
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1101 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886406,"lng":-77.094683},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3010","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3010
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3010 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.887008,"lng":-77.094291},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1200","predirectional":"N","street":"Garfield","suffix":"St","formatted_street":"N
+        Garfield St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1200
+        N Garfield St","","Arlington, VA 22201"],"formatted_address":"1200 N Garfield
+        St, Arlington, VA 22201","location":{"lat":38.886775,"lng":-77.094105},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"39.118308110111954,
+        -77.2516753863881","response":{"results":[{"address_components":{"number":"12191","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12191
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12191 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118305,"lng":-77.251728},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12193","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12193
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12193 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.11837,"lng":-77.251702},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12189","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12189
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12189 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118229,"lng":-77.251704},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12185","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12185
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12185 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118066,"lng":-77.251657},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12175","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12175
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12175 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118077,"lng":-77.251857},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"}]}},{"query":"38.98237295882022, -77.09805507289941","response":{"results":[{"address_components":{"number":"4963","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4963
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4963 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982397,"lng":-77.097998},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        MD"},{"address_components":{"number":"4940","street":"Hampden","suffix":"Ln","formatted_street":"Hampden
+        Ln","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4940
+        Hampden Ln","","Bethesda, MD 20814"],"formatted_address":"4940 Hampden Ln,
+        Bethesda, MD 20814","location":{"lat":38.982455,"lng":-77.098108},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4959","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4959
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4959 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982267,"lng":-77.098083},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4957","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4957
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4957 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4945
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4945 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:03:00 GMT
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=&limit
+    body:
+      encoding: UTF-8
+      string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
+        -77.09805507289941"]'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:00 GMT
+      X-Billable-Lookups-Count:
+      - '3'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api307
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E525_94FBB48F:01BB_695B8C54_77780:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '940'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"query":"38.88674717512318, -77.09464642536076","response":{"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3030","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3030
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3030 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886876,"lng":-77.094702},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3020","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3020
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3020 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886969,"lng":-77.094529},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1101","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1101
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1101 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886406,"lng":-77.094683},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3010","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3010
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3010 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.887008,"lng":-77.094291},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1200","predirectional":"N","street":"Garfield","suffix":"St","formatted_street":"N
+        Garfield St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1200
+        N Garfield St","","Arlington, VA 22201"],"formatted_address":"1200 N Garfield
+        St, Arlington, VA 22201","location":{"lat":38.886775,"lng":-77.094105},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"39.118308110111954,
+        -77.2516753863881","response":{"results":[{"address_components":{"number":"12191","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12191
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12191 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118305,"lng":-77.251728},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12193","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12193
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12193 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.11837,"lng":-77.251702},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12189","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12189
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12189 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118229,"lng":-77.251704},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12185","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12185
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12185 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118066,"lng":-77.251657},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12175","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12175
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12175 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118077,"lng":-77.251857},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"}]}},{"query":"38.98237295882022, -77.09805507289941","response":{"results":[{"address_components":{"number":"4963","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4963
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4963 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982397,"lng":-77.097998},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        MD"},{"address_components":{"number":"4940","street":"Hampden","suffix":"Ln","formatted_street":"Hampden
+        Ln","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4940
+        Hampden Ln","","Bethesda, MD 20814"],"formatted_address":"4940 Hampden Ln,
+        Bethesda, MD 20814","location":{"lat":38.982455,"lng":-77.098108},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4959","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4959
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4959 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982267,"lng":-77.098083},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4957","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4957
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4957 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4945
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4945 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:03:00 GMT
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=&limit
+    body:
+      encoding: UTF-8
+      string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
+        -77.09805507289941"]'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:01 GMT
+      X-Billable-Lookups-Count:
+      - '3'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api308
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E528_94FBB48F:01BB_695B8C54_77784:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '939'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"query":"38.88674717512318, -77.09464642536076","response":{"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3030","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3030
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3030 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886876,"lng":-77.094702},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3020","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3020
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3020 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886969,"lng":-77.094529},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1101","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1101
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1101 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886406,"lng":-77.094683},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3010","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3010
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3010 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.887008,"lng":-77.094291},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1200","predirectional":"N","street":"Garfield","suffix":"St","formatted_street":"N
+        Garfield St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1200
+        N Garfield St","","Arlington, VA 22201"],"formatted_address":"1200 N Garfield
+        St, Arlington, VA 22201","location":{"lat":38.886775,"lng":-77.094105},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"39.118308110111954,
+        -77.2516753863881","response":{"results":[{"address_components":{"number":"12191","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12191
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12191 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118305,"lng":-77.251728},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12193","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12193
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12193 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.11837,"lng":-77.251702},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12189","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12189
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12189 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118229,"lng":-77.251704},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12185","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12185
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12185 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118066,"lng":-77.251657},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12175","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12175
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12175 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118077,"lng":-77.251857},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"}]}},{"query":"38.98237295882022, -77.09805507289941","response":{"results":[{"address_components":{"number":"4963","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4963
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4963 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982397,"lng":-77.097998},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        MD"},{"address_components":{"number":"4940","street":"Hampden","suffix":"Ln","formatted_street":"Hampden
+        Ln","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4940
+        Hampden Ln","","Bethesda, MD 20814"],"formatted_address":"4940 Hampden Ln,
+        Bethesda, MD 20814","location":{"lat":38.982455,"lng":-77.098108},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4959","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4959
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4959 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982267,"lng":-77.098083},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4957","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4957
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4957 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4945
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4945 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:03:01 GMT
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/reverse?api_key=<API_KEY>&fields=&limit
+    body:
+      encoding: UTF-8
+      string: '["38.88674717512318, -77.09464642536076","39.118308110111954, -77.2516753863881","38.98237295882022,
+        -77.09805507289941"]'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:01 GMT
+      X-Billable-Lookups-Count:
+      - '3'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api309
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E529_94FBB48F:01BB_695B8C55_7778B:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '938'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"query":"38.88674717512318, -77.09464642536076","response":{"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3030","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3030
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3030 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886876,"lng":-77.094702},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3020","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3020
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3020 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.886969,"lng":-77.094529},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1101","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1101
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1101 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886406,"lng":-77.094683},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"3010","street":"Clarendon","suffix":"Blvd","formatted_street":"Clarendon
+        Blvd","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["3010
+        Clarendon Blvd","","Arlington, VA 22201"],"formatted_address":"3010 Clarendon
+        Blvd, Arlington, VA 22201","location":{"lat":38.887008,"lng":-77.094291},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"},{"address_components":{"number":"1200","predirectional":"N","street":"Garfield","suffix":"St","formatted_street":"N
+        Garfield St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1200
+        N Garfield St","","Arlington, VA 22201"],"formatted_address":"1200 N Garfield
+        St, Arlington, VA 22201","location":{"lat":38.886775,"lng":-77.094105},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"39.118308110111954,
+        -77.2516753863881","response":{"results":[{"address_components":{"number":"12191","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12191
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12191 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118305,"lng":-77.251728},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12193","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12193
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12193 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.11837,"lng":-77.251702},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12189","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12189
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12189 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118229,"lng":-77.251704},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12185","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12185
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12185 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118066,"lng":-77.251657},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"},{"address_components":{"number":"12175","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12175
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12175 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118077,"lng":-77.251857},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        of Gaithersburg"}]}},{"query":"38.98237295882022, -77.09805507289941","response":{"results":[{"address_components":{"number":"4963","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4963
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4963 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982397,"lng":-77.097998},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        MD"},{"address_components":{"number":"4940","street":"Hampden","suffix":"Ln","formatted_street":"Hampden
+        Ln","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4940
+        Hampden Ln","","Bethesda, MD 20814"],"formatted_address":"4940 Hampden Ln,
+        Bethesda, MD 20814","location":{"lat":38.982455,"lng":-77.098108},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4959","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4959
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4959 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982267,"lng":-77.098083},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4957","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4957
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4957 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.98227,"lng":-77.097989},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"4945","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4945
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4945 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982264,"lng":-77.097904},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Mon, 05 Jan 2026 10:03:01 GMT
 recorded_with: VCR 6.1.0
