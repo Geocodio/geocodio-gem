@@ -1,4 +1,4 @@
-## [0.4.0] - 2025-12-17
+## [0.5.0] - 2026-01-06
 - Added Distance API support:
   - `distance()` - Calculate distances from single origin to multiple destinations
   - `distanceMatrix()` - Calculate full distance matrix (multiple origins x destinations)
