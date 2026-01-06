@@ -213,6 +213,233 @@ To use `deleteList()`, pass in the ID of the list you would like to delete.
     response # => {"success"=>true}
 ```
 
+## Distance Calculations
+
+The Distance API allows you to calculate distances from a single origin to multiple destinations, or compute full distance matrices.
+
+### Coordinate Formats with Custom IDs
+
+You can add custom identifiers to coordinates using various formats. The ID will be returned in the response, making it easy to match results back to your data:
+
+```ruby
+# String format with ID
+"37.7749,-122.4194,warehouse_1"
+
+# Array format with ID
+[37.7749, -122.4194, "warehouse_1"]
+
+# Hash format with ID
+{ lat: 37.7749, lng: -122.4194, id: "warehouse_1" }
+```
+
+### Distance Mode and Units
+
+The SDK supports different distance calculation modes and units:
+
+```ruby
+# Available modes
+:straightline  # Default - great-circle (as the crow flies)
+:driving       # Road network routing with duration
+:haversine     # Alias for straightline (backward compatibility)
+
+# Available units
+:miles         # Default
+:kilometers
+```
+
+> **Note:** The default mode is `:straightline` (great-circle distance). Use `:driving` if you need road network routing with duration estimates.
+
+### Single Origin to Multiple Destinations
+
+Calculate distances from one origin to multiple destinations:
+
+```ruby
+# Basic usage with string coordinates
+response = geocodio.distance(
+  "38.8977,-77.0365,white_house",
+  ["38.9072,-77.0369,capitol", "38.8895,-77.0353,monument"]
+)
+
+response["origin"]["id"]  # => "white_house"
+response["destinations"][0]["distance_miles"]  # => 0.7
+response["destinations"][0]["id"]  # => "capitol"
+
+# With driving mode (includes duration)
+response = geocodio.distance(
+  "38.8977,-77.0365",
+  ["38.9072,-77.0369"],
+  mode: :driving
+)
+
+response["destinations"][0]["duration_seconds"]  # => 180
+
+# With filtering and sorting options
+response = geocodio.distance(
+  "38.8977,-77.0365,warehouse",
+  [
+    "38.9072,-77.0369,store_1",
+    "39.2904,-76.6122,store_2",
+    "39.9526,-75.1652,store_3"
+  ],
+  mode: :driving,
+  units: :kilometers,
+  max_results: 2,
+  max_distance: 100.0,
+  order_by: :distance,
+  sort: :asc
+)
+
+# Using array format for coordinates
+response = geocodio.distance(
+  [38.8977, -77.0365, "headquarters"],
+  [[38.9072, -77.0369, "branch_1"]]
+)
+
+# Using hash format for coordinates
+response = geocodio.distance(
+  { lat: 38.8977, lng: -77.0365, id: "hq" },
+  [{ lat: 38.9072, lng: -77.0369, id: "branch" }]
+)
+```
+
+### Distance Matrix (Multiple Origins to Multiple Destinations)
+
+Calculate full distance matrix from multiple origins to multiple destinations:
+
+```ruby
+origins = [
+  "38.8977,-77.0365,warehouse_dc",
+  "39.2904,-76.6122,warehouse_baltimore"
+]
+destinations = [
+  "38.9072,-77.0369,customer_1",
+  "39.9526,-75.1652,customer_2"
+]
+
+response = geocodio.distanceMatrix(origins, destinations)
+
+response["results"][0]["origin"]["id"]  # => "warehouse_dc"
+response["results"][0]["destinations"][0]["distance_miles"]  # => 0.7
+
+# With driving mode
+response = geocodio.distanceMatrix(
+  origins,
+  destinations,
+  mode: :driving,
+  units: :kilometers
+)
+
+# With filtering options
+response = geocodio.distanceMatrix(
+  origins,
+  destinations,
+  max_results: 2,
+  max_distance: 50.0,
+  min_distance: 1.0,
+  order_by: :distance,
+  sort: :asc
+)
+```
+
+### Add Distance to Geocoding Requests
+
+You can add distance calculations to existing geocode or reverse geocode requests:
+
+```ruby
+# Geocode an address and calculate distances to store locations
+response = geocodio.geocode(
+  ["1600 Pennsylvania Ave NW, Washington DC"],
+  [],     # fields
+  nil,    # limit
+  nil,    # format
+  destinations: [
+    "38.9072,-77.0369,store_dc",
+    "39.2904,-76.6122,store_baltimore"
+  ],
+  distance_mode: :driving,
+  distance_units: :miles
+)
+
+response["results"][0]["destinations"][0]["distance_miles"]  # => distance to first destination
+response["results"][0]["destinations"][0]["id"]  # => "store_dc"
+
+# Reverse geocode with distances
+response = geocodio.reverse(
+  ["38.8977,-77.0365"],
+  [],
+  nil,
+  nil,
+  destinations: ["38.9072,-77.0369,capitol"],
+  distance_mode: :straightline
+)
+
+response["results"][0]["destinations"]  # => array of destinations with distances
+```
+
+### Async Distance Matrix Jobs
+
+For large distance matrix calculations, use async jobs that process in the background:
+
+```ruby
+# Create a new distance matrix job
+job = geocodio.createDistanceMatrixJob(
+  "My Distance Calculation",
+  ["38.8977,-77.0365,origin_1", "38.9072,-77.0369,origin_2"],
+  ["38.8895,-77.0353,dest_1", "39.2904,-76.6122,dest_2"],
+  mode: :driving,
+  units: :miles,
+  callback_url: "https://example.com/webhook"  # Optional
+)
+
+job["id"]  # => Job identifier
+
+# Or use list IDs from previously uploaded lists
+job = geocodio.createDistanceMatrixJob(
+  "Distance from Lists",
+  12345,    # List ID for origins
+  67890,    # List ID for destinations
+  mode: :straightline
+)
+
+# Check job status
+status = geocodio.distanceMatrixJobStatus(job["id"])
+
+status["data"]["status"]  # => "COMPLETED", "PROCESSING", or "FAILED"
+status["data"]["progress"]  # => 0-100
+
+# List all jobs (paginated)
+jobs = geocodio.distanceMatrixJobs
+jobs = geocodio.distanceMatrixJobs(2)  # Page 2
+
+# Get job results as parsed hash
+results = geocodio.getDistanceMatrixJobResults(job["id"])
+
+results["results"][0]["origin"]["id"]  # => "origin_1"
+results["results"][0]["destinations"]  # => array of destinations with distances
+
+# Download results to file
+geocodio.downloadDistanceMatrixJob(job["id"], "/path/to/results.json")
+
+# Delete a job
+geocodio.deleteDistanceMatrixJob(job["id"])
+```
+
+### Distance Filtering Options
+
+All distance methods support the following filtering options:
+
+| Option | Type | Description |
+|--------|------|-------------|
+| `mode` | Symbol | `:straightline` (default), `:driving`, or `:haversine` |
+| `units` | Symbol | `:miles` (default), `:kilometers`, or `:km` |
+| `max_results` | Integer | Limit number of results |
+| `max_distance` | Float | Filter by maximum distance |
+| `min_distance` | Float | Filter by minimum distance |
+| `max_duration` | Integer | Filter by max duration in seconds (driving mode only) |
+| `min_duration` | Integer | Filter by min duration in seconds (driving mode only) |
+| `order_by` | Symbol | `:distance` (default) or `:duration` |
+| `sort` | Symbol | `:asc` (default) or `:desc` |
+
 ## Testing
 
 To run tests, be sure to create a `.env` file that export your Geocodio API Key within a variable of API_KEY. 

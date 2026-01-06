@@ -1,0 +1,130 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/distance-jobs?api_key=<API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"name":"Status Test Job","origins":[{"lat":38.8977,"lng":-77.0365}],"destinations":[{"lat":38.8895,"lng":-77.0353}]}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Tue, 06 Jan 2026 10:42:24 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api304
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:FB06_94FBB48F:01BB_695CE710_D7084:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '990'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"id":2,"identifier":"ccbb2480585aa14453f03d2dc4769a770c6eb301","status":"ENQUEUED","name":"Status
+        Test Job","created_at":"2026-01-06T10:42:24.000000Z","origins_count":1,"destinations_count":1,"total_calculations":1}'
+  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/distance-jobs/2?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Tue, 06 Jan 2026 10:42:24 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api311
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:FB07_94FBB48F:01BB_695CE710_D7086:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '989'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"id":2,"identifier":"ccbb2480585aa14453f03d2dc4769a770c6eb301","name":"Status
+        Test Job","created_at":"2026-01-06T10:42:24.000000Z","updated_at":"2026-01-06T10:42:24.000000Z","last_heartbeat_at":null,"origins_type":"coordinates","origins_count":1,"destinations_type":"coordinates","destinations_count":1,"distance_mode":"straightline","status":"ENQUEUED","download_url":null,"total_calculations":1,"calculations_completed":0,"progress":0,"status_message":"Waiting
+        to be processed.","time_left":null,"is_expired":false}}'
+  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
+recorded_with: VCR 6.1.0

@@ -127,4 +127,134 @@ http_interactions:
       string: '{"current_page":1,"data":[{"id":12041005,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"PROCESSING","progress":99,"message":"Assembling
         chunk 1 of 1","time_left_description":"A few moments left","time_left_seconds":0},"download_url":null,"expires_at":"2025-03-10T16:01:51.000000Z"},{"id":12041004,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12041004\/download","expires_at":"2025-03-10T16:01:51.000000Z"},{"id":12041003,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12041003\/download","expires_at":"2025-03-10T16:01:50.000000Z"},{"id":12041001,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12041001\/download","expires_at":"2025-03-10T16:00:57.000000Z"},{"id":12041000,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12041000\/download","expires_at":"2025-03-10T16:00:56.000000Z"},{"id":12040999,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040999\/download","expires_at":"2025-03-10T16:00:53.000000Z"},{"id":12040998,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040998\/download","expires_at":"2025-03-10T16:00:51.000000Z"},{"id":12040997,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040997\/download","expires_at":"2025-03-10T16:00:50.000000Z"},{"id":12040996,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040996\/download","expires_at":"2025-03-10T16:00:50.000000Z"},{"id":12040492,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040492\/download","expires_at":"2025-03-09T19:54:19.000000Z"},{"id":12040490,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040490\/download","expires_at":"2025-03-09T19:53:40.000000Z"},{"id":12040486,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040486\/download","expires_at":"2025-03-09T19:52:35.000000Z"},{"id":12040481,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040481\/download","expires_at":"2025-03-09T19:50:50.000000Z"},{"id":12040471,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040471\/download","expires_at":"2025-03-09T19:46:34.000000Z"},{"id":12040167,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.8\/lists\/12040167\/download","expires_at":"2025-03-09T15:10:25.000000Z"}],"first_page_url":"https:\/\/api.geocod.io\/v1.8\/lists?page=1","from":1,"next_page_url":"https:\/\/api.geocod.io\/v1.8\/lists?page=2","path":"https:\/\/api.geocod.io\/v1.8\/lists","per_page":15,"prev_page_url":null,"to":15}'
   recorded_at: Fri, 07 Mar 2025 17:01:51 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/lists?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api306
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E55E_94FBB48F:01BB_695B8C57_777A9:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '934'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"current_page":1,"data":[{"id":12212058,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"ENQUEUED","progress":0,"message":"Waiting
+        to be processed.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:03.000000Z"},{"id":12212057,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"ENQUEUED","progress":0,"message":"Waiting
+        to be processed.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:02.000000Z"},{"id":12212056,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"PROCESSING","progress":1,"message":"Processing","time_left_description":"Estimating
+        time to complete","time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:02.000000Z"},{"id":12212045,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.9\/lists\/12212045\/download","expires_at":"2026-01-08T08:59:41.000000Z"},{"id":12186210,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-11-15T10:17:59.000000Z"},{"id":12154177,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T18:52:25.000000Z"},{"id":12154140,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:52:48.000000Z"},{"id":12154139,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:50.000000Z"},{"id":12154138,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:53.000000Z"},{"id":12154137,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:53.000000Z"},{"id":12154136,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:47.000000Z"},{"id":12154135,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:45.000000Z"},{"id":12154134,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:28.000000Z"},{"id":12154133,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:34.000000Z"},{"id":12154132,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:23.000000Z"}],"first_page_url":"https:\/\/api.geocod.io\/v1.9\/lists?page=1","from":1,"next_page_url":"https:\/\/api.geocod.io\/v1.9\/lists?page=2","path":"https:\/\/api.geocod.io\/v1.9\/lists","per_page":15,"prev_page_url":null,"to":15}'
+  recorded_at: Mon, 05 Jan 2026 10:03:03 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.9/lists?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 05 Jan 2026 10:03:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api306
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:E55F_94FBB48F:01BB_695B8C57_777AB:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '933'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"current_page":1,"data":[{"id":12212058,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"ENQUEUED","progress":0,"message":"Waiting
+        to be processed.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:03.000000Z"},{"id":12212057,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"ENQUEUED","progress":0,"message":"Waiting
+        to be processed.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:02.000000Z"},{"id":12212056,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"PROCESSING","progress":1,"message":"Processing","time_left_description":"Estimating
+        time to complete","time_left_seconds":null},"download_url":null,"expires_at":"2026-01-08T10:03:02.000000Z"},{"id":12212045,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.9\/lists\/12212045\/download","expires_at":"2026-01-08T08:59:41.000000Z"},{"id":12186210,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-11-15T10:17:59.000000Z"},{"id":12154177,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T18:52:25.000000Z"},{"id":12154140,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:52:48.000000Z"},{"id":12154139,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:50.000000Z"},{"id":12154138,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:53.000000Z"},{"id":12154137,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:53.000000Z"},{"id":12154136,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:47.000000Z"},{"id":12154135,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:51:45.000000Z"},{"id":12154134,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:28.000000Z"},{"id":12154133,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:34.000000Z"},{"id":12154132,"fields":[],"file":{"estimated_rows_count":4,"filename":"example-list-zips.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2025-09-16T14:50:23.000000Z"}],"first_page_url":"https:\/\/api.geocod.io\/v1.9\/lists?page=1","from":1,"next_page_url":"https:\/\/api.geocod.io\/v1.9\/lists?page=2","path":"https:\/\/api.geocod.io\/v1.9\/lists","per_page":15,"prev_page_url":null,"to":15}'
+  recorded_at: Mon, 05 Jan 2026 10:03:03 GMT
 recorded_with: VCR 6.1.0

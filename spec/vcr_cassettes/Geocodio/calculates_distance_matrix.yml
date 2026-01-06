@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.geocod.io/v1.9/distance-matrix?api_key=<API_KEY>
+    body:
+      encoding: UTF-8
+      string: '{"origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"},{"lat":38.9072,"lng":-77.0369,"id":"origin_2"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"},{"lat":39.2904,"lng":-76.6122,"id":"dest_2"}]}'
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Tue, 06 Jan 2026 10:42:23 GMT
+      X-Billable-Distance-Calculations:
+      - '4'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api308
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:FB03_94FBB48F:01BB_695CE70F_D707D:039E
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '993'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"mode":"straightline","results":[{"origin":{"query":"38.8977,-77.0365","location":[38.8977,-77.0365],"id":"origin_1"},"destinations":[{"query":"38.8895,-77.0353","location":[38.8895,-77.0353],"id":"dest_1","distance_miles":1.5,"distance_km":2.5,"duration_seconds":294},{"query":"39.2904,-76.6122","location":[39.2904,-76.6122],"id":"dest_2","distance_miles":39,"distance_km":62.7,"duration_seconds":3584}]},{"origin":{"query":"38.9072,-77.0369","location":[38.9072,-77.0369],"id":"origin_2"},"destinations":[{"query":"38.8895,-77.0353","location":[38.8895,-77.0353],"id":"dest_1","distance_miles":1.7,"distance_km":2.7,"duration_seconds":210},{"query":"39.2904,-76.6122","location":[39.2904,-76.6122],"id":"dest_2","distance_miles":38.4,"distance_km":61.8,"duration_seconds":3430}]}]}'
+  recorded_at: Tue, 06 Jan 2026 10:42:23 GMT
+recorded_with: VCR 6.1.0
