@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    geocodio-gem (0.3.0)
+    geocodio-gem (0.5.0)
 
 GEM
   remote: https://rubygems.org/

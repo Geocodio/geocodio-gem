@@ -19,4 +19,4 @@
 #Ignore VSCode
 .vscode
 
-*.gem
+*.gemvendor/
