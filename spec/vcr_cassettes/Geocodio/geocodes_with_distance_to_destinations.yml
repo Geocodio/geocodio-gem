@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Mon, 05 Jan 2026 10:03:05 GMT
+      - Tue, 06 Jan 2026 10:42:24 GMT
       X-Billable-Lookups-Count:
       - '1'
       X-Billable-Fields-Count:
@@ -45,17 +45,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api306
+      - api309
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:E588_94FBB48F:01BB_695B8C59_777D2:039E
+      - 05BA2ED8:FB0C_94FBB48F:01BB_695CE710_D7088:039E
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '917'
+      - '987'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -69,9 +69,6 @@ http_interactions:
         N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
         N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
-        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}],"_warnings":["Ignoring
-        parameter destinations as it was not expected. See full list of valid parameters
-        here: https:\/\/www.geocod.io\/docs\/","Ignoring parameter distance_mode as
-        it was not expected. See full list of valid parameters here: https:\/\/www.geocod.io\/docs\/"]}'
-  recorded_at: Mon, 05 Jan 2026 10:03:05 GMT
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington","destinations":[{"query":"38.8895,-77.0353,monument","location":[38.8895,-77.0353],"distance_miles":3.2,"distance_km":5.2,"duration_seconds":null,"id":"monument"},{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":3.4,"distance_km":5.5,"duration_seconds":null,"id":"capitol"}]}]}'
+  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
 recorded_with: VCR 6.1.0

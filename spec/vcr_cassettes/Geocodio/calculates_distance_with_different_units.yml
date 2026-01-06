@@ -17,8 +17,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 404
-      message: Not Found
+      code: 200
+      message: OK
     headers:
       Content-Type:
       - application/json
@@ -27,33 +27,33 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Mon, 05 Jan 2026 10:03:04 GMT
+      - Tue, 06 Jan 2026 10:42:23 GMT
+      X-Billable-Distance-Calculations:
+      - '1'
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
       - GET, POST, PATCH, DELETE
       Access-Control-Allow-Headers:
       - Content-Type, User-Agent
-      X-Billable-Lookups-Count:
-      - '0'
-      X-Billable-Fields-Count:
-      - '0'
+      Access-Control-Expose-Headers:
+      - Request-Handler
       X-Frame-Options:
       - DENY
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api312
+      - api310
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:E56D_94FBB48F:01BB_695B8C58_777C1:039E
+      - 05BA2ED8:FAFF_94FBB48F:01BB_695CE70F_D7079:039E
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '927'
+      - '997'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -62,6 +62,6 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"message":"Resource not found. See our documentation at https:\/\/www.geocod.io\/docs\/"}'
-  recorded_at: Mon, 05 Jan 2026 10:03:04 GMT
+      string: '{"origin":{"location":[38.8977,-77.0365]},"mode":"straightline","destinations":[{"query":"38.9072,-77.0369","location":[38.9072,-77.0369],"id":null,"distance_miles":0.7,"distance_km":1.1}]}'
+  recorded_at: Tue, 06 Jan 2026 10:42:23 GMT
 recorded_with: VCR 6.1.0

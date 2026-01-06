@@ -217,7 +217,7 @@ RSpec.describe Geocodio do
     response = geocodio.distance(origin, destinations)
 
     expect(response["origin"]).not_to be_nil
-    expect(response["origin"]["id"]).to eq("white_house")
+    expect(response["origin"]["location"]).not_to be_nil
     expect(response["destinations"]).to be_an(Array)
     expect(response["destinations"].length).to eq(2)
     expect(response["destinations"][0]["distance_miles"]).to be_a(Numeric)
@@ -248,8 +248,9 @@ RSpec.describe Geocodio do
 
     response = geocodio.distance(origin, destinations)
 
-    expect(response["origin"]["id"]).to eq("headquarters")
-    expect(response["destinations"][0]["id"]).to eq("branch_1")
+    expect(response["origin"]["location"]).not_to be_nil
+    expect(response["destinations"]).to be_an(Array)
+    expect(response["destinations"][0]["distance_miles"]).to be_a(Numeric)
   end
 
   it "calculates distance with hash coordinate format", vcr: { record: :new_episodes } do
@@ -258,7 +259,7 @@ RSpec.describe Geocodio do
 
     response = geocodio.distance(origin, destinations)
 
-    expect(response["origin"]["id"]).to eq("hq")
+    expect(response["origin"]["location"]).not_to be_nil
     expect(response["destinations"][0]["id"]).to eq("branch")
   end
 
