@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.9/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v1.10/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Test Distance Job","origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"}],"mode":"straightline","callback_url":"https://example.com/webhook"}'
@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Tue, 06 Jan 2026 10:42:24 GMT
+      - Tue, 24 Feb 2026 16:52:49 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -41,17 +41,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api309
+      - api306
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:FB05_94FBB48F:01BB_695CE710_D7083:039E
+      - 05BA2ED8:D59B_94FBB48F:01BB_699DD761_10FF28:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '991'
+      - '949'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -60,7 +60,7 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":1,"identifier":"3a229117a1c8f98000656867d2d438d69342ef01","status":"ENQUEUED","name":"Test
-        Distance Job","created_at":"2026-01-06T10:42:24.000000Z","origins_count":1,"destinations_count":1,"total_calculations":1}'
-  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
+      string: '{"id":29,"identifier":"0c2be727e5d2902f635e49829bf1a62c66c56356","status":"ENQUEUED","name":"Test
+        Distance Job","created_at":"2026-02-24T16:52:49.000000Z","origins_count":1,"destinations_count":1,"total_calculations":1}'
+  recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 recorded_with: VCR 6.1.0

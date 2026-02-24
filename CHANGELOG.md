@@ -1,3 +1,6 @@
+## [0.6.0] - 2026-02-24
+- Updated API endpoint from v1.9 to v1.10
+
 ## [0.5.0] - 2026-01-06
 - Added Distance API support:
   - `distance()` - Calculate distances from single origin to multiple destinations

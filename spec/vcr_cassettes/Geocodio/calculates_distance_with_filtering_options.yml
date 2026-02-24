@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.9/distance?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369&destinations%5B%5D=39.2904,-76.6122&destinations%5B%5D=39.9526,-75.1652&max_results=2&order_by=distance&origin=38.8977,-77.0365&sort=asc
+    uri: https://api.geocod.io/v1.10/distance?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369&destinations%5B%5D=39.2904,-76.6122&destinations%5B%5D=39.9526,-75.1652&max_results=2&order_by=distance&origin=38.8977,-77.0365&sort=asc
     body:
       encoding: US-ASCII
       string: ''
@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Tue, 06 Jan 2026 10:42:23 GMT
+      - Tue, 24 Feb 2026 16:52:48 GMT
       X-Billable-Distance-Calculations:
       - '3'
       Access-Control-Allow-Origin:
@@ -43,17 +43,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api303
+      - api310
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:FB02_94FBB48F:01BB_695CE70F_D707C:039E
+      - 05BA2ED8:D598_94FBB48F:01BB_699DD760_10FF21:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '994'
+      - '952'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -63,5 +63,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"origin":{"location":[38.8977,-77.0365]},"mode":"straightline","destinations":[{"query":"38.9072,-77.0369","location":[38.9072,-77.0369],"id":null,"distance_miles":0.7,"distance_km":1.1},{"query":"39.2904,-76.6122","location":[39.2904,-76.6122],"id":null,"distance_miles":35.4,"distance_km":57.1}]}'
-  recorded_at: Tue, 06 Jan 2026 10:42:23 GMT
+  recorded_at: Tue, 24 Feb 2026 16:52:48 GMT
 recorded_with: VCR 6.1.0

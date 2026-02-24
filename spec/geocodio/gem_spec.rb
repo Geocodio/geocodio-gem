@@ -59,9 +59,9 @@ RSpec.describe Geocodio do
   it "reverse geocodes coordinates", vcr: { record: :new_episodes } do
     coords_sample = ["38.9002898,-76.9990361"]
 
-    expect(geocodio.reverse(coords_sample)["results"][0]["address_components"]["number"]).to eq("508")
-    expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900432, "lng"=>-76.999031})
-    expect(geocodio.reverse(coords_sample)["results"][0]["formatted_address"]).to eq("508 H St NE, Washington, DC 20002")
+    expect(geocodio.reverse(coords_sample)["results"][0]["address_components"]["number"]).to eq("510")
+    expect(geocodio.reverse(coords_sample)["results"][0]["location"]).to eq({"lat"=>38.900419, "lng"=>-76.998968})
+    expect(geocodio.reverse(coords_sample)["results"][0]["formatted_address"]).to eq("510 H St NE, Washington, DC 20002")
   end
 
   it "appends fields to coordinates", vcr: { record: :new_episodes } do
@@ -88,7 +88,7 @@ RSpec.describe Geocodio do
     coords_sample = ["38.9002898,-76.9990361"]
     coords_two = ["38.92977415631741,-77.04941962147353"]
 
-    expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("508 H St NE, Washington, DC 20002")
+    expect(geocodio.reverse(coords_sample, [], nil, "simple")["address"]).to eq("510 H St NE, Washington, DC 20002")
     # API returns nearest address to coordinates - verify we get a valid DC address
     expect(geocodio.reverse(coords_two, [], nil, "simple")["address"]).to include("Washington, DC")
   end
@@ -116,7 +116,7 @@ RSpec.describe Geocodio do
     expect(geocodio.reverse(batch_coordinates)["results"].size).to equal(batch_coordinates.size)
     expect(geocodio.reverse(batch_coordinates)["results"][0]["response"]["results"][0]["location"]).to eq({"lat"=>38.886672, "lng"=>-77.094735})
     expect(geocodio.reverse(batch_coordinates)["results"][1]["response"]["results"][0]["location"]).to eq({"lat"=>39.118305, "lng"=>-77.251728})
-    expect(geocodio.reverse(batch_coordinates)["results"][2]["response"]["results"][0]["location"]).to eq({"lat"=>38.982397, "lng"=>-77.097998})
+    expect(geocodio.reverse(batch_coordinates)["results"][2]["response"]["results"][0]["location"]).to eq({"lat"=>38.982455, "lng"=>-77.098108})
   end
 
   it "creates list from file", vcr: { record: :new_episodes } do
@@ -319,7 +319,7 @@ RSpec.describe Geocodio do
 
     response = geocodio.distanceMatrixJobStatus(job["id"])
 
-    expect(response["data"]["id"]).to eq(job["id"])
+    expect(response["data"]["identifier"]).to eq(job["identifier"])
     expect(response["data"]["status"]).not_to be_nil
   end
 

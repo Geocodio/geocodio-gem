@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -28,7 +28,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Fri, 07 Mar 2025 17:01:45 GMT
+      - Tue, 24 Feb 2026 16:52:44 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -46,94 +46,11 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api287
+      - api294
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:EE2E_05A11518:01BB_67CB2678_263C:697C
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '974'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.11816,"lng":-77.251754},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
-        of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
-    body:
-      encoding: UTF-8
-      string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
-        MD 20878","4961 Elm Street, Bethesda, MD"]'
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Fri, 07 Mar 2025 17:01:45 GMT
-      X-Billable-Lookups-Count:
-      - '3'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api303
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:EE2F_05A11518:01BB_67CB2679_267A:697C
+      - 05BA2ED8:D574_94FBB48F:01BB_699DD75C_10FEE8:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -150,25 +67,26 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
+        N Highland St, Arlington, VA 22201"},"results":[{"stable_address_key":"gcod_usndjrg9xn28uz888u3fkm6yusrdg","address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
         Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.11816,"lng":-77.251754},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"stable_address_key":"gcod_usnszsadjhvxkctarl4egkl2sah22","address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
         of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Fri, 07 Mar 2025 17:01:45 GMT
+        Elm St, Bethesda, MD"},"results":[{"stable_address_key":"gcod_usn89zdvv5lr6ypdb86m9yv8gs643","address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Tue, 24 Feb 2026 16:52:44 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -194,7 +112,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Fri, 07 Mar 2025 17:01:46 GMT
+      - Tue, 24 Feb 2026 16:52:45 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -212,11 +130,11 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api289
+      - api242
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 46E21BA0:EE30_05A11518:01BB_67CB2679_26C1:697C
+      - 05BA2ED8:D575_94FBB48F:01BB_699DD75D_10FEEB:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
@@ -233,25 +151,26 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
+        N Highland St, Arlington, VA 22201"},"results":[{"stable_address_key":"gcod_usndjrg9xn28uz888u3fkm6yusrdg","address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
+        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
+        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
         Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.11816,"lng":-77.251754},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
+        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"stable_address_key":"gcod_usnszsadjhvxkctarl4egkl2sah22","address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
+        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
+        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
         of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
+        Elm St, Bethesda, MD"},"results":[{"stable_address_key":"gcod_usn89zdvv5lr6ypdb86m9yv8gs643","address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
+        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
+        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
+  recorded_at: Tue, 24 Feb 2026 16:52:45 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.8/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -277,90 +196,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Fri, 07 Mar 2025 17:01:46 GMT
-      X-Billable-Lookups-Count:
-      - '3'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api281
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 46E21BA0:EE31_05A11518:01BB_67CB267A_2709:697C
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '971'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.11816,"lng":-77.251754},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"},{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
-        of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Fri, 07 Mar 2025 17:01:46 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=&limit
-    body:
-      encoding: UTF-8
-      string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
-        MD 20878","4961 Elm Street, Bethesda, MD"]'
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Mon, 05 Jan 2026 10:02:59 GMT
+      - Tue, 24 Feb 2026 16:52:45 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -382,13 +218,13 @@ http_interactions:
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:E51D_94FBB48F:01BB_695B8C53_7776C:039E
+      - 05BA2ED8:D576_94FBB48F:01BB_699DD75D_10FEEC:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '944'
+      - '971'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -399,26 +235,26 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        N Highland St, Arlington, VA 22201"},"results":[{"stable_address_key":"gcod_usndjrg9xn28uz888u3fkm6yusrdg","address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
         N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
         St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
         Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"stable_address_key":"gcod_usnszsadjhvxkctarl4egkl2sah22","address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
         Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
         Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
         of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        Elm St, Bethesda, MD"},"results":[{"stable_address_key":"gcod_usn89zdvv5lr6ypdb86m9yv8gs643","address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
         Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
         MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Mon, 05 Jan 2026 10:02:59 GMT
+  recorded_at: Tue, 24 Feb 2026 16:52:45 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=&limit
+    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&fields=&limit
     body:
       encoding: UTF-8
       string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
@@ -444,7 +280,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Mon, 05 Jan 2026 10:02:59 GMT
+      - Tue, 24 Feb 2026 16:52:45 GMT
       X-Billable-Lookups-Count:
       - '3'
       X-Billable-Fields-Count:
@@ -462,17 +298,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api303
+      - api311
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:E51E_94FBB48F:01BB_695B8C53_7776F:039E
+      - 05BA2ED8:D578_94FBB48F:01BB_699DD75D_10FEEE:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '943'
+      - '970'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -483,189 +319,21 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
+        N Highland St, Arlington, VA 22201"},"results":[{"stable_address_key":"gcod_usndjrg9xn28uz888u3fkm6yusrdg","address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
         Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
         N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
         St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
         Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
+        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"stable_address_key":"gcod_usnszsadjhvxkctarl4egkl2sah22","address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
         Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
         Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
         Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
         of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
+        Elm St, Bethesda, MD"},"results":[{"stable_address_key":"gcod_usn89zdvv5lr6ypdb86m9yv8gs643","address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
         St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
         Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
         MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Mon, 05 Jan 2026 10:02:59 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=&limit
-    body:
-      encoding: UTF-8
-      string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
-        MD 20878","4961 Elm Street, Bethesda, MD"]'
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Mon, 05 Jan 2026 10:02:59 GMT
-      X-Billable-Lookups-Count:
-      - '3'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api307
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 05BA2ED8:E51F_94FBB48F:01BB_695B8C53_77771:039E
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '942'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
-        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
-        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
-        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
-        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
-        of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
-        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
-        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Mon, 05 Jan 2026 10:02:59 GMT
-- request:
-    method: post
-    uri: https://api.geocod.io/v1.9/geocode?api_key=<API_KEY>&fields=&limit
-    body:
-      encoding: UTF-8
-      string: '["1109 N Highland St, Arlington, VA 22201","12187 Darnestown Rd, Gaithersburg,
-        MD 20878","4961 Elm Street, Bethesda, MD"]'
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.7.1
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
-      Cache-Control:
-      - no-cache, private
-      Date:
-      - Mon, 05 Jan 2026 10:03:00 GMT
-      X-Billable-Lookups-Count:
-      - '3'
-      X-Billable-Fields-Count:
-      - '0'
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Methods:
-      - GET, POST, PATCH, DELETE
-      Access-Control-Allow-Headers:
-      - Content-Type, User-Agent
-      Access-Control-Expose-Headers:
-      - Request-Handler
-      X-Frame-Options:
-      - DENY
-      Content-Security-Policy:
-      - default-src 'none';
-      Request-Handler:
-      - api309
-      Server:
-      - Unicorns with magic wands (https://www.geocod.io)
-      X-Request-Id:
-      - 05BA2ED8:E522_94FBB48F:01BB_695B8C53_77776:039E
-      X-Content-Type-Options:
-      - nosniff
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Ratelimit-Remaining:
-      - '941'
-      X-Ratelimit-Limit:
-      - '1000'
-      X-Ratelimit-Period:
-      - '60'
-      Connection:
-      - close
-    body:
-      encoding: ASCII-8BIT
-      string: '{"results":[{"query":"1109 N Highland St, Arlington, VA 22201","response":{"input":{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","state":"VA","zip":"22201","country":"US"},"formatted_address":"1109
-        N Highland St, Arlington, VA 22201"},"results":[{"address_components":{"number":"1109","predirectional":"N","street":"Highland","suffix":"St","formatted_street":"N
-        Highland St","city":"Arlington","county":"Arlington County","state":"VA","zip":"22201","country":"US"},"address_lines":["1109
-        N Highland St","","Arlington, VA 22201"],"formatted_address":"1109 N Highland
-        St, Arlington, VA 22201","location":{"lat":38.886672,"lng":-77.094735},"accuracy":1,"accuracy_type":"rooftop","source":"Arlington"}]}},{"query":"12187
-        Darnestown Rd, Gaithersburg, MD 20878","response":{"input":{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","state":"MD","zip":"20878","country":"US"},"formatted_address":"12187
-        Darnestown Rd, Gaithersburg, MD 20878"},"results":[{"address_components":{"number":"12187","street":"Darnestown","suffix":"Rd","formatted_street":"Darnestown
-        Rd","city":"Gaithersburg","county":"Montgomery County","state":"MD","zip":"20878","country":"US"},"address_lines":["12187
-        Darnestown Rd","","Gaithersburg, MD 20878"],"formatted_address":"12187 Darnestown
-        Rd, Gaithersburg, MD 20878","location":{"lat":39.118147,"lng":-77.251689},"accuracy":1,"accuracy_type":"rooftop","source":"City
-        of Gaithersburg"}]}},{"query":"4961 Elm Street, Bethesda, MD","response":{"input":{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","state":"MD","country":"US"},"formatted_address":"4961
-        Elm St, Bethesda, MD"},"results":[{"address_components":{"number":"4961","street":"Elm","suffix":"St","formatted_street":"Elm
-        St","city":"Bethesda","county":"Montgomery County","state":"MD","zip":"20814","country":"US"},"address_lines":["4961
-        Elm St","","Bethesda, MD 20814"],"formatted_address":"4961 Elm St, Bethesda,
-        MD 20814","location":{"lat":38.982252,"lng":-77.098164},"accuracy":1,"accuracy_type":"rooftop","source":"Montgomery"}]}}]}'
-  recorded_at: Mon, 05 Jan 2026 10:03:00 GMT
+  recorded_at: Tue, 24 Feb 2026 16:52:45 GMT
 recorded_with: VCR 6.1.0

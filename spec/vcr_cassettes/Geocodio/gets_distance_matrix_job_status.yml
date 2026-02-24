@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.9/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v1.10/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Status Test Job","origins":[{"lat":38.8977,"lng":-77.0365}],"destinations":[{"lat":38.8895,"lng":-77.0353}]}'
@@ -27,7 +27,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Tue, 06 Jan 2026 10:42:24 GMT
+      - Tue, 24 Feb 2026 16:52:49 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -41,17 +41,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api304
+      - api277
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:FB06_94FBB48F:01BB_695CE710_D7084:039E
+      - 05BA2ED8:D59D_94FBB48F:01BB_699DD761_10FF29:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '990'
+      - '948'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -60,12 +60,12 @@ http_interactions:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":2,"identifier":"ccbb2480585aa14453f03d2dc4769a770c6eb301","status":"ENQUEUED","name":"Status
-        Test Job","created_at":"2026-01-06T10:42:24.000000Z","origins_count":1,"destinations_count":1,"total_calculations":1}'
-  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
+      string: '{"id":30,"identifier":"e53f885bed61dcad07bcc1b5acfc785ac222c015","status":"ENQUEUED","name":"Status
+        Test Job","created_at":"2026-02-24T16:52:49.000000Z","origins_count":1,"destinations_count":1,"total_calculations":1}'
+  recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.9/distance-jobs/2?api_key=<API_KEY>
+    uri: https://api.geocod.io/v1.10/distance-jobs/30?api_key=<API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -90,7 +90,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       Date:
-      - Tue, 06 Jan 2026 10:42:24 GMT
+      - Tue, 24 Feb 2026 16:52:49 GMT
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -104,17 +104,17 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none';
       Request-Handler:
-      - api311
+      - api242
       Server:
       - Unicorns with magic wands (https://www.geocod.io)
       X-Request-Id:
-      - 05BA2ED8:FB07_94FBB48F:01BB_695CE710_D7086:039E
+      - 05BA2ED8:D59E_94FBB48F:01BB_699DD761_10FF2D:054D
       X-Content-Type-Options:
       - nosniff
       X-Xss-Protection:
       - 1; mode=block
       X-Ratelimit-Remaining:
-      - '989'
+      - '947'
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Period:
@@ -123,8 +123,8 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"data":{"id":2,"identifier":"ccbb2480585aa14453f03d2dc4769a770c6eb301","name":"Status
-        Test Job","created_at":"2026-01-06T10:42:24.000000Z","updated_at":"2026-01-06T10:42:24.000000Z","last_heartbeat_at":null,"origins_type":"coordinates","origins_count":1,"destinations_type":"coordinates","destinations_count":1,"distance_mode":"straightline","status":"ENQUEUED","download_url":null,"total_calculations":1,"calculations_completed":0,"progress":0,"status_message":"Waiting
+      string: '{"data":{"identifier":"e53f885bed61dcad07bcc1b5acfc785ac222c015","name":"Status
+        Test Job","created_at":"2026-02-24T16:52:49.000000Z","origins_type":"coordinates","origins_count":1,"destinations_type":"coordinates","destinations_count":1,"distance_mode":"straightline","status":"ENQUEUED","download_url":null,"total_calculations":1,"calculations_completed":0,"progress":0,"status_message":"Waiting
         to be processed.","time_left":null,"is_expired":false}}'
-  recorded_at: Tue, 06 Jan 2026 10:42:24 GMT
+  recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 recorded_with: VCR 6.1.0
