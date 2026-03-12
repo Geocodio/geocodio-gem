@@ -1,3 +1,6 @@
+## [0.7.0] - 2026-03-12
+- Updated default API version to v1.11
+
 ## [0.6.0] - 2026-02-24
 - Updated API endpoint from v1.9 to v1.10
 

@@ -134,4 +134,138 @@ http_interactions:
       string: '{"address":"2269 Cathedral Ave NW, Washington, DC 20008","lat":38.927781,"lng":-77.051845,"accuracy":0.97,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}'
   recorded_at: Tue, 24 Feb 2026 16:52:44 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&format=simple&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:54 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api306
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8DB_94FBB48F:01BB_69B2A9CA_1462AE:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '977'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":"510 H St NE, Washington, DC 20002","lat":38.900419,"lng":-76.998968,"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"}'
+  recorded_at: Thu, 12 Mar 2026 11:55:55 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&format=simple&q=38.92977415631741,-77.04941962147353
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:55 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api310
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8DC_94FBB48F:01BB_69B2A9CB_1462AF:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '976'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":"2269 Cathedral Ave NW, Washington, DC 20008","lat":38.927781,"lng":-77.051845,"accuracy":0.97,"accuracy_type":"rooftop","source":"Statewide
+        (City of Washington)"}'
+  recorded_at: Thu, 12 Mar 2026 11:55:55 GMT
 recorded_with: VCR 6.1.0

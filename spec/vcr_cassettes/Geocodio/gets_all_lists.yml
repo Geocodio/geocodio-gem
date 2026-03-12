@@ -130,4 +130,68 @@ http_interactions:
         to be processed.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T16:52:46.000000Z"},{"id":12241902,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"PROCESSING","progress":99,"message":"Preparing
         file for download","time_left_description":"A few moments left","time_left_seconds":0},"download_url":null,"expires_at":"2026-02-27T16:52:47.000000Z"},{"id":12241900,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.10\/lists\/12241900\/download","expires_at":"2026-02-27T16:50:30.000000Z"},{"id":12241899,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.10\/lists\/12241899\/download","expires_at":"2026-02-27T16:50:30.000000Z"},{"id":12241898,"fields":[],"file":{"estimated_rows_count":19,"filename":"lat_long_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.10\/lists\/12241898\/download","expires_at":"2026-02-27T16:50:23.000000Z"},{"id":12241897,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list_test.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":"https:\/\/api.geocod.io\/v1.10\/lists\/12241897\/download","expires_at":"2026-02-27T16:50:19.000000Z"},{"id":12238331,"fields":["census2020","timezone","cd+legislators"],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:34.000000Z"},{"id":12238330,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:28.000000Z"},{"id":12238329,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:23.000000Z"},{"id":12238328,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:18.000000Z"},{"id":12238326,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:15.000000Z"},{"id":12238325,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:19.000000Z"},{"id":12238324,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:05:13.000000Z"},{"id":12238323,"fields":["census2020","timezone","cd+legislators"],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-21T11:00:11.000000Z"}],"first_page_url":"https:\/\/api.geocod.io\/v1.10\/lists?page=1","from":1,"next_page_url":"https:\/\/api.geocod.io\/v1.10\/lists?page=2","path":"https:\/\/api.geocod.io\/v1.10\/lists","per_page":15,"prev_page_url":null,"to":15}'
   recorded_at: Tue, 24 Feb 2026 16:52:47 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/lists?api_key=<API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:56 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api294
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8EA_94FBB48F:01BB_69B2A9CC_1462C5:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '964'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"current_page":1,"current_page_url":"https:\/\/api.geocod.io\/v1.11\/lists?page=1","data":[{"id":12241937,"fields":["census2020","timezone","cd+legislators"],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"FAILED","progress":0,"message":"An
+        error occurred. Please try again later or contact us if the problem persists.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:03:12.000000Z"},{"id":12241936,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:03:07.000000Z"},{"id":12241935,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:03:03.000000Z"},{"id":12241934,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:02:58.000000Z"},{"id":12241932,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:02:55.000000Z"},{"id":12241931,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:02:58.000000Z"},{"id":12241930,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:02:53.000000Z"},{"id":12241929,"fields":[],"file":{"estimated_rows_count":24,"filename":"sample_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:43.000000Z"},{"id":12241926,"fields":["census2020","timezone","cd+legislators"],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"FAILED","progress":0,"message":"An
+        error occurred. Please try again later or contact us if the problem persists.","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:22.000000Z"},{"id":12241925,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:16.000000Z"},{"id":12241924,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:12.000000Z"},{"id":12241923,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:07.000000Z"},{"id":12241921,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:19.000000Z"},{"id":12241920,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:23.000000Z"},{"id":12241919,"fields":[],"file":{"estimated_rows_count":2,"filename":"test_list.csv"},"status":{"state":"COMPLETED","progress":100,"message":"Completed","time_left_description":null,"time_left_seconds":null},"download_url":null,"expires_at":"2026-02-27T17:01:02.000000Z"}],"first_page_url":"https:\/\/api.geocod.io\/v1.11\/lists?page=1","from":1,"next_page_url":"https:\/\/api.geocod.io\/v1.11\/lists?page=2","path":"https:\/\/api.geocod.io\/v1.11\/lists","per_page":15,"prev_page_url":null,"to":15}'
+  recorded_at: Thu, 12 Mar 2026 11:55:56 GMT
 recorded_with: VCR 6.1.0

@@ -270,4 +270,274 @@ http_interactions:
         DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)"}]}'
   recorded_at: Tue, 24 Feb 2026 16:52:44 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:53 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api310
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8D1_94FBB48F:01BB_69B2A9C9_1462A2:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '987'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"stable_address_key":"gcod_usns9336kzhky4334vs7fgmnxvbzb","address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900419,"lng":-76.998968},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43398dkxdr7svcsd","address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky4335udnpc4rkaeec","address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433ajkv8yk2zgg8d","address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433x7cfk7qufmcy6","address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
+        DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43373uq3ssjlwkhb","address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
+        DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"}]}'
+  recorded_at: Thu, 12 Mar 2026 11:55:53 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:54 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api306
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8D2_94FBB48F:01BB_69B2A9C9_1462A3:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '986'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"stable_address_key":"gcod_usns9336kzhky4334vs7fgmnxvbzb","address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900419,"lng":-76.998968},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43398dkxdr7svcsd","address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky4335udnpc4rkaeec","address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433ajkv8yk2zgg8d","address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433x7cfk7qufmcy6","address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
+        DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43373uq3ssjlwkhb","address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
+        DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"}]}'
+  recorded_at: Thu, 12 Mar 2026 11:55:54 GMT
+- request:
+    method: get
+    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&q=38.9002898,-76.9990361
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.7.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Thu, 12 Mar 2026 11:55:54 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api303
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 05BA2ED8:C8D3_94FBB48F:01BB_69B2A9CA_1462A4:0595
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '985'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"stable_address_key":"gcod_usns9336kzhky4334vs7fgmnxvbzb","address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
+        DC 20002","location":{"lat":38.900419,"lng":-76.998968},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43398dkxdr7svcsd","address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
+        DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky4335udnpc4rkaeec","address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
+        DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433ajkv8yk2zgg8d","address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
+        DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky433x7cfk7qufmcy6","address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
+        DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"},{"stable_address_key":"gcod_usns9336kzhky43373uq3ssjlwkhb","address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
+        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
+        DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
+        (City of Washington)"}]}'
+  recorded_at: Thu, 12 Mar 2026 11:55:54 GMT
 recorded_with: VCR 6.1.0
