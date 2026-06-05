@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.10/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Test Distance Job","origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"}],"mode":"straightline","callback_url":"https://example.com/webhook"}'
@@ -65,7 +65,7 @@ http_interactions:
   recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.11/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Test Distance Job","origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"}],"mode":"straightline","callback_url":"https://example.com/webhook"}'

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.10/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Status Test Job","origins":[{"lat":38.8977,"lng":-77.0365}],"destinations":[{"lat":38.8895,"lng":-77.0353}]}'
@@ -65,7 +65,7 @@ http_interactions:
   recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.10/distance-jobs/30?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs/30?api_key=<API_KEY>
     body:
       encoding: US-ASCII
       string: ''
@@ -129,7 +129,7 @@ http_interactions:
   recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.11/distance-jobs?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"name":"Status Test Job","origins":[{"lat":38.8977,"lng":-77.0365}],"destinations":[{"lat":38.8895,"lng":-77.0353}]}'
@@ -192,7 +192,7 @@ http_interactions:
   recorded_at: Thu, 12 Mar 2026 11:55:57 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.11/distance-jobs/32?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-jobs/32?api_key=<API_KEY>
     body:
       encoding: US-ASCII
       string: ''
