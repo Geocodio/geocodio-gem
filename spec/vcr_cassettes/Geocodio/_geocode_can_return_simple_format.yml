@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&format=simple&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&format=simple&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -68,7 +68,7 @@ http_interactions:
   recorded_at: Tue, 24 Feb 2026 16:52:43 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.10/geocode?api_key=<API_KEY>&format=simple&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&format=simple&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -130,12 +130,12 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"address":"1120 N Highland St, Arlington, VA 22201","lat":38.886748,"lng":-77.094752,"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER\/Line\u00ae
+      string: '{"address":"1120 N Highland St, Arlington, VA 22201","lat":38.886748,"lng":-77.094752,"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER/Line®
         from the US Census Bureau"}'
   recorded_at: Tue, 24 Feb 2026 16:52:43 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.11/geocode?api_key=<API_KEY>&format=simple&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&format=simple&q=1109%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -201,7 +201,7 @@ http_interactions:
   recorded_at: Thu, 12 Mar 2026 11:55:53 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.11/geocode?api_key=<API_KEY>&format=simple&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&format=simple&q=1120%20N%20Highland%20St,%20Arlington,%20VA%2022201
     body:
       encoding: US-ASCII
       string: ''
@@ -263,7 +263,7 @@ http_interactions:
       - close
     body:
       encoding: ASCII-8BIT
-      string: '{"address":"1120 N Highland St, Arlington, VA 22201","lat":38.886748,"lng":-77.094752,"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER\/Line\u00ae
+      string: '{"address":"1120 N Highland St, Arlington, VA 22201","lat":38.886748,"lng":-77.094752,"accuracy":1,"accuracy_type":"range_interpolation","source":"TIGER/Line®
         from the US Census Bureau"}'
   recorded_at: Thu, 12 Mar 2026 11:55:53 GMT
 recorded_with: VCR 6.1.0

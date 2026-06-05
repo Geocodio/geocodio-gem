@@ -22,7 +22,7 @@ RSpec.describe Geocodio do
   it "geocodes a single address", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
 
-    expect(geocodio.geocode(address_sample)["input"]["formatted_address"]).to eq(address_sample.join(""))
+    expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["postal_code"]).to eq("22201")
     expect(geocodio.geocode(address_sample)["results"][0]["formatted_address"]).to eq(address_sample.join(""))
     expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["number"]).to eq("1109")
     expect(geocodio.geocode(address_sample)["results"][0]["address_components"]["city"]).to eq("Arlington")
@@ -101,9 +101,9 @@ RSpec.describe Geocodio do
     ]
 
     expect(geocodio.geocode(batch_addresses)["results"].size).to equal(batch_addresses.size)
-    expect(geocodio.geocode(batch_addresses)["results"][0]["response"]["input"]["formatted_address"]).to eq("1109 N Highland St, Arlington, VA 22201")
-    expect(geocodio.geocode(batch_addresses)["results"][1]["response"]["input"]["formatted_address"]).to eq("12187 Darnestown Rd, Gaithersburg, MD 20878")
-    expect(geocodio.geocode(batch_addresses)["results"][2]["response"]["input"]["formatted_address"]).to eq("4961 Elm St, Bethesda, MD")
+    expect(geocodio.geocode(batch_addresses)["results"][0]["response"]["results"][0]["formatted_address"]).to eq("1109 N Highland St, Arlington, VA 22201")
+    expect(geocodio.geocode(batch_addresses)["results"][1]["response"]["results"][0]["formatted_address"]).to eq("12187 Darnestown Rd, Gaithersburg, MD 20878")
+    expect(geocodio.geocode(batch_addresses)["results"][2]["response"]["results"][0]["formatted_address"]).to eq("4961 Elm St, Bethesda, MD 20814")
   end
 
   it "reverse geocodes batch coordinates", vcr: { record: :new_episodes } do

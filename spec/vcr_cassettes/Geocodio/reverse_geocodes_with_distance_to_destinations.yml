@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.geocod.io/v1.10/reverse?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369,capitol&distance_mode=driving&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v2/reverse?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369,capitol&distance_mode=driving&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -65,34 +65,34 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"results":[{"stable_address_key":"gcod_usns9336kzhky4334vs7fgmnxvbzb","address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["510
         H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
         DC 20002","location":{"lat":38.900419,"lng":-76.998968},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":286,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky43398dkxdr7svcsd","address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["508
         H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
         DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":284,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky4335udnpc4rkaeec","address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["506
         H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
         DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":283,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky433ajkv8yk2zgg8d","address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["504
         H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
         DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":281,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky433x7cfk7qufmcy6","address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["512
         H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
         DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":287,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky43373uq3ssjlwkhb","address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["514
         H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
         DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":288,"id":"capitol"}]}]}'
   recorded_at: Tue, 24 Feb 2026 16:52:50 GMT
 - request:
     method: get
-    uri: https://api.geocod.io/v1.11/reverse?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369,capitol&distance_mode=driving&q=38.9002898,-76.9990361
+    uri: https://api.geocod.io/v2/reverse?api_key=<API_KEY>&destinations%5B%5D=38.9072,-77.0369,capitol&distance_mode=driving&q=38.9002898,-76.9990361
     body:
       encoding: US-ASCII
       string: ''
@@ -155,27 +155,27 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"results":[{"stable_address_key":"gcod_usns9336kzhky4334vs7fgmnxvbzb","address_components":{"number":"510","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["510
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["510
         H St NE","","Washington, DC 20002"],"formatted_address":"510 H St NE, Washington,
         DC 20002","location":{"lat":38.900419,"lng":-76.998968},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":286,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky43398dkxdr7svcsd","address_components":{"number":"508","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["508
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["508
         H St NE","","Washington, DC 20002"],"formatted_address":"508 H St NE, Washington,
         DC 20002","location":{"lat":38.900432,"lng":-76.999031},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":284,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky4335udnpc4rkaeec","address_components":{"number":"506","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["506
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["506
         H St NE","","Washington, DC 20002"],"formatted_address":"506 H St NE, Washington,
         DC 20002","location":{"lat":38.900437,"lng":-76.999099},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":283,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky433ajkv8yk2zgg8d","address_components":{"number":"504","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["504
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["504
         H St NE","","Washington, DC 20002"],"formatted_address":"504 H St NE, Washington,
         DC 20002","location":{"lat":38.900422,"lng":-76.999169},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.2,"distance_km":3.6,"duration_seconds":281,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky433x7cfk7qufmcy6","address_components":{"number":"512","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["512
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["512
         H St NE","","Washington, DC 20002"],"formatted_address":"512 H St NE, Washington,
         DC 20002","location":{"lat":38.900435,"lng":-76.998897},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":287,"id":"capitol"}]},{"stable_address_key":"gcod_usns9336kzhky43373uq3ssjlwkhb","address_components":{"number":"514","street":"H","suffix":"St","postdirectional":"NE","formatted_street":"H
-        St NE","city":"Washington","county":"District of Columbia","state":"DC","zip":"20002","country":"US"},"address_lines":["514
+        St NE","city":"Washington","county":"District of Columbia","state_province":"DC","postal_code":"20002","country":"US"},"address_lines":["514
         H St NE","","Washington, DC 20002"],"formatted_address":"514 H St NE, Washington,
         DC 20002","location":{"lat":38.900415,"lng":-76.99883},"accuracy":1,"accuracy_type":"rooftop","match_type":null,"source":"Statewide
         (City of Washington)","destinations":[{"query":"38.9072,-77.0369,capitol","location":[38.9072,-77.0369],"distance_miles":2.3,"distance_km":3.6,"duration_seconds":288,"id":"capitol"}]}]}'

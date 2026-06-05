@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: post
-    uri: https://api.geocod.io/v1.10/distance-matrix?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-matrix?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"},{"lat":38.9072,"lng":-77.0369,"id":"origin_2"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"},{"lat":39.2904,"lng":-76.6122,"id":"dest_2"}]}'
@@ -66,7 +66,7 @@ http_interactions:
   recorded_at: Tue, 24 Feb 2026 16:52:49 GMT
 - request:
     method: post
-    uri: https://api.geocod.io/v1.11/distance-matrix?api_key=<API_KEY>
+    uri: https://api.geocod.io/v2/distance-matrix?api_key=<API_KEY>
     body:
       encoding: UTF-8
       string: '{"origins":[{"lat":38.8977,"lng":-77.0365,"id":"origin_1"},{"lat":38.9072,"lng":-77.0369,"id":"origin_2"}],"destinations":[{"lat":38.8895,"lng":-77.0353,"id":"dest_1"},{"lat":39.2904,"lng":-76.6122,"id":"dest_2"}]}'

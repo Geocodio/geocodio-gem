@@ -1,3 +1,12 @@
+## [1.0.0] - 2026-06-05
+- **BREAKING**: Migrated to Geocodio API v2 (base URL changed from `v1.11` to `v2`)
+- **BREAKING**: Removed the top-level `input` object from `/geocode` and `/reverse` responses. The parsed address now lives in `results[].address_components`.
+- **BREAKING**: Renamed keys inside `address_components` and `address_components_secondary`:
+  - `zip` → `postal_code`
+  - `state` → `state_province`
+  - `secondaryunit` → `unit_type`
+  - `secondarynumber` → `unit_number`
+
 ## [0.7.0] - 2026-03-12
 - Updated default API version to v1.11
 
