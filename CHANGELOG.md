@@ -1,3 +1,8 @@
+## [2.0.0] - 2026-07-15
+- **SECURITY**: Require `faraday >= 2.14.3` to address [CVE-2026-54297](https://github.com/advisories/GHSA-98m9-hrrm-r99r) — uncontrolled recursion in `Faraday::NestedParamsEncoder` allowing a stack-exhaustion denial of service via deeply nested query parameters.
+- **BREAKING**: Raised `required_ruby_version` to `>= 3.0.0`. The patched Faraday 2.14.3 requires Ruby 3.0+, so Ruby 2.6/2.7 (both end-of-life) are no longer supported.
+- Declared `faraday` and `faraday-follow_redirects` as explicit runtime dependencies in the gemspec (they were previously only present in the development `Gemfile`).
+
 ## [1.0.0] - 2026-06-05
 - **BREAKING**: Migrated to Geocodio API v2 (base URL changed from `v1.11` to `v2`)
 - **BREAKING**: Removed the top-level `input` object from `/geocode` and `/reverse` responses. The parsed address now lives in `results[].address_components`.

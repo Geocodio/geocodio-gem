@@ -11,10 +11,11 @@ gem "rake", "~> 13.0"
 gem "rspec", "~> 3.0"
 gem "webmock"
 gem "vcr"
+# base64 stopped being a default gem in Ruby 3.4; vcr requires it at load time.
+gem "base64"
 
-#API CALLS
-gem "faraday"
-gem "faraday-follow_redirects"
+# NOTE: faraday and faraday-follow_redirects are declared as runtime
+# dependencies in geocodio-gem.gemspec (faraday >= 2.14.3 for CVE-2026-54297).
 
 #DEBUGGING
 gem "byebug"

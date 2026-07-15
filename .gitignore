@@ -19,4 +19,7 @@
 #Ignore VSCode
 .vscode
 
-*.gemvendor/
+*.gem
+
+# Ignore local bundle install path
+/vendor/

@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "A Ruby Gem to help you integrate your application with the Geocodio API."
   spec.homepage = "https://www.geocod.io/docs"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.0.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
@@ -31,8 +31,16 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  # Uncomment to register a new dependency of your gem
-  # spec.add_dependency "example-gem", "~> 1.0"
+  # Runtime dependencies.
+  # faraday: pinned to >= 2.14.3 to address CVE-2026-54297 (uncontrolled
+  # recursion in NestedParamsEncoder allowing stack-exhaustion DoS). The fix
+  # first landed in the 2.x line at 2.14.3, which requires Ruby >= 3.0.
+  spec.add_dependency "faraday", ">= 2.14.3"
+  spec.add_dependency "faraday-follow_redirects", ">= 0.3.0"
+  # csv is required at runtime (see lib/geocodio/gem.rb). It stopped being a
+  # default gem in Ruby 3.4, so it must be declared explicitly now that this
+  # gem supports Ruby 3.0+.
+  spec.add_dependency "csv", "~> 3.0"
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
