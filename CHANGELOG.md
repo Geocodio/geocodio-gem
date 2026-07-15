@@ -1,7 +1,9 @@
 ## [2.0.0] - 2026-07-15
 - **SECURITY**: Require `faraday >= 2.14.3` to address [CVE-2026-54297](https://github.com/advisories/GHSA-98m9-hrrm-r99r) — uncontrolled recursion in `Faraday::NestedParamsEncoder` allowing a stack-exhaustion denial of service via deeply nested query parameters.
 - **BREAKING**: Raised `required_ruby_version` to `>= 3.0.0`. The patched Faraday 2.14.3 requires Ruby 3.0+, so Ruby 2.6/2.7 (both end-of-life) are no longer supported.
-- Declared `faraday` and `faraday-follow_redirects` as explicit runtime dependencies in the gemspec (they were previously only present in the development `Gemfile`).
+- Declared `faraday`, `faraday-follow_redirects`, and `csv` as explicit runtime dependencies in the gemspec. `faraday` and `faraday-follow_redirects` were previously only present in the development `Gemfile`, so the published gem carried no version constraint; `csv` is used at runtime and stopped being a default gem in Ruby 3.4.
+- Bumped vulnerable transitive development dependencies to clear all outstanding advisories: `addressable` 2.8.1 → 2.9.0 ([GHSA-h27x-rffw-24p4](https://github.com/advisories/GHSA-h27x-rffw-24p4)) and `rexml` 3.2.5 → 3.4.4 ([GHSA-2rxp-v6pw-ch6m](https://github.com/advisories/GHSA-2rxp-v6pw-ch6m) and related). These are test-only and are not shipped with the gem.
+- Updated the CI matrix to Ruby 3.0–3.3.
 
 ## [1.0.0] - 2026-06-05
 - **BREAKING**: Migrated to Geocodio API v2 (base URL changed from `v1.11` to `v2`)
