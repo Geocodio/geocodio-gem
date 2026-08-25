@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&fields=uk-westminster,uk-local&q=10%20Downing%20St,%20London,%20United%20Kingdom
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Mon, 24 Aug 2026 14:11:33 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api322
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 519967C3:CE59_94FBB48F:01BB_6A8C5115_610D:0C25
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '999'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"stable_address_key":"gcod_gbnf5jp6g3xbpmcg4djw4475wxx89","address_components":{"number":"10","street":"Downing","suffix":"St","formatted_street":"Downing
+        St","city":"London","nation":"England","postal_code":"SW1A 2AA","country":"GB"},"address_lines":["10
+        Downing St","London","SW1A 2AA"],"formatted_address":"10 Downing St, London
+        SW1A 2AA","location":{"lat":51.503541,"lng":-0.12767},"accuracy":1,"accuracy_type":"rooftop","match_type":"building_centroid","source":"Contains
+        OS data \u00a9 Crown copyright. Contains PAF\u00ae data \u00a9 Royal Mail
+        Group Ltd.","fields":{"uk_westminster":[{"district_type":"westminster_constituency","gss_code":"E14001172","ocd_id":"ocd-division\/country:gb\/part:eng\/region:uki\/ed:cities_of_london_and_westminster","name":"Cities
+        of London and Westminster","is_upcoming_district":false,"source":"Office for
+        National Statistics"}],"uk_local":[{"district_type":"ward","gss_code":"E05013806","ocd_id":"ocd-division\/country:gb\/part:eng\/ward:e05013806","name":"St
+        James''s","is_upcoming_district":false,"source":"Office for National Statistics"}]}}]}'
+  recorded_at: Mon, 24 Aug 2026 14:11:33 GMT
+recorded_with: VCR 6.1.0

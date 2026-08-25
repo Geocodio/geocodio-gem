@@ -38,6 +38,17 @@ RSpec.describe Geocodio do
     expect(geocodio.geocode(address_sample, appended_fields)["results"][0]["fields"]["school_districts"]["unified"]["grade_high"]).to eq("12")
   end
 
+  it "appends UK-specific fields", vcr: { record: :new_episodes } do
+    address_sample = ["10 Downing St, London, United Kingdom"]
+    appended_fields = ["uk-westminster", "uk-local"]
+
+    results = geocodio.geocode(address_sample, appended_fields)["results"][0]
+
+    expect(results["fields"]["uk_westminster"][0]["name"]).to eq("Cities of London and Westminster")
+    expect(results["fields"]["uk_westminster"][0]["district_type"]).to eq("westminster_constituency")
+    expect(results["fields"]["uk_local"][0]["district_type"]).to eq("ward")
+  end
+
   it "#geocode can limit amount of responses", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     appended_fields = ["school", "cd"]
