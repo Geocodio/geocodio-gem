@@ -1,3 +1,7 @@
+## [Unreleased]
+- Documented the API's `_warnings` response key, including where warnings appear on single, batch, per-result, error, Lists API and distance matrix job responses
+- Added specs locking in `_warnings` passthrough on every response shape
+
 ## [2.0.0] - 2026-07-15
 - **SECURITY**: Require `faraday >= 2.14.3` to address [CVE-2026-54297](https://github.com/advisories/GHSA-98m9-hrrm-r99r) — uncontrolled recursion in `Faraday::NestedParamsEncoder` allowing a stack-exhaustion denial of service via deeply nested query parameters.
 - **BREAKING**: Raised `required_ruby_version` to `>= 3.0.0`. The patched Faraday 2.14.3 requires Ruby 3.0+, so Ruby 2.6/2.7 (both end-of-life) are no longer supported.
