@@ -1,4 +1,7 @@
-## [Unreleased]
+## [2.1.0] - 2026-10-06
+- Documented UK support, including UK-specific appends (`uk-westminster`, `uk-devolved`, `uk-local`) and a UK address in the batch geocoding example
+- Added a spec covering UK-specific field appends
+- Updated README response examples to the API v2 shape (no top-level `input` object)
 - Documented the API's `_warnings` response key, including where warnings appear on single, batch, per-result, error, Lists API and distance matrix job responses
 - Added specs locking in `_warnings` passthrough on every response shape
 
