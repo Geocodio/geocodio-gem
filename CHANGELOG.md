@@ -1,3 +1,6 @@
+## [2.2.0] - 2026-10-12
+- Added the `calculation_type` option to `distanceMatrix()` and `createDistanceMatrixJob()`. Pass `calculation_type: :pairs` to measure each origin only against the destination at the same position, instead of the default full matrix (`:matrix`)
+
 ## [2.1.0] - 2026-10-06
 - Documented UK support, including UK-specific appends (`uk-westminster`, `uk-devolved`, `uk-local`) and a UK address in the batch geocoding example
 - Added a spec covering UK-specific field appends
