@@ -186,7 +186,10 @@ module Geocodio
     # Calculate distance matrix from multiple origins to multiple destinations
     # @param origins [Array] Array of origin coordinates
     # @param destinations [Array] Array of destination coordinates
-    # @param options [Hash] Same options as distance() method
+    # @param options [Hash] Same options as distance() method, plus:
+    #   - calculation_type: :matrix (default, every origin against every destination)
+    #     or :pairs (origin i against destination i only; origins and destinations
+    #     must be the same length, and the max_*/min_* filters are not available)
     def distanceMatrix(origins, destinations, options = {})
       raise ArgumentError, 'Please provide at least one origin.' if origins.nil? || origins.empty?
       raise ArgumentError, 'Please provide at least one destination.' if destinations.nil? || destinations.empty?
@@ -215,6 +218,7 @@ module Geocodio
     # @param destinations [Array, Integer] Array of coordinates or list ID
     # @param options [Hash] Same options as distanceMatrix() plus:
     #   - callback_url: URL for webhook notification
+    #   - calculation_type: :matrix (default) or :pairs, as for distanceMatrix()
     def createDistanceMatrixJob(name, origins, destinations, options = {})
       raise ArgumentError, 'Please provide a job name.' if name.nil? || name.empty?
       raise ArgumentError, 'Please provide origins.' if origins.nil?
@@ -366,6 +370,8 @@ module Geocodio
     # Build distance body parameters for POST requests
     def build_distance_body_params(options)
       params = {}
+
+      params[:calculation_type] = options[:calculation_type].to_s if options[:calculation_type]
 
       # Mode (map haversine to straightline)
       if options[:mode]
