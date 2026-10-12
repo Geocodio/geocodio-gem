@@ -385,6 +385,29 @@ response = geocodio.distanceMatrix(
 )
 ```
 
+#### One-to-One Pairs
+
+By default, every origin is measured against every destination. Pass `calculation_type: :pairs` to measure each origin only against the destination at the same position: the first origin against the first destination, the second against the second, and so on. Use it when you already know which trips you want, such as a list of commutes.
+
+```ruby
+origins = [
+  "38.8977,-77.0365,home",
+  "38.886672,-77.094735,office"
+]
+destinations = [
+  "38.9072,-77.0369,capitol",
+  "38.8895,-77.0353,monument"
+]
+
+response = geocodio.distanceMatrix(origins, destinations, calculation_type: :pairs)
+
+response["results"][0]["origin"]["id"]  # => "home"
+response["results"][0]["destinations"].length  # => 1
+response["results"][0]["destinations"][0]["id"]  # => "capitol"
+```
+
+`calculation_type` accepts `:matrix` (the default) or `:pairs`, as a symbol or a string. With `:pairs`, origins and destinations must be the same length, and the API rejects the `max_results`, `max_distance`, `max_duration`, `min_distance` and `min_duration` filters. The option applies to `distanceMatrix` and `createDistanceMatrixJob` only.
+
 ### Add Distance to Geocoding Requests
 
 You can add distance calculations to existing geocode or reverse geocode requests:
@@ -436,6 +459,16 @@ job = geocodio.createDistanceMatrixJob(
 )
 
 job["id"]  # => Job identifier
+
+# Measure one-to-one pairs instead of a full matrix
+job = geocodio.createDistanceMatrixJob(
+  "Commutes",
+  ["38.8977,-77.0365,home", "38.886672,-77.094735,office"],
+  ["38.9072,-77.0369,capitol", "38.8895,-77.0353,monument"],
+  calculation_type: :pairs
+)
+
+job["calculation_type"]  # => "pairs"
 
 # Or use list IDs from previously uploaded lists
 job = geocodio.createDistanceMatrixJob(

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    geocodio-gem (2.1.0)
+    geocodio-gem (2.2.0)
       csv (~> 3.0)
       faraday (>= 2.14.3)
       faraday-follow_redirects (>= 0.3.0)
