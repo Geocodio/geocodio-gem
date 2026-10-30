@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geocod.io/v2/geocode?api_key=<API_KEY>&fields=au-federal-electorate,au-state-electorate&q=83%20Torrens%20St,%20Braddon%20ACT%202612,%20Australia
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Faraday v2.14.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Cache-Control:
+      - no-cache, private
+      Date:
+      - Fri, 30 Oct 2026 17:34:12 GMT
+      X-Billable-Lookups-Count:
+      - '1'
+      X-Billable-Fields-Count:
+      - '2'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PATCH, DELETE
+      Access-Control-Allow-Headers:
+      - Content-Type, User-Agent
+      Access-Control-Expose-Headers:
+      - Request-Handler
+      X-Trace-Id:
+      - b91be210db6aeb759e5a59875dc62050
+      Traceresponse:
+      - 00-b91be210db6aeb759e5a59875dc62050-ebf4fe6947f1229b-01
+      X-Frame-Options:
+      - DENY
+      Content-Security-Policy:
+      - default-src 'none';
+      Request-Handler:
+      - api319
+      Server:
+      - Unicorns with magic wands (https://www.geocod.io)
+      X-Request-Id:
+      - 325AD7CE:D398_05A11518:01BB_6AE4D514_72A57C:1DF8
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Ratelimit-Remaining:
+      - '996'
+      X-Ratelimit-Limit:
+      - '1000'
+      X-Ratelimit-Period:
+      - '60'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"stable_address_key":"gcod_aunjmf9cyj4e46pa7q5khxpuzenca","address_components":{"number":"83","street":"Torrens","suffix":"St","formatted_street":"Torrens
+        St","city":"Braddon","state_province":"ACT","postal_code":"2612","country":"AU"},"address_lines":["83
+        Torrens St","","Braddon ACT 2612"],"formatted_address":"83 Torrens St, Braddon
+        ACT 2612","location":{"lat":-35.265582,"lng":149.135149},"accuracy":1,"accuracy_type":"rooftop","match_type":"building_centroid","source":"Statewide
+        (ACT Addresses from <a href=''https:\/\/actmapi.act.gov.au\/''>ACTMapi<\/a>
+        &copy;ACT Government CC BY 4.0)","fields":{"au_federal_electorate":[{"name":"Canberra","code":"802","ocd_id":"ocd-division\/country:au\/territory:act\/federal_electorate:canberra","state":"ACT","proportion":1,"is_upcoming_district":false,"source":"Geoscape
+        Australia"}],"au_state_electorate":[{"name":"Kurrajong","code":"80003","ocd_id":"ocd-division\/country:au\/territory:act\/sldl:kurrajong","state":"ACT","chamber":"legislative_assembly","proportion":1,"is_upcoming_district":false,"source":"Geoscape
+        Australia"}]}}]}'
+  recorded_at: Fri, 30 Oct 2026 17:34:12 GMT
+recorded_with: VCR 6.1.0

@@ -87,6 +87,14 @@ United Kingdom addresses support UK-specific appends such as Westminster and dev
     results # => {"results"=>[{"address_components"=>{"number"=>"10", "street"=>"Downing", "suffix"=>"St", "formatted_street"=>"Downing St", "city"=>"London", "nation"=>"England", "postal_code"=>"SW1A 2AA", "country"=>"GB"}, "formatted_address"=>"10 Downing St, London SW1A 2AA", "location"=>{"lat"=>51.503541, "lng"=>-0.12767}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Contains OS data © Crown copyright. Contains PAF® data © Royal Mail Group Ltd.", "fields"=>{"uk_westminster"=>[{"district_type"=>"westminster_constituency", "gss_code"=>"E14001172", "ocd_id"=>"ocd-division/country:gb/part:eng/region:uki/ed:cities_of_london_and_westminster", "name"=>"Cities of London and Westminster", "is_upcoming_district"=>false, "source"=>"Office for National Statistics"}], "uk_local"=>[{"district_type"=>"ward", "gss_code"=>"E05013806", "ocd_id"=>"ocd-division/country:gb/part:eng/ward:e05013806", "name"=>"St James's", "is_upcoming_district"=>false, "source"=>"Office for National Statistics"}]}}]}
 ```
 
+Australian addresses support AU-specific appends such as federal and state electorates (`au-federal-electorate`, `au-state-electorate`) and ABS census data (`au-census`, `au-demographics`, `au-housing`, `au-income`). Use `au-federal-electorate-next` to return upcoming federal electorate boundary changes.
+
+```ruby
+    results = geocodio.geocode(["83 Torrens St, Braddon ACT 2612, Australia"], ["au-federal-electorate", "au-state-electorate"])
+
+    results # => {"results"=>[{"address_components"=>{"number"=>"83", "street"=>"Torrens", "suffix"=>"St", "formatted_street"=>"Torrens St", "city"=>"Braddon", "state_province"=>"ACT", "postal_code"=>"2612", "country"=>"AU"}, "formatted_address"=>"83 Torrens St, Braddon ACT 2612", "location"=>{"lat"=>-35.265582, "lng"=>149.135149}, "accuracy"=>1, "accuracy_type"=>"rooftop", "source"=>"Statewide (ACT Addresses from ACTMapi ©ACT Government CC BY 4.0)", "fields"=>{"au_federal_electorate"=>[{"name"=>"Canberra", "code"=>"802", "ocd_id"=>"ocd-division/country:au/territory:act/federal_electorate:canberra", "state"=>"ACT", "proportion"=>1, "is_upcoming_district"=>false, "source"=>"Geoscape Australia"}], "au_state_electorate"=>[{"name"=>"Kurrajong", "code"=>"80003", "ocd_id"=>"ocd-division/country:au/territory:act/sldl:kurrajong", "state"=>"ACT", "chamber"=>"legislative_assembly", "proportion"=>1, "is_upcoming_district"=>false, "source"=>"Geoscape Australia"}]}}]}
+```
+
 ### Limiting Results
 
 Some results may return a collection of different possible matches to the address or coordinates you've provided. If you would like to limit the number of results you receive, you can add a `limit` parameter that will set a maximum amount of results to be returned. 
