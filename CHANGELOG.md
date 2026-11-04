@@ -1,3 +1,7 @@
+## [2.3.0] - 2026-10-30
+- Documented AU support, including AU-specific appends (`au-census`, `au-demographics`, `au-housing`, `au-income`, etc.) and an AU address in the batch geocoding example
+- Added a spec covering AU-specific field appends
+
 ## [2.2.0] - 2026-10-12
 - Added the `calculation_type` option to `distanceMatrix()` and `createDistanceMatrixJob()`. Pass `calculation_type: :pairs` to measure each origin only against the destination at the same position, instead of the default full matrix (`:matrix`)
 

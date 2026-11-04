@@ -49,6 +49,18 @@ RSpec.describe Geocodio do
     expect(results["fields"]["uk_local"][0]["district_type"]).to eq("ward")
   end
 
+  it "appends AU-specific fields", vcr: { record: :new_episodes } do
+    address_sample = ["83 Torrens St, Braddon ACT 2612, Australia"]
+    appended_fields = ["au-federal-electorate", "au-state-electorate"]
+
+    results = geocodio.geocode(address_sample, appended_fields)["results"][0]
+
+    expect(results["fields"]["au_federal_electorate"][0]["name"]).to eq("Canberra")
+    expect(results["fields"]["au_federal_electorate"][0]["state"]).to eq("ACT")
+    expect(results["fields"]["au_state_electorate"][0]["name"]).to eq("Kurrajong")
+    expect(results["fields"]["au_state_electorate"][0]["chamber"]).to eq("legislative_assembly")
+  end
+
   it "#geocode can limit amount of responses", vcr: { record: :new_episodes } do
     address_sample = ["1109 N Highland St, Arlington, VA 22201"]
     appended_fields = ["school", "cd"]
